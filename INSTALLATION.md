@@ -17,13 +17,13 @@ your normal save backups. This release covers the original single-player campaig
 ## Download and verify
 
 1. Open [GitHub Releases](https://github.com/thefreemike31/fear-vr/releases/latest).
-2. Expand **Assets** if needed. Download **fear-vr-v1.3.1.zip** and
-   **fear-vr-v1.3.1.zip.sha256**. Ignore GitHub's automatic Source code archives.
+2. Expand **Assets** if needed. Download **fear-vr-v1.4.0.zip** and
+   **fear-vr-v1.4.0.zip.sha256**. Ignore GitHub's automatic Source code archives.
 3. Open the `.sha256` file in Notepad. Its first 64 characters are the expected hash.
 4. In the folder containing the ZIP, open PowerShell and run:
 
    ```powershell
-   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.3.1.zip'
+   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.4.0.zip'
    ```
 
 5. Compare all 64 characters. Letter case does not matter. A mismatch means
@@ -91,6 +91,19 @@ See the [VDXR project](https://github.com/mbucchia/VirtualDesktop-OpenXR) and
 4. Run **F.E.A.R. VR.exe** in the installed game folder.
 
 Meta Quest Link and Air Link are unsupported, including through SteamVR.
+
+## Launcher language
+
+The launcher defaults to **Automatic**, using your Windows UI-language preferences
+with English as the fallback. You can select English, French, German, Spanish,
+Italian, Polish, Russian, Brazilian Portuguese, Simplified Chinese or Traditional
+Chinese. The selector changes the UI immediately; **Play** saves the choice for
+both editions. Cancel and previews do not save it.
+
+This translates the launcher and common messages, independently of the game's
+installed language. Technical logs and the Controls guide remain in English.
+Native-speaker review and automatic selection on non-English Windows systems
+remain open to feedback.
 
 ## First launch
 

@@ -1,8 +1,29 @@
-# Troubleshooting F.E.A.R. VR v1.3.1
+# Troubleshooting F.E.A.R. VR v1.4.0
+
+## New settings in v1.4
+
+**Launcher language:** use its language selector to override Automatic; Play
+saves the selection. This does not translate the game. For incorrect wording or
+automatic selection, report the chosen language and Windows UI-language order.
+
+**Weapon size:** use Calibration & Body Fit > Weapon Size Calibration. Center
+the stick between 5% adjustments and wait for weapon switches to finish. Stick
+movement, turning and jumping are intentionally blocked while this mode is open;
+X exits. Reset Grip/Sight Alignments does not reset size; down resets the selected
+weapon to 100%, while Reset All Calibration resets every weapon's size.
+
+**Ladders:** check Comfort & Movement > Ladder Mode. Manual and Auto (Both Grips)
+use grips; Joystick uses the movement stick, with forward/backward to climb,
+neutral to hold and Jump to release. Center the stick before re-engaging. Report
+the level, ladder, approach and selected mode if entry or top-out still fails.
+
+**Cinema aspect:** movies and camera-driven scenes now fit the complete frame
+without stretching or cropping it. Letterboxing may be intentional. If a scene
+still looks distorted, include its exact location and desktop resolution.
 
 ## Stuck at Press any key to continue
 
-Update v1.3.0 to **v1.3.1** using Setup > Upgrade. This fixes the missing
+Update v1.3.0 to **v1.4.0** using Setup > Upgrade. This fixes the missing
 pointer, laggy headset view and unresponsive controllers at the loading prompt.
 Release and press either trigger to continue. Until updated, a keyboard key
 can pass the prompt.
@@ -60,11 +81,11 @@ at a time, and save logs from the failing attempt before relaunching.
 ## GOG: Setup says another mod loader is present: dinput8.dll
 
 The v1.1.0 installer and launcher incorrectly rejected GOG's original Input
-wrapper. Use **v1.3.1 or later**; the verified original GOG file is allowed and
+wrapper. Use **v1.4.0 or later**; the verified original GOG file is allowed and
 preserved. Its presence does not mean you installed another mod.
 
 If you moved your original file to bypass that warning, close F.E.A.R., restore
-that same `dinput8.dll` to the GOG game folder and install v1.3.1. If it is lost,
+that same `dinput8.dll` to the GOG game folder and install v1.4.0. If it is lost,
 repair the game through GOG, then reinstall the VR mod. Do not substitute a DLL
 from a download site or the Steam edition. Unknown or modified loaders still
 need their own uninstall instructions or a clean supported installation.
@@ -325,8 +346,9 @@ pull, and move relative to the gun. Follow the weapon's tutorial card. A full,
 stowed, or reserve-empty gun may correctly have no reload card. Enable tutorial
 hints if needed; starting New Game resets lesson progress, but loading does not.
 
-For ladders or pickups, clear occupied hands and try a fresh Grip close to the
-interaction. Sustained tracking loss can release a ladder anchor; brief recovery
+For pickups and grip-based ladders, clear occupied hands and try a fresh Grip
+close to the interaction. In Joystick ladder mode, use the movement stick and
+center it before re-engaging. Sustained tracking loss can release a ladder anchor; brief recovery
 does not guarantee every headset avoids the original issue. Decorative props
 are not all interactive. If a particular grate, enemy, door, ladder endpoint,
 or weapon fails consistently, report that exact object/location and whether

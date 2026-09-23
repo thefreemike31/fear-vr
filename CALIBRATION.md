@@ -10,7 +10,7 @@ saves or Continue.
 
 ## Suggested order
 
-1. Set your intended seated/standing **Play Position** under **Movement & Comfort**.
+1. Set your intended seated/standing **Play Position** under **Comfort & Movement**.
    Confirm that the headset runtime's floor and tracking look correct.
 2. Use **Calibrate Standing Height** when applicable. Follow the displayed pose
    and confirmation instructions; do not crouch or stretch upward during capture.
@@ -34,12 +34,35 @@ You do not need every advanced calibration to begin playing.
 | Holsters & pouches | Physical draw and reload locations |
 | Fit Hands to Controllers | Hand/controller reference fit, also used by held hands |
 | Weapon Grip Calibration | Weapon placement and orientation in the hand |
+| Weapon Size Calibration | Per-weapon visual size, from 50% to 150% |
 | Advanced Sight Alignment | Aim direction; it does not move the weapon model |
 
 Changing controller hand fitting can affect how an older per-weapon grip
 alignment feels. Revisit the affected grip instead of repeatedly changing
 unrelated sight settings. Passive holster visibility can be off during play;
 calibration still shows its references.
+
+## Weapon size calibration
+
+Open **Weapon Size Calibration** under **Calibration & Body Fit**. It works in
+the calibration room from the main menu, or in your current campaign level.
+Use **A** for the previous weapon, **B/Y** for the next, and **X** to exit.
+Wait for a weapon switch to finish before adjusting it.
+
+Flick either stick left/right for 5% steps between **50% and 150%**, or down to
+reset the selected weapon to **100%**. Center the stick between steps. The held
+weapon changes size immediately and the profile saves each weapon separately;
+both copies of a dual weapon share that weapon's setting. Stick locomotion,
+turning and jumping are suppressed in this calibration mode; physical tracking
+still works.
+
+100% uses the established weapon size. Held hands keep their existing scaling
+with the gun. This does not change ammunition, damage or inventory. Grip and
+sight alignment remain separate adjustments. Their individual resets leave
+weapon size intact; **Reset All Calibration** also resets all weapon sizes.
+
+The new native support-hand poses may change how older custom grip alignments
+feel. Revisit the affected weapon's grip if necessary.
 
 ## Undo a bad adjustment
 

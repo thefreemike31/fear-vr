@@ -42,6 +42,10 @@ Use **Options > VR Settings > Comfort & Movement** for play position, turning, t
 options. Smooth turning defaults to 180 degrees/second; lower it or choose snap
 turning to suit you. Review vignette and camera-driven-scene options before play.
 
+**Movement Direction** on this page defaults to **Head**. Choose **Controller**
+to follow the hand assigned to your movement stick. If that hand loses tracking
+or points almost vertically, movement falls back to the head direction.
+
 Jump needs a deliberate upward stick push. After stick-crouching, briefly return
 the stick to center before pushing up to jump. A double tap is not required.
 
@@ -89,6 +93,11 @@ For ASP and G2A2, a tactical magazine change with a round still chambered does
 not need another bolt pull. Empty reloads still need racking. Keep the ASP scope
 close to your selected eye to acquire the view; it remains usable while tilting.
 
+Support hands now use native weapon grip poses. If an older custom alignment
+feels wrong, revisit grip calibration. The shotgun support hand follows the moving
+fore-end during pumping. [Weapon Size Calibration](CALIBRATION.md#weapon-size-calibration)
+adjusts the size of individual guns separately from grip and sight alignment.
+
 For the shotgun, reach toward the ammo pouch to reveal a shell and use Grip to
 pick it up, without pressing Reload. This also works when passive holster models
 are hidden. The shell hides when the tube is full. Load at the underside opening.
@@ -124,9 +133,21 @@ does not also add physical weapon-strike damage.
 
 Physical pickups, weapon exchange, melee, and ladders depend on eligible objects
 and free hands. A decorative prop is not necessarily grabbable. Clear held
-objects/weapons when an interaction requires an empty hand. On physical ladders,
-hold Grip at the ladder and move your hand to climb; releasing lets go. The
-optional automatic-climb setting is separate from manual pulling.
+objects/weapons when an interaction requires an empty hand.
+
+## Ladder modes
+
+Under **Comfort & Movement**, choose **Ladder Mode**:
+
+- **Manual** (default): hold Grip at the ladder and move your hand to climb; releasing lets go.
+- **Auto (Both Grips)**: engage both grips for automatic climbing.
+- **Joystick**: use the assigned movement stick. Approach from below with forward input, or from the upper platform with backward input. Forward climbs up, backward climbs down and neutral holds position. Jump releases the ladder; return the stick to neutral before engaging again.
+
+Joystick entry supports straight, off-center and angled approaches within the
+ladder's normal reach and obstruction checks. Top-out suppresses immediate
+re-grabs. Not every campaign ladder or reported pushback case has been verified.
+
+## Interaction hints
 
 Tutorial hints can be enabled in VR settings. **New Game** resets tutorial
 progress; Continue and loading retain it. Reload cards wait until a reload is

@@ -4,12 +4,21 @@ The first public release arrived on **September 11, 2026**, after weeks of
 prototype development, headset testing, private betas, and player feedback.
 The earliest retained development checkpoint is **July 21, 2026**: a working
 VR prototype already existed at that point. This timeline covers the recorded
-work from that checkpoint through the v1.3.1 release, rather than claiming an
+work from that checkpoint through the v1.4.0 release, rather than claiming an
 exact date for the project's first experiment.
 
 This is a summary of TheFreeMike's project. It is separate from the
 [DR-89/fear-vr project](https://github.com/DR-89/fear-vr); this repository's
 support covers releases published by TheFreeMike here.
+
+## September 23, 2026 - v1.4.0 controls, calibration and launcher languages
+
+Adds controller-directed movement, joystick ladder climbing and live per-weapon
+size calibration. Improves native support-hand poses, shotgun pumping, ladder
+entry and top-out behavior, cinema aspect preservation and VR settings layouts.
+The launcher adds automatic/manual selection of ten languages independently of
+the game's language. Player feedback remains welcome for translations and broader
+ladder, headset and edition coverage.
 
 ## September 21, 2026 - v1.3.1 loading-screen hotfix
 

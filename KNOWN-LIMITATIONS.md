@@ -51,3 +51,16 @@
 
 Read the latest release notes and open issues before assuming an old workaround
 still applies. Development tools and the local Level Select menu are not shipped.
+
+## v1.4 additions
+
+Launcher translations have offline layout/catalog checks and owner UI review,
+but native-speaker review and automatic selection on non-English Windows remain
+open to feedback. They do not change the installed game's language; logs and the
+Controls guide remain English.
+
+Joystick climbing and the latest entry correction are owner accepted, but all
+campaign ladders and previously reported top-out pushback cases are not verified.
+Cinema aspect correction is owner accepted; confirmation of the affected player's
+exact scene/resolution is still pending. Older custom weapon grip alignments may
+need recalibration with the new native support-hand poses.
