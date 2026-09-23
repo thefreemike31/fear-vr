@@ -52,6 +52,13 @@
 Read the latest release notes and open issues before assuming an old workaround
 still applies. Development tools and the local Level Select menu are not shipped.
 
+## v1.4.1 hotfix scope
+
+The resized-magazine, shotgun shell ownership, lingering calibration-card and
+reload-lesson fixes are owner accepted. Automated checks cover the scale range
+and production state transitions; headset coverage was not enumerated for every
+weapon, size, controller or edition. Upgrade v1.4.0 rather than resetting profiles.
+
 ## v1.4 additions
 
 Launcher translations have offline layout/catalog checks and owner UI review,

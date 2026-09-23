@@ -1,4 +1,18 @@
-# Troubleshooting F.E.A.R. VR v1.4.0
+# Troubleshooting F.E.A.R. VR v1.4.1
+
+## v1.4.0: disappearing magazines or stuck reload/calibration instructions
+
+Upgrade to **v1.4.1**. It fixes scaled pistol/dual-pistol magazines disappearing
+or moving away during manual reload, reserve magazine size updates, shotgun
+fore-end takeover while handling a shell, and calibration text leaking into
+tutorial cards. It also separates magazine/cell lessons from the actual charging
+stage, so tactical G2A2/ASP reloads no longer leave an unnecessary bolt prompt.
+
+No calibration or tutorial reset is needed. Until updated, reset the affected
+weapon to **100%** for the reported magazine issue. For a partial shotgun reload,
+insert the shell, release Grip, then freshly grab and pump the fore-end.
+If a problem persists, report weapon, size percentage, handedness, reload stage
+and edition, with a short video if possible.
 
 ## New settings in v1.4
 
@@ -23,7 +37,7 @@ still looks distorted, include its exact location and desktop resolution.
 
 ## Stuck at Press any key to continue
 
-Update v1.3.0 to **v1.4.0** using Setup > Upgrade. This fixes the missing
+Update v1.3.0 to **v1.4.1** using Setup > Upgrade. This fixes the missing
 pointer, laggy headset view and unresponsive controllers at the loading prompt.
 Release and press either trigger to continue. Until updated, a keyboard key
 can pass the prompt.
@@ -81,11 +95,11 @@ at a time, and save logs from the failing attempt before relaunching.
 ## GOG: Setup says another mod loader is present: dinput8.dll
 
 The v1.1.0 installer and launcher incorrectly rejected GOG's original Input
-wrapper. Use **v1.4.0 or later**; the verified original GOG file is allowed and
+wrapper. Use **v1.4.1 or later**; the verified original GOG file is allowed and
 preserved. Its presence does not mean you installed another mod.
 
 If you moved your original file to bypass that warning, close F.E.A.R., restore
-that same `dinput8.dll` to the GOG game folder and install v1.4.0. If it is lost,
+that same `dinput8.dll` to the GOG game folder and install v1.4.1. If it is lost,
 repair the game through GOG, then reinstall the VR mod. Do not substitute a DLL
 from a download site or the Steam edition. Unknown or modified loaders still
 need their own uninstall instructions or a clean supported installation.

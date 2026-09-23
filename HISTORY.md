@@ -4,12 +4,19 @@ The first public release arrived on **September 11, 2026**, after weeks of
 prototype development, headset testing, private betas, and player feedback.
 The earliest retained development checkpoint is **July 21, 2026**: a working
 VR prototype already existed at that point. This timeline covers the recorded
-work from that checkpoint through the v1.4.0 release, rather than claiming an
+work from that checkpoint through the v1.4.1 release, rather than claiming an
 exact date for the project's first experiment.
 
 This is a summary of TheFreeMike's project. It is separate from the
 [DR-89/fear-vr project](https://github.com/DR-89/fear-vr); this repository's
 support covers releases published by TheFreeMike here.
+
+## September 23, 2026 - v1.4.1 reload and calibration hotfix
+
+Fixes scaled manual-reload magazines and reserve visuals, shotgun shell handling
+interrupted by support grip, calibration instructions persisting into tutorials,
+and reload lessons shown outside their actual charging stage. Thanks to Jarilo
+for the quick bug report and help. Profiles and lesson progress are preserved.
 
 ## September 23, 2026 - v1.4.0 controls, calibration and launcher languages
 

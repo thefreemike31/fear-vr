@@ -54,7 +54,9 @@ reset the selected weapon to **100%**. Center the stick between steps. The held
 weapon changes size immediately and the profile saves each weapon separately;
 both copies of a dual weapon share that weapon's setting. Stick locomotion,
 turning and jumping are suppressed in this calibration mode; physical tracking
-still works.
+still works. Exiting calibration clears its temporary instructions and preserves
+your normal tutorial progress. v1.4.1 also keeps manual-reload magazines and
+reserve visuals aligned with resized weapons; upgrade v1.4.0 if magazines vanish.
 
 100% uses the established weapon size. Held hands keep their existing scaling
 with the gun. This does not change ammunition, damage or inventory. Grip and

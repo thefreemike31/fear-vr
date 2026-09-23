@@ -1,28 +1,36 @@
-# F.E.A.R. VR v1.4.0
+# F.E.A.R. VR v1.4.1 — Reload and calibration hotfix
 
-- **Joystick ladders:** choose stick climbing alongside Manual and Auto (Both Grips). Climbing is faster and closer to the ladder, with more forgiving straight, off-center and angled approaches and protection against immediate re-grips at the top.
-- **Controller-directed movement:** a new Movement Direction option lets you follow the movement hand. Head remains the default.
-- **Per-weapon size calibration:** resize each gun from 50% to 150% with a live preview and saved profile settings. Calibration now blocks accidental stick movement, and its instruction symbols display correctly.
-- **Weapon handling polish:** native support-hand poses fit the guns more closely, and shotgun pumping follows the fore-end's movement.
-- **Cinema aspect correction:** movies and camera-driven scenes preserve the complete frame and its aspect ratio. VR settings pages also have more consistent, readable layouts.
-- **Ten launcher languages:** automatic Windows-language selection or a manual choice of English, French, German, Spanish, Italian, Polish, Russian, Brazilian Portuguese, Simplified Chinese and Traditional Chinese. This changes the launcher, independently of the installed game's language.
+**Everyone using v1.4.0 should update**, especially if you have changed weapon sizes.
 
-The Steam launcher also recognizes the current input proxy used for automatic
-4 GB memory preparation. The v1.3.1 loading-screen fix and all earlier features remain.
+- Fixes magazines disappearing or moving away during manual reloads on resized
+  pistols and dual pistols. Reserve magazines now also follow live size changes
+  correctly, including pistol and SMG belt visuals.
+- Fixes the shotgun support grip interrupting shell loading, particularly on
+  smaller weapons. Shell handling keeps control until you release Grip; a fresh
+  fore-end grab still lets you pump and finish a partial reload.
+- Clears temporary calibration instructions when leaving calibration, so they
+  cannot linger in normal tutorial cards. Existing lesson progress is preserved.
+- Shows magazine/cell and charging lessons at the correct reload stage.
+  G2A2/ASP tactical reloads finish on insertion without an unnecessary bolt prompt;
+  Type-7 uses its existing cell-and-hammer sequence.
+
+Thanks to Jarilo for finding the bug so quickly and helping with the fix!
 
 ## Updating
 
-Close the game, extract **fear-vr-v1.4.0.zip** into a fresh folder, keep
+Close the game, extract **fear-vr-v1.4.1.zip** into a fresh folder, keep
 **setup-files** beside **F.E.A.R. VR Setup.exe**, and choose **Upgrade**.
-No uninstall is needed; saves and profiles are preserved. Supports the same
-GOG and Steam editions. See the included controls and calibration guides for the new options.
+No uninstall, calibration reset or tutorial reset is needed; saves and profiles
+are preserved. All v1.4 features remain included for GOG and Steam.
 
-## Testing and remaining limits
+Until you update, setting the affected weapon back to **100%** is a workaround
+for the reported scaled-magazine problem; it does not fix the other issues above.
 
-The owner accepted the gameplay changes and reviewed the translated launcher UI.
-The final package has offline install, upgrade, startup-guard and uninstall checks;
-these do not establish a new headset run of the exact shipping launcher.
-Native-speaker review and automatic selection on non-English Windows systems
-remain open to player feedback. Launcher language does not install game translations.
-Broader ladder/edition coverage and confirmation of previously reported scene
-distortion remain welcome. The existing native cleanup crash after Quit is unresolved.
+## Validation and limits
+
+The owner confirmed these fixes in the headset. Exact per-edition and all-weapon
+headset coverage was not enumerated. Production-code regression checks cover
+scale transforms, shell/card ownership and staged lessons; final installer and
+exact-ZIP upgrade checks are separate from headset acceptance.
+The launcher and other runtime components are unchanged from v1.4.0.
+The existing Quit cleanup crash and broader language/hardware limitations remain.

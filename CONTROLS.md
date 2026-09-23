@@ -102,6 +102,15 @@ For the shotgun, reach toward the ammo pouch to reveal a shell and use Grip to
 pick it up, without pressing Reload. This also works when passive holster models
 are hidden. The shell hides when the tube is full. Load at the underside opening.
 
+In v1.4.1, shell loading retains control while you carry or insert a shell;
+the shotgun support grip cannot take over that action. To finish a partial
+reload, insert a shell, release Grip, then freshly grab and pump the fore-end.
+
+Reload lessons follow the actual stage: inserting a magazine or seating a cell
+completes that lesson, and charging guidance appears only when required. G2A2/ASP
+tactical reloads do not need a bolt pull; Type-7 still uses cell then hammer.
+Existing lesson progress is preserved, with no reset needed.
+
 To put a grenade back, release it near its calibrated holster. The return region
 is more forgiving than the grab region; move away from the holster to throw.
 
