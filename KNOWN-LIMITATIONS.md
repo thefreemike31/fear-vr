@@ -1,5 +1,11 @@
 # Known limitations
 
+## v1.4.2 validation scope
+
+The owner accepted the moving-head level-load height test and prompt vent breaking.
+Full per-edition, every-vent, both-hand/pose and scripted-return matrices remain
+unreported. Package checks do not substitute for those headset tests.
+
 [Main guide](README.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
 - This release targets verified GOG and original Steam base-game single-player

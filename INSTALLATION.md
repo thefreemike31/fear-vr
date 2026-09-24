@@ -17,13 +17,13 @@ your normal save backups. This release covers the original single-player campaig
 ## Download and verify
 
 1. Open [GitHub Releases](https://github.com/thefreemike31/fear-vr/releases/latest).
-2. Expand **Assets** if needed. Download **fear-vr-v1.4.1.zip** and
-   **fear-vr-v1.4.1.zip.sha256**. Ignore GitHub's automatic Source code archives.
+2. Expand **Assets** if needed. Download **fear-vr-v1.4.2.zip** and
+   **fear-vr-v1.4.2.zip.sha256**. Ignore GitHub's automatic Source code archives.
 3. Open the `.sha256` file in Notepad. Its first 64 characters are the expected hash.
 4. In the folder containing the ZIP, open PowerShell and run:
 
    ```powershell
-   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.4.1.zip'
+   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.4.2.zip'
    ```
 
 5. Compare all 64 characters. Letter case does not matter. A mismatch means

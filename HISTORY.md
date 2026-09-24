@@ -1,10 +1,17 @@
 # The road to F.E.A.R. VR by TheFreeMike
 
+
+## v1.4.2 - September 24, 2026
+
+Preserves calibrated height through automatic transition recentering and fixes
+unreliable physical melee against scripted vent covers, including the bent stage.
+Includes the v1.4.1 reload/calibration fixes; saves and profiles remain compatible.
+
 The first public release arrived on **September 11, 2026**, after weeks of
 prototype development, headset testing, private betas, and player feedback.
 The earliest retained development checkpoint is **July 21, 2026**: a working
 VR prototype already existed at that point. This timeline covers the recorded
-work from that checkpoint through the v1.4.1 release, rather than claiming an
+work from that checkpoint through the v1.4.2 release, rather than claiming an
 exact date for the project's first experiment.
 
 This is a summary of TheFreeMike's project. It is separate from the

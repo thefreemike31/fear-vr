@@ -1,5 +1,11 @@
 # Calibration and body fit
 
+## v1.4.2 height preservation
+
+Automatic recentering during level loads and scripted transitions keeps the
+established vertical reference. Explicit recenter remains available. The fix
+does not reset or change saved calibration values.
+
 [Main guide](README.md) · [Controls](CONTROLS.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
 Open **Options > VR Settings > Calibration & Body Fit**. From the main menu,

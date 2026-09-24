@@ -1,5 +1,12 @@
 # Controls and weapon handling
 
+## v1.4.2 vent interaction
+
+Physical empty-hand strikes now reliably reach scripted vent damage receivers,
+including after the cover bends. Withdraw your hand between distinct strikes;
+there is no need to repeatedly pound the cover. Native vent scripts still decide
+when it breaks.
+
 [Main guide](README.md) | [Calibration](CALIBRATION.md) | [Troubleshooting](TROUBLESHOOTING.md)
 
 Open **Controller Layouts.html** from the downloaded ZIP or the installed
