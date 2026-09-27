@@ -1,5 +1,13 @@
 # Controls and weapon handling
 
+## v1.5 turret aiming and ladder landings
+
+Remote turrets use the configured dominant hand for aiming and firing. Pitch and
+yaw follow changes from your settled entry direction; wrist roll does not steer.
+Left-handed turret pitch was owner-tested. Ladder landing camera handoff now
+starts within a verified standing destination while retaining collision checks.
+That ladder change has internal regression evidence, not new headset confirmation.
+
 ## v1.4.2 vent interaction
 
 Physical empty-hand strikes now reliably reach scripted vent damage receivers,

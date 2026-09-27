@@ -1,5 +1,14 @@
 # Troubleshooting F.E.A.R. VR v1.4.2
 
+## v1.5 save, effect and interaction fixes
+
+Upgrade to v1.5 if checkpoints hitch, wall-impact particles stall in slow motion,
+small stone marks appear to float, or remote turret pitch feels inverted.
+Save buffering improved the owner's tested hotspots; unrelated loading stalls
+and slow Steam loading remain possible. Existing saves and calibration are kept.
+Ladder landing camera handoff also changed based on internal regression tests;
+report the location and action if a landing still snaps you back.
+
 ## Height changes or stubborn vent covers
 
 Upgrade to v1.4.2 if standing height changes after moving your head during a load,

@@ -1,5 +1,14 @@
 # Known limitations
 
+## v1.5 validation scope
+
+The owner accepted save-stutter improvement at two GOG hotspots, corrected slow-
+motion particles, small stone-impact appearance and left-handed turret aiming.
+Ladder landing was accepted on internal regression evidence; synthetic collision
+tests do not establish every campaign landing or physical comfort. Separate Steam
+headset coverage, a new right-handed turret run and an assembled-ZIP headset run
+are not claimed. Save buffering does not eliminate every possible loading hitch.
+
 ## v1.4.2 validation scope
 
 The owner accepted the moving-head level-load height test and prompt vent breaking.
