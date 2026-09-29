@@ -2,13 +2,16 @@
 
 ## v1.6 language import and shortcut coverage
 
-Import recognizes only the verified Spanish Director's Edition DVD/ISO and
-matching Spanish 1.08 updater. Spanish GOG VR received owner testing; Steam
-Spanish VR, other discs/languages, original retail startup and full-campaign
-playback are not established. The localized import/reset follow-up has owner
-approval and offline tests, not native-speaker review in every language.
-The [tutorial](INSTALLATION.md#import-spanish-game-text-and-voices) explains required
-media, mounting, updater selection and reset. No game data is redistributed.
+v1.6.1 removes the Spanish-only import restriction. Original language DVD/ISOs
+with matching-language 1.08 patches are intended to work across all languages
+in theory; **only Spanish has official real-media/gameplay testing**. Other
+languages remain unverified. The native reader requires the original supported
+InstallShield cabinet layout; split, incomplete or different-format releases may
+be refused. The user must match disc and patch language. Synthetic metadata
+regressions do not establish real-language or native-speaker acceptance.
+Steam Spanish VR, original retail startup and full-campaign playback are not
+established. See the [tutorial](INSTALLATION.md#import-game-text-and-voices).
+No game data is redistributed; existing Spanish recovery records remain valid.
 Mission open/close, quick save and quick load were owner-accepted on GOG; separate
 Steam headset coverage and non-Touch physical combinations remain unclaimed.
 

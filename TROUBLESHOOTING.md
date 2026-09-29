@@ -2,22 +2,27 @@
 
 ## Language import and reset
 
-Follow the [complete tutorial](INSTALLATION.md#import-spanish-game-text-and-voices).
-This importer supports the Spanish Director's Edition DVD/ISO plus the matching
-Spanish 1.08 updater, **fear_update_es_100-107_108.exe**. Mount the ISO as a DVD
-drive before clicking Import language; the file picker asks for the updater,
-not the ISO. Unknown media, another language or another patch version is rejected.
-Neither installer is executed, and the mod supplies no game-language archives.
+Follow the [complete tutorial](INSTALLATION.md#import-game-text-and-voices).
+Upgrade to **v1.6.1**: v1.6.0 accidentally restricted import to Spanish media.
+Use your original language DVD/ISO and the **1.08 patch in that same language**.
+All language editions are intended to work in theory; only Spanish is officially
+tested. Other languages are not rejected merely for being non-Spanish.
 
-Close the game and open the launcher from the intended installation. If the button
-says Reset language, an import or interrupted-operation record exists. Use Reset
-language to restore the backed-up originals before importing again. Preserve
-FEAR-VR-Language and current archives if reset reports changed files or invalid
-backups; do not delete recovery records or manually mix archives to bypass it.
-Report the exact message, edition, media and patch version, and whether an import
-was interrupted. Saves/calibration are independent and should not be reset.
-The launcher language selector changes UI text only. Spanish GOG VR was tested;
-Steam Spanish VR, other media/languages and full-campaign coverage remain unclaimed.
+Mount one F.E.A.R. ISO as a DVD drive before importing; the file picker asks for
+the updater EXE, not the ISO. Eject other F.E.A.R. discs. All cabinet files must
+be available. Damaged/incomplete archives, missing update archives and unsupported
+cabinet formats are refused before replacing game language data. A valid checksum
+does not identify the spoken language: choose a matching disc and patch yourself.
+
+Keep **FEAR-VR-Language** and its backups. Close the game and use **Reset language**
+before switching languages. Existing v1.6 Spanish backups remain restorable.
+If import was interrupted or reset is refused, keep the backups and exact error;
+do not delete the recovery folder or manually mix archives. Report edition,
+source media, patch version and the shortest reproduction steps.
+
+Import/reset preserves saves and calibration. Launcher UI language is independent.
+Spanish GOG gameplay was officially tested; Steam Spanish VR, other real-language
+media and full-campaign coverage remain unverified.
 
 ## Mission and save/load shortcuts
 

@@ -2,9 +2,11 @@
 
 ## New in v1.6: language import and controller shortcuts
 
-- **Spanish text and voices from your own media:** use the launcher's Import
-  language button with the supported Spanish Director's Edition DVD/ISO and
-  matching Spanish 1.08 updater. [Step-by-step import/reset tutorial](INSTALLATION.md#import-spanish-game-text-and-voices).
+- **Game text and voices from your own language media:** use Import language
+  with an original language DVD/ISO and its matching-language 1.08 patch.
+  v1.6.1 removes the Spanish-only restriction. All language editions are intended
+  to work in theory; only Spanish has been officially tested.
+  [Step-by-step tutorial](INSTALLATION.md#import-game-text-and-voices).
 - **Mission screen:** press Y+B to open or close it; release both before repeating.
 - **Quick save:** hold Y+A together for two seconds. **Quick load:** hold X+B
   together for two seconds to load the quick-save slot. [Controls and other profiles](CONTROLS.md).
@@ -16,7 +18,7 @@
 Play the original F.E.A.R. campaign in PC VR, with tracked hands, physical
 weapon handling, configurable controls, and comfort options.
 
-**Current release: v1.6.0. Free, unofficial, and made by TheFreeMike.**
+**Current release: v1.6.1. Free, unofficial, and made by TheFreeMike.**
 You need a legitimate copy of the **GOG F.E.A.R. Platinum Collection** or the
 original **Steam F.E.A.R. base game**, and a Windows PC capable of PC VR. The base game is not included.
 
@@ -60,7 +62,7 @@ and a native installer with recovery support.
 ## Start here
 
 1. Confirm the unmodified GOG or Steam base game works on your PC.
-2. From the release's **Assets** list, download `fear-vr-v1.6.0.zip` and its
+2. From the release's **Assets** list, download `fear-vr-v1.6.1.zip` and its
    `.sha256` file. GitHub's automatic **Source code** downloads are not the mod.
 3. Verify and extract the complete ZIP. Keep **setup-files** beside
    **F.E.A.R. VR Setup.exe**.

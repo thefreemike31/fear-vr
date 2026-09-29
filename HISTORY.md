@@ -1,5 +1,12 @@
 # The road to F.E.A.R. VR by TheFreeMike
 
+## v1.6.1 - September 29, 2026
+
+Removes accidental Spanish-only language import checks and fixed archive offsets.
+Original language media plus matching 1.08 updates now use cabinet metadata and
+content checksums. Reset preserves compatibility with v1.6 Spanish backups.
+Only Spanish is officially tested; other languages are theoretically compatible.
+
 ## v1.6 - September 29, 2026
 
 Launcher Spanish DVD/1.08 language import and reset, localized prompts, mission
