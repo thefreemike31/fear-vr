@@ -16,6 +16,7 @@
   <p class="lede">These layouts come from the same canonical mapping data used to compile the OpenXR bridge. They describe the default <strong>mapping profile</strong>, which may differ from the controller name printed on the hardware when a runtime emulates another profile.</p>
   <div class="callout"><strong>Validation key:</strong> Meta / Oculus Touch is physically headset-validated. Every other mapping is specification-checked and compiled into the bridge but still needs feedback from matching hardware. System, Meta, Windows, and SteamVR dashboard buttons remain runtime-owned.</div>
   <div class="callout"><strong>Pause with SteamVR:</strong> press the two lower face buttons together: <strong>Right A + Left X</strong> on Touch, or <strong>Right A + Left A</strong> on the Index mapping. Press them together rather than holding one first. The profile tables show the equivalent controls for other mappings. The normal mapped Menu button remains available when the runtime exposes it; a system/dashboard button may open the runtime instead.</div>
+  <div class="callout"><strong>Mission and quick-save shortcuts (v1.6):</strong> Touch <strong>Y+B</strong> opens/closes the mission screen; release both before toggling again. Hold <strong>Y+A</strong> together for <strong>two seconds</strong> to quick save; hold <strong>X+B</strong> for two seconds to quick load the quick-save slot, not the latest checkpoint. Release either early to cancel. A progress bar shows the hold; a requested message is not proof that saving has completed. These physical combinations ignore handedness, Southpaw and action remapping. Save/load requires eligible single-player gameplay outside menus, dialogs, calibration and scripted camera control. Missing face buttons mean these shortcuts are unavailable; see each profile table for equivalents.</div>
   <section class="legend">
     <div><strong>Trigger</strong><br>Fire. Also selects menu items while pointing.</div>
     <div><strong>Grip / squeeze</strong><br>Grab props, support weapons, climb, perform reload steps, or squeeze the utility hand at your temple for the flashlight.</div>
@@ -75,7 +76,10 @@
 <tr><td>Right stick click</td><td>Sticky only: tap switches/Unarmed; hold opens wheel. Holsters: disabled</td><td>Start running; tap: Walk/Run; hold: Medkit</td></tr>
 <tr><td>Left Y</td><td>Grenade / throwable</td><td>Reload</td></tr>
 <tr><td>Left Menu</td><td>Pause menu</td><td>Pause menu</td></tr>
-<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr></tbody>
+<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr>
+<tr><td>Left Y + Right B: press; release before repeating</td><td>Toggle mission/objectives screen</td><td>Toggle mission/objectives screen</td></tr>
+<tr><td>Left Y + Right A: hold together for 2 seconds</td><td>Quick save (eligible gameplay only)</td><td>Quick save (eligible gameplay only)</td></tr>
+<tr><td>Left X + Right B: hold together for 2 seconds</td><td>Quick load quick-save slot (eligible gameplay only)</td><td>Quick load quick-save slot (eligible gameplay only)</td></tr></tbody>
   </table>
   <details>
     <summary>OpenXR mapping profile</summary>
@@ -104,7 +108,10 @@
 <tr><td>Right stick click</td><td>Sticky only: tap switches/Unarmed; hold opens wheel. Holsters: disabled</td><td>Start running; tap: Walk/Run; hold: Medkit</td></tr>
 <tr><td>Left B</td><td>Grenade / throwable</td><td>Reload</td></tr>
 <tr><td>Press center of left trackpad</td><td>Pause menu</td><td>Pause menu</td></tr>
-<tr><td>Right A + Left A together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr></tbody>
+<tr><td>Right A + Left A together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr>
+<tr><td>Left B + Right B: press; release before repeating</td><td>Toggle mission/objectives screen</td><td>Toggle mission/objectives screen</td></tr>
+<tr><td>Left B + Right A: hold together for 2 seconds</td><td>Quick save (eligible gameplay only)</td><td>Quick save (eligible gameplay only)</td></tr>
+<tr><td>Left A + Right B: hold together for 2 seconds</td><td>Quick load quick-save slot (eligible gameplay only)</td><td>Quick load quick-save slot (eligible gameplay only)</td></tr></tbody>
   </table>
   <details>
     <summary>OpenXR mapping profile</summary>
@@ -133,7 +140,10 @@
 <tr><td>Press center of right trackpad</td><td>Sticky only: tap switches/Unarmed; hold opens wheel. Holsters: disabled</td><td>Start running; tap: Walk/Run; hold: Medkit</td></tr>
 <tr><td>Press bottom of left trackpad</td><td>Grenade / throwable</td><td>Reload</td></tr>
 <tr><td>Left Menu</td><td>Pause menu</td><td>Pause menu</td></tr>
-<tr><td>Press top of right trackpad + Press top of left trackpad together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr></tbody>
+<tr><td>Press top of right trackpad + Press top of left trackpad together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr>
+<tr><td>Press bottom of left trackpad + Press bottom of right trackpad: press; release before repeating</td><td>Toggle mission/objectives screen</td><td>Toggle mission/objectives screen</td></tr>
+<tr><td>Press bottom of left trackpad + Press top of right trackpad: hold together for 2 seconds</td><td>Quick save (eligible gameplay only)</td><td>Quick save (eligible gameplay only)</td></tr>
+<tr><td>Press top of left trackpad + Press bottom of right trackpad: hold together for 2 seconds</td><td>Quick load quick-save slot (eligible gameplay only)</td><td>Quick load quick-save slot (eligible gameplay only)</td></tr></tbody>
   </table>
   <details>
     <summary>OpenXR mapping profile</summary>
@@ -162,7 +172,10 @@
 <tr><td>Press center of right trackpad</td><td>Sticky only: tap switches/Unarmed; hold opens wheel. Holsters: disabled</td><td>Start running; tap: Walk/Run; hold: Medkit</td></tr>
 <tr><td>Press bottom of left trackpad</td><td>Grenade / throwable</td><td>Reload</td></tr>
 <tr><td>Left Menu</td><td>Pause menu</td><td>Pause menu</td></tr>
-<tr><td>Press top of right trackpad + Press top of left trackpad together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr></tbody>
+<tr><td>Press top of right trackpad + Press top of left trackpad together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr>
+<tr><td>Press bottom of left trackpad + Press bottom of right trackpad: press; release before repeating</td><td>Toggle mission/objectives screen</td><td>Toggle mission/objectives screen</td></tr>
+<tr><td>Press bottom of left trackpad + Press top of right trackpad: hold together for 2 seconds</td><td>Quick save (eligible gameplay only)</td><td>Quick save (eligible gameplay only)</td></tr>
+<tr><td>Press top of left trackpad + Press bottom of right trackpad: hold together for 2 seconds</td><td>Quick load quick-save slot (eligible gameplay only)</td><td>Quick load quick-save slot (eligible gameplay only)</td></tr></tbody>
   </table>
   <details>
     <summary>OpenXR mapping profile</summary>
@@ -190,7 +203,10 @@
 <tr><td>Left stick click</td><td>Start running; tap: Walk/Run; hold: Medkit</td><td>Sticky only: tap switches/Unarmed; hold opens wheel. Holsters: disabled</td></tr>
 <tr><td>Right stick click</td><td>Sticky only: tap switches/Unarmed; hold opens wheel. Holsters: disabled</td><td>Start running; tap: Walk/Run; hold: Medkit</td></tr>
 <tr><td>Left Secondary</td><td>Grenade / throwable</td><td>Reload</td></tr>
-<tr><td>Right Primary + Left Primary together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr></tbody>
+<tr><td>Right Primary + Left Primary together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr>
+<tr><td>Left Secondary + Right Secondary: press; release before repeating</td><td>Toggle mission/objectives screen</td><td>Toggle mission/objectives screen</td></tr>
+<tr><td>Left Secondary + Right Primary: hold together for 2 seconds</td><td>Quick save (eligible gameplay only)</td><td>Quick save (eligible gameplay only)</td></tr>
+<tr><td>Left Primary + Right Secondary: hold together for 2 seconds</td><td>Quick load quick-save slot (eligible gameplay only)</td><td>Quick load quick-save slot (eligible gameplay only)</td></tr></tbody>
   </table>
   <details>
     <summary>OpenXR mapping profile</summary>
@@ -219,7 +235,10 @@
 <tr><td>Right stick click</td><td>Sticky only: tap switches/Unarmed; hold opens wheel. Holsters: disabled</td><td>Start running; tap: Walk/Run; hold: Medkit</td></tr>
 <tr><td>Left Y</td><td>Grenade / throwable</td><td>Reload</td></tr>
 <tr><td>Left Menu</td><td>Pause menu</td><td>Pause menu</td></tr>
-<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr></tbody>
+<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr>
+<tr><td>Left Y + Right B: press; release before repeating</td><td>Toggle mission/objectives screen</td><td>Toggle mission/objectives screen</td></tr>
+<tr><td>Left Y + Right A: hold together for 2 seconds</td><td>Quick save (eligible gameplay only)</td><td>Quick save (eligible gameplay only)</td></tr>
+<tr><td>Left X + Right B: hold together for 2 seconds</td><td>Quick load quick-save slot (eligible gameplay only)</td><td>Quick load quick-save slot (eligible gameplay only)</td></tr></tbody>
   </table>
   <details>
     <summary>OpenXR mapping profile</summary>
@@ -248,7 +267,10 @@
 <tr><td>Press center of right trackpad</td><td>Sticky only: tap switches/Unarmed; hold opens wheel. Holsters: disabled</td><td>Start running; tap: Walk/Run; hold: Medkit</td></tr>
 <tr><td>Press bottom of left trackpad</td><td>Grenade / throwable</td><td>Reload</td></tr>
 <tr><td>Left Menu</td><td>Pause menu</td><td>Pause menu</td></tr>
-<tr><td>Press top of right trackpad + Press top of left trackpad together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr></tbody>
+<tr><td>Press top of right trackpad + Press top of left trackpad together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr>
+<tr><td>Press bottom of left trackpad + Press bottom of right trackpad: press; release before repeating</td><td>Toggle mission/objectives screen</td><td>Toggle mission/objectives screen</td></tr>
+<tr><td>Press bottom of left trackpad + Press top of right trackpad: hold together for 2 seconds</td><td>Quick save (eligible gameplay only)</td><td>Quick save (eligible gameplay only)</td></tr>
+<tr><td>Press top of left trackpad + Press bottom of right trackpad: hold together for 2 seconds</td><td>Quick load quick-save slot (eligible gameplay only)</td><td>Quick load quick-save slot (eligible gameplay only)</td></tr></tbody>
   </table>
   <details>
     <summary>OpenXR mapping profile</summary>
@@ -277,7 +299,10 @@
 <tr><td>Right stick click</td><td>Sticky only: tap switches/Unarmed; hold opens wheel. Holsters: disabled</td><td>Start running; tap: Walk/Run; hold: Medkit</td></tr>
 <tr><td>Left Y</td><td>Grenade / throwable</td><td>Reload</td></tr>
 <tr><td>Left Menu</td><td>Pause menu</td><td>Pause menu</td></tr>
-<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr></tbody>
+<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr>
+<tr><td>Left Y + Right B: press; release before repeating</td><td>Toggle mission/objectives screen</td><td>Toggle mission/objectives screen</td></tr>
+<tr><td>Left Y + Right A: hold together for 2 seconds</td><td>Quick save (eligible gameplay only)</td><td>Quick save (eligible gameplay only)</td></tr>
+<tr><td>Left X + Right B: hold together for 2 seconds</td><td>Quick load quick-save slot (eligible gameplay only)</td><td>Quick load quick-save slot (eligible gameplay only)</td></tr></tbody>
   </table>
   <details>
     <summary>OpenXR mapping profile</summary>
@@ -306,7 +331,10 @@
 <tr><td>Right stick click</td><td>Sticky only: tap switches/Unarmed; hold opens wheel. Holsters: disabled</td><td>Start running; tap: Walk/Run; hold: Medkit</td></tr>
 <tr><td>Left Y</td><td>Grenade / throwable</td><td>Reload</td></tr>
 <tr><td>Left Menu</td><td>Pause menu</td><td>Pause menu</td></tr>
-<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr></tbody>
+<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr>
+<tr><td>Left Y + Right B: press; release before repeating</td><td>Toggle mission/objectives screen</td><td>Toggle mission/objectives screen</td></tr>
+<tr><td>Left Y + Right A: hold together for 2 seconds</td><td>Quick save (eligible gameplay only)</td><td>Quick save (eligible gameplay only)</td></tr>
+<tr><td>Left X + Right B: hold together for 2 seconds</td><td>Quick load quick-save slot (eligible gameplay only)</td><td>Quick load quick-save slot (eligible gameplay only)</td></tr></tbody>
   </table>
   <details>
     <summary>OpenXR mapping profile</summary>
@@ -335,7 +363,10 @@
 <tr><td>Right stick click</td><td>Sticky only: tap switches/Unarmed; hold opens wheel. Holsters: disabled</td><td>Start running; tap: Walk/Run; hold: Medkit</td></tr>
 <tr><td>Left Y</td><td>Grenade / throwable</td><td>Reload</td></tr>
 <tr><td>Left Menu</td><td>Pause menu</td><td>Pause menu</td></tr>
-<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr></tbody>
+<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr>
+<tr><td>Left Y + Right B: press; release before repeating</td><td>Toggle mission/objectives screen</td><td>Toggle mission/objectives screen</td></tr>
+<tr><td>Left Y + Right A: hold together for 2 seconds</td><td>Quick save (eligible gameplay only)</td><td>Quick save (eligible gameplay only)</td></tr>
+<tr><td>Left X + Right B: hold together for 2 seconds</td><td>Quick load quick-save slot (eligible gameplay only)</td><td>Quick load quick-save slot (eligible gameplay only)</td></tr></tbody>
   </table>
   <details>
     <summary>OpenXR mapping profile</summary>
@@ -364,7 +395,10 @@
 <tr><td>Right stick click</td><td>Sticky only: tap switches/Unarmed; hold opens wheel. Holsters: disabled</td><td>Start running; tap: Walk/Run; hold: Medkit</td></tr>
 <tr><td>Left Y</td><td>Grenade / throwable</td><td>Reload</td></tr>
 <tr><td>Left Menu</td><td>Pause menu</td><td>Pause menu</td></tr>
-<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr></tbody>
+<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr>
+<tr><td>Left Y + Right B: press; release before repeating</td><td>Toggle mission/objectives screen</td><td>Toggle mission/objectives screen</td></tr>
+<tr><td>Left Y + Right A: hold together for 2 seconds</td><td>Quick save (eligible gameplay only)</td><td>Quick save (eligible gameplay only)</td></tr>
+<tr><td>Left X + Right B: hold together for 2 seconds</td><td>Quick load quick-save slot (eligible gameplay only)</td><td>Quick load quick-save slot (eligible gameplay only)</td></tr></tbody>
   </table>
   <details>
     <summary>OpenXR mapping profile</summary>
@@ -416,7 +450,10 @@
 <tr><td>Right stick click</td><td>Sticky only: tap switches/Unarmed; hold opens wheel. Holsters: disabled</td><td>Start running; tap: Walk/Run; hold: Medkit</td></tr>
 <tr><td>Left Y</td><td>Grenade / throwable</td><td>Reload</td></tr>
 <tr><td>Left Menu</td><td>Pause menu</td><td>Pause menu</td></tr>
-<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr></tbody>
+<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr>
+<tr><td>Left Y + Right B: press; release before repeating</td><td>Toggle mission/objectives screen</td><td>Toggle mission/objectives screen</td></tr>
+<tr><td>Left Y + Right A: hold together for 2 seconds</td><td>Quick save (eligible gameplay only)</td><td>Quick save (eligible gameplay only)</td></tr>
+<tr><td>Left X + Right B: hold together for 2 seconds</td><td>Quick load quick-save slot (eligible gameplay only)</td><td>Quick load quick-save slot (eligible gameplay only)</td></tr></tbody>
   </table>
   <details>
     <summary>OpenXR mapping profile</summary>
@@ -445,7 +482,10 @@
 <tr><td>Right stick click</td><td>Sticky only: tap switches/Unarmed; hold opens wheel. Holsters: disabled</td><td>Start running; tap: Walk/Run; hold: Medkit</td></tr>
 <tr><td>Left Y</td><td>Grenade / throwable</td><td>Reload</td></tr>
 <tr><td>Left Menu</td><td>Pause menu</td><td>Pause menu</td></tr>
-<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr></tbody>
+<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr>
+<tr><td>Left Y + Right B: press; release before repeating</td><td>Toggle mission/objectives screen</td><td>Toggle mission/objectives screen</td></tr>
+<tr><td>Left Y + Right A: hold together for 2 seconds</td><td>Quick save (eligible gameplay only)</td><td>Quick save (eligible gameplay only)</td></tr>
+<tr><td>Left X + Right B: hold together for 2 seconds</td><td>Quick load quick-save slot (eligible gameplay only)</td><td>Quick load quick-save slot (eligible gameplay only)</td></tr></tbody>
   </table>
   <details>
     <summary>OpenXR mapping profile</summary>
@@ -474,7 +514,10 @@
 <tr><td>Right stick click</td><td>Sticky only: tap switches/Unarmed; hold opens wheel. Holsters: disabled</td><td>Start running; tap: Walk/Run; hold: Medkit</td></tr>
 <tr><td>Left Y</td><td>Grenade / throwable</td><td>Reload</td></tr>
 <tr><td>Left Menu</td><td>Pause menu</td><td>Pause menu</td></tr>
-<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr></tbody>
+<tr><td>Right A + Left X together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr>
+<tr><td>Left Y + Right B: press; release before repeating</td><td>Toggle mission/objectives screen</td><td>Toggle mission/objectives screen</td></tr>
+<tr><td>Left Y + Right A: hold together for 2 seconds</td><td>Quick save (eligible gameplay only)</td><td>Quick save (eligible gameplay only)</td></tr>
+<tr><td>Left X + Right B: hold together for 2 seconds</td><td>Quick load quick-save slot (eligible gameplay only)</td><td>Quick load quick-save slot (eligible gameplay only)</td></tr></tbody>
   </table>
   <details>
     <summary>OpenXR mapping profile</summary>
@@ -509,7 +552,10 @@
 <tr><td>Left D-pad right</td><td>Available for remapping</td><td>Available for remapping</td></tr>
 <tr><td>Left bumper</td><td>Available for remapping</td><td>Available for remapping</td></tr>
 <tr><td>Right bumper</td><td>Available for remapping</td><td>Available for remapping</td></tr>
-<tr><td>Right A + Left D-pad down together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr></tbody>
+<tr><td>Right A + Left D-pad down together (SteamVR)</td><td>Pause menu</td><td>Pause menu</td></tr>
+<tr><td>Left D-pad left + Right B: press; release before repeating</td><td>Toggle mission/objectives screen</td><td>Toggle mission/objectives screen</td></tr>
+<tr><td>Left D-pad left + Right A: hold together for 2 seconds</td><td>Quick save (eligible gameplay only)</td><td>Quick save (eligible gameplay only)</td></tr>
+<tr><td>Left D-pad down + Right B: hold together for 2 seconds</td><td>Quick load quick-save slot (eligible gameplay only)</td><td>Quick load quick-save slot (eligible gameplay only)</td></tr></tbody>
   </table>
   <details>
     <summary>OpenXR mapping profile</summary>
@@ -518,7 +564,7 @@
   </details>
 </article>
   </section>
-  <footer>Binding data last updated 2026-09-10; RC6.2 guide reviewed September 11, 2026. Profiles included: 17. Generated from config/controller-mappings.json; SteamVR pause behavior is handled by GameClient.</footer>
+  <footer>Binding data last updated 2026-09-29; RC6.2 guide reviewed September 11, 2026. Profiles included: 17. Generated from config/controller-mappings.json; SteamVR pause behavior is handled by GameClient.</footer>
 </main>
 </body>
 </html>

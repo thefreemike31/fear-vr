@@ -1,5 +1,34 @@
 # Troubleshooting F.E.A.R. VR v1.4.2
 
+## Language import and reset
+
+Follow the [complete tutorial](INSTALLATION.md#import-spanish-game-text-and-voices).
+This importer supports the Spanish Director's Edition DVD/ISO plus the matching
+Spanish 1.08 updater, **fear_update_es_100-107_108.exe**. Mount the ISO as a DVD
+drive before clicking Import language; the file picker asks for the updater,
+not the ISO. Unknown media, another language or another patch version is rejected.
+Neither installer is executed, and the mod supplies no game-language archives.
+
+Close the game and open the launcher from the intended installation. If the button
+says Reset language, an import or interrupted-operation record exists. Use Reset
+language to restore the backed-up originals before importing again. Preserve
+FEAR-VR-Language and current archives if reset reports changed files or invalid
+backups; do not delete recovery records or manually mix archives to bypass it.
+Report the exact message, edition, media and patch version, and whether an import
+was interrupted. Saves/calibration are independent and should not be reset.
+The launcher language selector changes UI text only. Spanish GOG VR was tested;
+Steam Spanish VR, other media/languages and full-campaign coverage remain unclaimed.
+
+## Mission and save/load shortcuts
+
+Y+B toggles missions; release both before pressing again. Hold Y+A for two seconds
+to quick save, X+B for two seconds to quick load the quick-save slot. Release one
+early to cancel; release all face buttons before retrying. These combinations
+ignore handedness/remapping and require supported face inputs. Save/load is blocked
+in menus, dialogs, calibration and other non-gameplay contexts. No quick-save slot
+means quick load is unavailable; it does not load the latest checkpoint instead.
+See [controls](CONTROLS.md#mission-screen-quick-save-and-quick-load) for equivalents.
+
 ## v1.5 save, effect and interaction fixes
 
 Upgrade to v1.5 if checkpoints hitch, wall-impact particles stall in slow motion,

@@ -32,3 +32,8 @@ terms supplied with those tools. F.E.A.R. and related assets remain the property
 of their respective owners. The mod is distributed free of charge under the
 permission reported by the project maintainer; this package grants no right to
 redistribute the original game or use its assets outside that permission.
+
+## zlib
+
+The launcher language importer statically links zlib for bounded archive decompression.
+Copyright and license: `licenses/zlib.txt`. No game-language data is redistributed.

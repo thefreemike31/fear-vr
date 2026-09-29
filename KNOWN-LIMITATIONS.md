@@ -1,5 +1,17 @@
 # Known limitations
 
+## v1.6 language import and shortcut coverage
+
+Import recognizes only the verified Spanish Director's Edition DVD/ISO and
+matching Spanish 1.08 updater. Spanish GOG VR received owner testing; Steam
+Spanish VR, other discs/languages, original retail startup and full-campaign
+playback are not established. The localized import/reset follow-up has owner
+approval and offline tests, not native-speaker review in every language.
+The [tutorial](INSTALLATION.md#import-spanish-game-text-and-voices) explains required
+media, mounting, updater selection and reset. No game data is redistributed.
+Mission open/close, quick save and quick load were owner-accepted on GOG; separate
+Steam headset coverage and non-Touch physical combinations remain unclaimed.
+
 ## v1.5 validation scope
 
 The owner accepted save-stutter improvement at two GOG hotspots, corrected slow-

@@ -1,5 +1,11 @@
 # The road to F.E.A.R. VR by TheFreeMike
 
+## v1.6 - September 29, 2026
+
+Launcher Spanish DVD/1.08 language import and reset, localized prompts, mission
+toggle and deliberate quick-save/load combinations. Improved wall/body clearance,
+back holsters, magazine presentation, lefty support seating and calibration mirror.
+
 ## v1.5 - September 27, 2026
 
 Save buffering reduces checkpoint stutter at tested hotspots. Slow-motion particle
@@ -17,7 +23,7 @@ The first public release arrived on **September 11, 2026**, after weeks of
 prototype development, headset testing, private betas, and player feedback.
 The earliest retained development checkpoint is **July 21, 2026**: a working
 VR prototype already existed at that point. This timeline covers the recorded
-work from that checkpoint through the v1.5 release, rather than claiming an
+work from that checkpoint through the v1.6 release, rather than claiming an
 exact date for the project's first experiment.
 
 This is a summary of TheFreeMike's project. It is separate from the

@@ -1,5 +1,46 @@
 # Installation, updates, and recovery
 
+## Import Spanish game text and voices
+
+**New in v1.6:** the launcher's **Import language** button can import Spanish
+game text and voices into a supported GOG or Steam installation. This first
+release recognizes the **Spanish Director's Edition retail DVD/ISO** and the
+matching official **Spanish 1.08 patch**, `fear_update_es_100-107_108.exe`.
+Other languages, disc layouts and patch versions are not supported by this importer.
+You supply both files; the mod does not include an ISO, patch or game-language data.
+
+1. Close F.E.A.R. and finish installing/upgrading the VR mod. Have your Spanish
+   Director's Edition DVD/ISO and the matching Spanish 1.08 updater ready.
+2. Insert the DVD, or right-click the ISO in Windows and choose **Mount**.
+   It must appear as a DVD drive; selecting an unmounted ISO is not enough.
+3. Open **F.E.A.R. VR.exe from the game folder you want to change**. If you have
+   several installations, double-check which launcher you opened.
+4. Click **Import language**. The launcher detects the mounted supported DVD.
+   Confirm the Spanish text-and-voices import, then select
+   **fear_update_es_100-107_108.exe** in the file picker.
+5. Wait for the completion message. The launcher reads the DVD and updater;
+   it does **not** run either installer. Current language archives are backed up
+   before replacement. Leave the game closed until import finishes.
+6. Use **Play in VR** and check game menus, subtitles and voices. The button now
+   reads **Reset language**. You can eject the mounted ISO after import completes.
+
+To restore the language that was present before import, close the game, reopen
+the same launcher, click **Reset language**, and confirm. Saves and VR calibration
+are kept. Keep the **FEAR-VR-Language** folder in that installation: it contains
+the backups and recovery records needed for reset. Do not manually replace
+language archives while an import is active.
+
+The launcher's own language selector only translates launcher text. It does not
+select the game's language or replace the import step. Import/reset prompts are
+translated in all ten launcher languages; Windows dialog buttons follow Windows.
+Spanish import and VR gameplay were owner-tested on GOG. Steam import has offline
+fixture coverage; Steam Spanish VR and full campaign language coverage remain open.
+
+If the DVD is not detected, check that the supported ISO is mounted. If the patch
+is rejected, use the matching Spanish 1.08 updater named above; renaming a different
+file will not work. For a backup/conflict error, keep the recovery folder and
+archives intact and consult [troubleshooting](TROUBLESHOOTING.md#language-import-and-reset).
+
 [Back to the main guide](README.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
 ## Before installing
@@ -17,13 +58,13 @@ your normal save backups. This release covers the original single-player campaig
 ## Download and verify
 
 1. Open [GitHub Releases](https://github.com/thefreemike31/fear-vr/releases/latest).
-2. Expand **Assets** if needed. Download **fear-vr-v1.5.0.zip** and
-   **fear-vr-v1.5.0.zip.sha256**. Ignore GitHub's automatic Source code archives.
+2. Expand **Assets** if needed. Download **fear-vr-v1.6.0.zip** and
+   **fear-vr-v1.6.0.zip.sha256**. Ignore GitHub's automatic Source code archives.
 3. Open the `.sha256` file in Notepad. Its first 64 characters are the expected hash.
 4. In the folder containing the ZIP, open PowerShell and run:
 
    ```powershell
-   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.5.0.zip'
+   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.6.0.zip'
    ```
 
 5. Compare all 64 characters. Letter case does not matter. A mismatch means

@@ -1,5 +1,13 @@
 # Calibration and body fit
 
+## Language and shortcut settings in v1.6
+
+Language import/reset preserves VR calibration. The launcher language selector
+changes launcher text; game text/voices use the separate [import/reset tutorial](INSTALLATION.md#import-spanish-game-text-and-voices).
+Mission **Y+B**, quick-save **Y+A (2 seconds)** and quick-load **X+B (2 seconds)**
+are physical combinations, unchanged by handedness or remapping. Save/load is
+disabled during calibration; see [shortcut behavior](CONTROLS.md#mission-screen-quick-save-and-quick-load).
+
 ## v1.4.2 height preservation
 
 Automatic recentering during level loads and scripted transitions keeps the

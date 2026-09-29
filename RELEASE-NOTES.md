@@ -1,24 +1,22 @@
-# F.E.A.R. VR v1.5 - Smoother saves and gameplay fixes
+# F.E.A.R. VR v1.6 - Language import and controller shortcuts
 
-- Reduces save/checkpoint stutter by buffering native save writes. The owner
-  reported a large improvement at the tested door and ceiling-drop locations.
-  Save format, triggers, mission state and existing saves remain compatible.
-- Fixes wall-impact particles freezing or lingering during slow motion,
-  especially at high refresh rates, and prevents timing markers being rendered.
-- Fixes small stone impact marks appearing to float off walls while preserving
-  the depth of large craters.
-- Corrects remote turret pitch mapping, including the reported inverted aiming
-  in left-handed mode. Wrist roll no longer steers pitch or yaw.
-- Improves the camera handoff at verified ladder landings to address a reproduced
-  snap-back mechanism while retaining body-clearance and collision checks.
-- Includes all v1.4.2 height, vent, reload and calibration fixes.
+- **Import Spanish text and voices from the launcher.** Supply the supported
+  Spanish Director's Edition DVD/ISO and matching Spanish 1.08 updater. Import
+  backs up the original language; Reset language restores it. Prompts are
+  localized in all ten launcher languages. [Read the tutorial](INSTALLATION.md#import-spanish-game-text-and-voices).
+- **Mission screen:** Y+B opens and closes objectives; release before repeating.
+- **Quick save:** hold Y+A for two seconds. **Quick load:** hold X+B for two seconds
+  to load the quick-save slot. Release early to cancel; physical combinations do
+  not change with handedness or remapping. [Control guide](CONTROLS.md).
+- More consistent wall clearance and room-scale body following.
+- Vertical back holsters, improved chest clearance and rear-facing magazines.
+- Improved left-handed support grips, including shotgun and ASP seating.
+- Opaque calibration mirror and retained v1.5 save/effects/turret fixes.
 
-Close the game, extract the complete ZIP, keep setup-files beside Setup, and
-choose **Upgrade**. Your saves and calibration are kept; no reset is needed.
+Close the game, extract the full ZIP and choose Setup > Upgrade. Keep setup-files
+beside Setup. Saves and calibration are kept; no reset is required.
 
-The save, particle, small-impact and left-handed turret fixes received owner
-headset acceptance. Ladder landing was accepted on internal regression evidence;
-affected-player confirmation and physical comfort testing remain open. Separate
-Steam headset coverage and a new assembled-ZIP headset run are not claimed.
-This does not promise to eliminate every loading hitch or fix every ladder.
-See KNOWN-LIMITATIONS.md for remaining limitations. Package version: 1.5.0.
+Language import currently recognizes the Spanish media above, not arbitrary
+language ISOs. Spanish GOG gameplay and the Touch/GOG shortcuts were owner-tested.
+Separate Steam Spanish VR, broader hardware/media and a new assembled-ZIP headset
+run are not claimed. The package version is 1.6.0. See KNOWN-LIMITATIONS.md.

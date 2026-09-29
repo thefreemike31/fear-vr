@@ -1,5 +1,35 @@
 # Controls and weapon handling
 
+## Mission screen, quick save and quick load
+
+| Touch button combination | Action |
+| --- | --- |
+| **Y + B** | Open or close the mission/objectives screen |
+| **Y + A**, held together for **2 seconds** | Quick save |
+| **X + B**, held together for **2 seconds** | Quick load the quick-save slot |
+| **A + X** on SteamVR | Existing pause shortcut |
+
+These are physical buttons, unchanged by left-handed mode, Southpaw or action
+remapping. Release both buttons before repeating the mission toggle, and release
+all face buttons before another shortcut. Holding a completed pair does not repeat.
+For save/load, a progress bar shows the two-second real-time hold, including in
+slow motion. Release either button early to cancel. Quick load uses the quick-save
+slot, **not the latest checkpoint**; its deliberate hold is the confirmation.
+Save first before relying on quick load. A request message acknowledges dispatch,
+not completed disk writing. Native save/load eligibility still applies.
+
+Save/load works only in eligible single-player gameplay, outside menus, dialogs,
+chat, calibration, weapon selection and scripted camera control. Y+B closes only
+the mission screen, not other menus. Avoid pressing three/four face buttons at once.
+You may add the second button later; the save/load timer begins when both are down.
+If a button was held alone first, its normal mapped action may already have fired.
+
+On the suggested Index profile: **Left B + Right B** toggles missions,
+**Left B + Right A** holds quick save, and **Left A + Right B** holds quick load.
+Other profiles: use the per-profile combinations in **Controller Layouts.html**.
+Profiles without both required face inputs cannot use that combination. Touch/GOG
+received owner testing; other hardware and separate Steam headset coverage remain open.
+
 ## v1.5 turret aiming and ladder landings
 
 Remote turrets use the configured dominant hand for aiming and firing. Pitch and
