@@ -1,5 +1,11 @@
 # The road to F.E.A.R. VR by TheFreeMike
 
+## v1.7.1 - October 2, 2026
+
+Important hotfix for the body-update water/ladder progression regression, including
+supported standing platform exits and visible body in water. Adds optional native
+OBS capture and a launcher workflow guide; capture control/exit follow-ups remain.
+
 ## v1.7 - October 2, 2026
 
 Full-body IK and mirror-based body calibration, flying kick and slide, weapon

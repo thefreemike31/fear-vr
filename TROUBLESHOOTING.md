@@ -1,8 +1,38 @@
-# Troubleshooting F.E.A.R. VR v1.4.2
+# Troubleshooting F.E.A.R. VR v1.7.1
+
+## Ladder progression after the body update
+
+Install **v1.7.1** with the complete package if grabbing/climbing a ladder from
+water fails or top-out leaves you low under the platform and drops you back into
+the pool. This hotfix restores those paths and keeps the body visible in water.
+No save or calibration reset is needed. If a ladder still fails, include the
+level/checkpoint, selected ladder mode, entry direction, edition and short steps.
+The reproduced flooded-ladder case was owner-tested; every campaign ladder has
+not been tested.
+
+## OBS capture window
+
+Follow the [OBS workflow](INSTALLATION.md#recording-with-obs). Enable **OBS capture
+window** in the launcher before starting the game, then use OBS **Game Capture >
+Capture specific window > F.E.A.R. VR Capture (FEARVR-Capture.exe)**.
+
+- **Missing/black source:** confirm the helper window exists and that OBS targets
+  FEARVR-Capture.exe. Close the game and upgrade the complete package if the helper
+  is missing; do not mix old launcher, bridge and helper files.
+- **Cropped, stretched or changing framing:** reset transform, Fit to Screen and
+  remove cropping. Native-eye capture keeps its dimensions through menus/loading.
+  Fitting a near-square eye to 16:9 intentionally leaves side bars. Set the OBS
+  canvas/output to the source dimensions for a recording at its native aspect.
+- **Control glitch or performance change:** compare a new launch with capture
+  disabled. Capture adds GPU work; record the mode, format, runtime, resolution
+  and whether OBS had focus. Intermittent controls and normal Quit/exit crashes
+  remain under investigation. Save progress and stop recording before quitting.
+- Verify a short recording, including audio, before relying on a longer take.
+  Menu capture and offline tests do not establish every gameplay/display mode.
 
 ## Full body, calibration, kick and slide
 
-Upgrade with the complete v1.7 package so all body meshes are installed. If the
+Upgrade with the complete v1.7.1 package so all body meshes are installed. If the
 body is hidden, check **Immersion & Interaction > Visible Body**; a saved Off is
 preserved. Use **Calibration & Body Fit > Fit Visible Body** for proportions and
 reach. The mirror's absent head is a known limitation. Exit fitting with X on
@@ -23,7 +53,7 @@ remain without a focused headset result; do not assume every ladder is fixed.
 ## Language import and reset
 
 Follow the [complete tutorial](INSTALLATION.md#import-game-text-and-voices).
-Upgrade to **v1.6.1**: v1.6.0 accidentally restricted import to Spanish media.
+Use **v1.6.1 or later**: v1.6.0 accidentally restricted import to Spanish media.
 Use your original language DVD/ISO and the **1.08 patch in that same language**.
 All language editions are intended to work in theory; only Spanish is officially
 tested. Other languages are not rejected merely for being non-Spanish.

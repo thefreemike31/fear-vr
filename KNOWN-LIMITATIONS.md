@@ -1,5 +1,21 @@
 # Known limitations
 
+## v1.7.1 ladder and OBS capture scope
+
+The reproduced water-to-ladder climb and standing platform exit were owner-headset
+accepted after the body-update regression. Every ladder mode, campaign ladder,
+separate Steam headset run and the assembled public ZIP are not claimed tested.
+The body remains visible in water. Earlier untested red-ladder cases are separate.
+
+OBS capture is optional, experimental and off by default. GOG gameplay recordings
+cover windowed native-eye/16:9 and borderless native-eye. Borderless 16:9 reached
+the menu and OBS hook but lacks a completed gameplay recording; full Steam physical
+mode coverage is also pending. An intermittent control glitch and native Quit/exit
+crashes were observed and remain unresolved; no accepted-baseline comparison
+established their cause. Compare capture-off performance if needed. Synthetic
+minimization/framing checks do not establish every physical headset behavior.
+See the [OBS guide](INSTALLATION.md#recording-with-obs).
+
 ## v1.7 body and interaction coverage
 
 Full body/calibration, kick/slide, selected weapon weight, room-scale recovery and
@@ -84,10 +100,9 @@ unreported. Package checks do not substitute for those headset tests.
 - Releases are unsigned. Local download verification is not a guarantee that
   every antivirus or reputation service will accept the same archive.
 
-- Windowed mirror controls were tested on GOG at 720p with VirtualDesktopXR;
-  Steam memory startup was tested with Virtual Desktop and SteamVR. These tests
-  do not establish every display mode or OBS/minimized capture behavior.
-  Do not assume recording continues while the mirror is minimized.
+- The ordinary desktop mirror and the optional OBS helper are separate windows.
+  The helper has offline minimization checks and the bounded gameplay coverage
+  above. Check a short recording before relying on any minimized configuration.
 - Small held props can still sit farther from the hand than ideal.
 
 Read the latest release notes and open issues before assuming an old workaround

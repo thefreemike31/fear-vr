@@ -1,13 +1,13 @@
 # Installation, updates, and recovery
 
-## Upgrading to v1.7
+## Upgrading to v1.7.1
 
-Close the game, extract the complete v1.7.0 ZIP, keep setup-files beside Setup,
-and choose **Upgrade**. The installer includes the full-body meshes; do not copy
-only the DLL. Saves, language backups and calibration remain intact. Visible Body
-starts On unless your profile explicitly saved Off. Follow the
-[body fitting tutorial](CALIBRATION.md#full-body-ik-and-fit-visible-body) and
-[kick/slide controls](CONTROLS.md#flying-kick-and-slide). No calibration reset is required.
+This hotfix repairs a progress-blocking ladder regression from the body update.
+Close the game, extract the complete v1.7.1 ZIP, keep setup-files beside Setup,
+and choose **Upgrade**. Keep all body meshes and the new capture helper together;
+do not copy only the DLL. Saves, language backups and calibration remain intact.
+No profile or calibration reset is required. The new optional OBS workflow is
+explained [below](#recording-with-obs).
 
 <a id="import-spanish-game-text-and-voices"></a>
 ## Import game text and voices
@@ -64,13 +64,13 @@ your normal save backups. This release covers the original single-player campaig
 ## Download and verify
 
 1. Open [GitHub Releases](https://github.com/thefreemike31/fear-vr/releases/latest).
-2. Expand **Assets** if needed. Download **fear-vr-v1.6.1.zip** and
-   **fear-vr-v1.6.1.zip.sha256**. Ignore GitHub's automatic Source code archives.
+2. Expand **Assets** if needed. Download **fear-vr-v1.7.1.zip** and
+   **fear-vr-v1.7.1.zip.sha256**. Ignore GitHub's automatic Source code archives.
 3. Open the `.sha256` file in Notepad. Its first 64 characters are the expected hash.
 4. In the folder containing the ZIP, open PowerShell and run:
 
    ```powershell
-   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.6.1.zip'
+   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.7.1.zip'
    ```
 
 5. Compare all 64 characters. Letter case does not matter. A mismatch means
@@ -139,6 +139,48 @@ See the [VDXR project](https://github.com/mbucchia/VirtualDesktop-OpenXR) and
 
 Meta Quest Link and Air Link are unsupported, including through SteamVR.
 
+## Recording with OBS
+
+The optional experimental capture window provides the complete rendered **right
+eye** through a separate desktop helper. OBS is installed separately. No OBS
+OpenXR layer or extra capture plugin is required. Capture is off by default.
+
+1. Close the game and open **F.E.A.R. VR.exe**. Enable **OBS capture window**.
+2. Choose **Windowed** or **Borderless (desktop size)**. Capture disables exclusive
+   fullscreen so the Windows desktop keeps its resolution.
+3. Choose **Capture: native eye (1:1)** for the full eye at its rendered resolution,
+   or **Capture: 16:9 (fit full eye)** for a 3840 x 2160 source containing the whole
+   eye. These choices change capture framing, not headset resolution.
+4. Select **Play in VR**. In OBS, add a **Game Capture** source, choose
+   **Capture specific window**, and select **F.E.A.R. VR Capture**
+   (**FEARVR-Capture.exe**). Select the capture helper, not FEAR.exe.
+5. Select the OBS source, reset its transform (**Ctrl+R**) and **Fit to Screen**
+   (**Ctrl+F**). Leave cropping at zero. Native capture keeps the same eye-sized
+   source through menus and loading; menu content is fitted inside it.
+6. For a recording at the eye's exact resolution, set OBS **Base (Canvas)** and
+   **Output (Scaled)** resolutions to the capture source's dimensions. Those
+   dimensions depend on your headset/runtime settings; do not copy someone else's.
+   For a 16:9 recording, use a 16:9 canvas/output and Fit to Screen. A near-square
+   eye has side bars when fitted to 16:9; removing them requires cropping or
+   distortion. The capture mode preserves the complete view.
+7. Make a short recording and check framing, audio and smoothness before a long
+   session. You can bring OBS to the foreground while VR stays live.
+   Stop OBS recording before quitting the game.
+
+To return to ordinary play, close the game, turn **OBS capture window** off and
+launch again. Format changes take effect on the next launch. If you close the
+capture window manually, restart the game to reopen it. The helper closes when
+the game ends. Recording is controlled in OBS; this launcher option alone does
+not record a video. Use Game Capture: Window Capture sees the smaller desktop
+preview. The launcher's desktop 720p/1080p setting does not set capture resolution.
+
+This first capture release has known follow-ups: an intermittent control glitch
+and native Quit/exit crashes have been observed; their causes are unconfirmed.
+Compare a fresh launch with capture off if controls or performance change.
+GOG gameplay recordings cover windowed native/16:9 and borderless native;
+borderless 16:9 gameplay and the full Steam capture matrix remain unverified.
+See [capture troubleshooting](TROUBLESHOOTING.md#obs-capture-window).
+
 ## Launcher language
 
 The launcher defaults to **Automatic**, using your Windows UI-language preferences
@@ -158,8 +200,9 @@ Use **F.E.A.R. VR.exe**, not **FEAR.exe** or an existing store shortcut that sta
 the flat game. You can make a desktop shortcut to the VR executable. Leave it
 beside the installed game; do not move the executable itself to the desktop.
 
-Choose **Fullscreen** (the first-run default) or **Windowed**, with **1280 x 720**
-or **1920 x 1080** for windowed mode, then select **Play in VR**. Your choice is
+Choose **Fullscreen** (the first-run default), **Windowed**, or **Borderless
+(desktop size)**. Windowed offers **1280 x 720** or **1920 x 1080**. Select
+**Play in VR** when ready. Your choice is
 remembered across launches and editions; closing without playing does not save
 changes. These settings control the desktop mirror, not headset resolution.
 The game may also remember the desktop resolution in its normal display settings.
