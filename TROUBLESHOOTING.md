@@ -1,5 +1,25 @@
 # Troubleshooting F.E.A.R. VR v1.4.2
 
+## Full body, calibration, kick and slide
+
+Upgrade with the complete v1.7 package so all body meshes are installed. If the
+body is hidden, check **Immersion & Interaction > Visible Body**; a saved Off is
+preserved. Use **Calibration & Body Fit > Fit Visible Body** for proportions and
+reach. The mirror's absent head is a known limitation. Exit fitting with X on
+Touch to restore normal weapon selection. See the [fitting guide](CALIBRATION.md#full-body-ik-and-fit-visible-body).
+
+Kick uses a second up flick during a real jump; holding up or walking off a ledge
+does not qualify. Slide requires forward movement held and two down flicks within
+about half a second while grounded. Use the jump/turn stick, which changes with
+Movement Stick/Southpaw. A single down remains crouch; ease the stick back between
+flicks. See [controls](CONTROLS.md#flying-kick-and-slide). Report the exact gesture,
+handedness, movement-stick setting, terrain and whether slow motion was active.
+
+v1.7 improves padlock/glass strikes and close door touch; native locks and
+unbreakable story objects still apply. Report the level and exact object if a
+strike fails. Auto Pickup and red-ladder follow-ups have offline coverage but
+remain without a focused headset result; do not assume every ladder is fixed.
+
 ## Language import and reset
 
 Follow the [complete tutorial](INSTALLATION.md#import-game-text-and-voices).

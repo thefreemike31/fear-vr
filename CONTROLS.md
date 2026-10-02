@@ -1,5 +1,26 @@
 # Controls and weapon handling
 
+## Flying kick and slide
+
+Use the **jump/turn stick**: normally the right stick, or the opposite stick when
+Movement Stick/Southpaw changes your locomotion hand. Weapon handedness alone does
+not select it. These are stick gestures, not face-button combinations.
+
+- **Flying kick:** flick up to jump, let the stick retreat, then flick up again
+  while still airborne. One kick per jump. You do not need to reach the exact
+  center or meet a tiny double-tap deadline. Holding up does not repeat it.
+- **Slide:** hold the movement stick forward and flick the jump/turn stick down
+  twice in quick succession (within about half a second), easing it back between
+  flicks. Start on the ground. The first down is ordinary crouch; the second starts
+  the slide. Afterward, tap crouch normally to stand if toggle-crouch remains on
+  and there is room overhead.
+
+Single up still jumps; single down still crouches. Kick/slide work with Visible
+Body off too. They follow normal collision and native melee rules; an enemy hit
+is not guaranteed. Slow motion slows the attack. Menus, calibration and invalid
+movement states prevent activation. Landing ends kick damage; jumping or losing
+stable ground cancels a slide. Your tracked view remains under headset control.
+
 ## Mission screen, quick save and quick load
 
 | Touch button combination | Action |

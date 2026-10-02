@@ -1,5 +1,14 @@
 # Installation, updates, and recovery
 
+## Upgrading to v1.7
+
+Close the game, extract the complete v1.7.0 ZIP, keep setup-files beside Setup,
+and choose **Upgrade**. The installer includes the full-body meshes; do not copy
+only the DLL. Saves, language backups and calibration remain intact. Visible Body
+starts On unless your profile explicitly saved Off. Follow the
+[body fitting tutorial](CALIBRATION.md#full-body-ik-and-fit-visible-body) and
+[kick/slide controls](CONTROLS.md#flying-kick-and-slide). No calibration reset is required.
+
 <a id="import-spanish-game-text-and-voices"></a>
 ## Import game text and voices
 

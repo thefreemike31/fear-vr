@@ -1,5 +1,32 @@
 # Calibration and body fit
 
+## Full-body IK and Fit Visible Body
+
+**New in v1.7:** articulated arms, torso, legs and feet follow your headset and
+hands, with procedural walking, crouching, landing and body shadows. No additional
+body trackers are required. This is an estimated pose, not measured full-body tracking.
+**Visible Body** is under **Options > VR Settings > Immersion & Interaction**.
+It defaults to On; a previously saved Off stays Off. Turning it off restores
+floating hands. The old experimental rigid-arms option has been retired.
+
+1. Set your seated/standing Play Position and calibrate height first.
+2. Open **Options > VR Settings > Calibration & Body Fit > Fit Visible Body**.
+   From the main menu this uses the calibration room; during play it uses your level.
+3. Use the mirror to adjust **height, reach, shoulder width, forward position and
+   fullness**. On Touch: **A** selects the previous field; **B or Y** selects the
+   next; flick either stick left/right to adjust, or down to reset the selected
+   field. Return the stick toward center between changes. **X** exits.
+4. Check relaxed arms, full reach, looking down and crouching. Changes save to
+   your profile. The fitter temporarily selects Unarmed and restores your prior
+   weapon/ammo selection on exit.
+5. Use **Reset Visible Body Fit** for the body fit alone. Existing hand, holster,
+   weapon-grip and sight tools remain separate. Avoid Reset All Calibration unless
+   you intend to clear the rest of your fitting too.
+
+The calibration mirror currently has no head; this is a known visual limitation.
+Feet/elbows are inferred and can need personal fitting. Existing profiles and
+calibration are preserved during upgrade; no blanket reset is required.
+
 ## Language and shortcut settings in v1.6
 
 Language import/reset preserves VR calibration. The launcher language selector

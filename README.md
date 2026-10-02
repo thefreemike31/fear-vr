@@ -1,24 +1,24 @@
 # F.E.A.R. VR Mod by TheFreeMike
 
-## New in v1.6: language import and controller shortcuts
+## New in v1.7: full body, calibration, flying kick and slide
 
-- **Game text and voices from your own language media:** use Import language
-  with an original language DVD/ISO and its matching-language 1.08 patch.
-  v1.6.1 removes the Spanish-only restriction. All language editions are intended
-  to work in theory; only Spanish has been officially tested.
-  [Step-by-step tutorial](INSTALLATION.md#import-game-text-and-voices).
-- **Mission screen:** press Y+B to open or close it; release both before repeating.
-- **Quick save:** hold Y+A together for two seconds. **Quick load:** hold X+B
-  together for two seconds to load the quick-save slot. [Controls and other profiles](CONTROLS.md).
-- Improved wall clearance, room-scale body following, back holsters, magazine
-  presentation, left-handed support grips and the calibration mirror.
+- **Full-body IK**, enabled by default, with articulated arms, torso, legs,
+  procedural feet and shadows. Saved visibility preferences are preserved.
+- **Fit Visible Body**: adjust height, reach, shoulders, forward position and
+  fullness using the mirror. [Body fitting tutorial](CALIBRATION.md#full-body-ik-and-fit-visible-body).
+- **Flying kick and slide**: up-up during a jump kicks; forward movement plus
+  down-down slides. [Exact gestures](CONTROLS.md#flying-kick-and-slide).
+- More convincing weapon weight, steadier body transitions in slow motion,
+  room-scale recovery after recentering, and improved door/padlock/glass contact.
+- Language import and mission/quick-save/load shortcuts remain included.
+  [Language tutorial](INSTALLATION.md#import-game-text-and-voices).
 
 <img src="assets/alma.png" alt="Alma, F.E.A.R. VR artwork" width="240">
 
 Play the original F.E.A.R. campaign in PC VR, with tracked hands, physical
 weapon handling, configurable controls, and comfort options.
 
-**Current release: v1.6.1. Free, unofficial, and made by TheFreeMike.**
+**Current release: v1.7.0. Free, unofficial, and made by TheFreeMike.**
 You need a legitimate copy of the **GOG F.E.A.R. Platinum Collection** or the
 original **Steam F.E.A.R. base game**, and a Windows PC capable of PC VR. The base game is not included.
 

@@ -1,5 +1,16 @@
 # Known limitations
 
+## v1.7 body and interaction coverage
+
+Full body/calibration, kick/slide, selected weapon weight, room-scale recovery and
+campaign door/padlock/glass changes received owner or affected-player acceptance.
+Separate Steam headset coverage of these combined changes and a new assembled-ZIP
+headset run are not claimed. The calibration mirror has no head; body pose is
+inferred from headset/controllers, not full-body trackers. Perfect frame pacing
+and every weapon's weight feel are not established; Cannon feel remains untested.
+Auto Pickup and red-ladder follow-ups ship with offline coverage and no focused
+headset acceptance. Existing slow Steam loading and Quit cleanup issues remain.
+
 ## v1.6 language import and shortcut coverage
 
 v1.6.1 removes the Spanish-only import restriction. Original language DVD/ISOs

@@ -1,5 +1,11 @@
 # The road to F.E.A.R. VR by TheFreeMike
 
+## v1.7 - October 2, 2026
+
+Full-body IK and mirror-based body calibration, flying kick and slide, weapon
+weight, body transition polish, room-scale recenter recovery and campaign
+interaction improvements. Retains general language import from v1.6.1.
+
 ## v1.6.1 - September 29, 2026
 
 Removes accidental Spanish-only language import checks and fixed archive offsets.
