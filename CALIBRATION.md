@@ -23,7 +23,13 @@ floating hands. The old experimental rigid-arms option has been retired.
    weapon-grip and sight tools remain separate. Avoid Reset All Calibration unless
    you intend to clear the rest of your fitting too.
 
-The calibration mirror currently has no head; this is a known visual limitation.
+**Updated in v1.7.2:** Body Height adjusts vertical upper-body fit while keeping
+the feet grounded and the legs moving. It no longer rescales boots, legs or arm
+reach; use the separate Reach and Fullness settings for those aspects of fit.
+New profiles and **Reset Visible Body Fit** start Body Height at **115%**.
+Upgrading preserves your saved percentage; reset only if you want the new default.
+The mirror now displays the head. Resting arms, support cuffs and hand shadows
+are improved, though a minor occasional hip/arm snap remains under investigation.
 Feet/elbows are inferred and can need personal fitting. Existing profiles and
 calibration are preserved during upgrade; no blanket reset is required.
 

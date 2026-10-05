@@ -1,14 +1,28 @@
-# Troubleshooting F.E.A.R. VR v1.7.1
+# Troubleshooting F.E.A.R. VR v1.7.2
 
 ## Ladder progression after the body update
 
-Install **v1.7.1** with the complete package if grabbing/climbing a ladder from
-water fails or top-out leaves you low under the platform and drops you back into
-the pool. This hotfix restores those paths and keeps the body visible in water.
-No save or calibration reset is needed. If a ladder still fails, include the
-level/checkpoint, selected ladder mode, entry direction, edition and short steps.
-The reproduced flooded-ladder case was owner-tested; every campaign ladder has
-not been tested.
+Upgrade to **v1.7.2** with the complete package. Tall ladders now choose the actual
+top platform instead of an intermediate floor. The earlier water-to-ladder and
+standing-exit fixes remain included. No save or calibration reset is needed.
+If a ladder still fails, include the level/checkpoint, selected ladder mode,
+entry direction, edition and short steps. The reported tall and flooded ladder
+cases were owner-tested; every campaign ladder has not been tested.
+
+## Feet float or legs stop moving after adjusting Body Height
+
+Upgrade to **v1.7.2**, then revisit **Calibration & Body Fit > Fit Visible Body**.
+Body Height now adjusts upper-body fitting while preserving grounded feet and
+leg motion. Existing percentages are kept. Use the separate Reach and Fullness
+controls if needed; no full calibration reset is required. New/reset body fits
+start at 115%, and the calibration mirror now shows the head.
+
+## Flashlight gesture with the other hand
+
+Either free hand works in v1.7.2. Bring it to the forehead with Grip released,
+then squeeze once. A hand already holding/supporting an object, climbing or
+reloading keeps that interaction. Release Grip before trying again. The native
+battery must still have charge. See [controls](CONTROLS.md#flashlight-gesture).
 
 ## OBS capture window
 

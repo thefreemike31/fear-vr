@@ -21,6 +21,15 @@ is not guaranteed. Slow motion slows the attack. Menus, calibration and invalid
 movement states prevent activation. Landing ends kick damage; jumping or losing
 stable ground cancels a slide. Your tracked view remains under headset control.
 
+## Flashlight gesture
+
+In v1.7.2, use **either free physical hand**, including while the opposite hand
+holds a gun. Bring the free hand to your forehead with **Grip released**, then
+squeeze Grip once to toggle the flashlight. Release before repeating; holding
+Grip does not repeatedly toggle it. This is independent of dominant-hand settings.
+Hands holding a gun, prop or grenade, supporting a weapon, climbing or reloading
+keep their existing interaction priority. The game's battery rules still apply.
+
 ## Mission screen, quick save and quick load
 
 | Touch button combination | Action |

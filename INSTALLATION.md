@@ -1,12 +1,12 @@
 # Installation, updates, and recovery
 
-## Upgrading to v1.7.1
+## Upgrading to v1.7.2
 
-This hotfix repairs a progress-blocking ladder regression from the body update.
-Close the game, extract the complete v1.7.1 ZIP, keep setup-files beside Setup,
-and choose **Upgrade**. Keep all body meshes and the new capture helper together;
+This hotfix corrects tall-ladder exits and body-height fitting after the body update.
+Close the game, extract the complete v1.7.2 ZIP, keep setup-files beside Setup,
+and choose **Upgrade**. Keep all body meshes and the capture helper together;
 do not copy only the DLL. Saves, language backups and calibration remain intact.
-No profile or calibration reset is required. The new optional OBS workflow is
+No profile or calibration reset is required. The optional OBS workflow is
 explained [below](#recording-with-obs).
 
 <a id="import-spanish-game-text-and-voices"></a>
@@ -64,13 +64,13 @@ your normal save backups. This release covers the original single-player campaig
 ## Download and verify
 
 1. Open [GitHub Releases](https://github.com/thefreemike31/fear-vr/releases/latest).
-2. Expand **Assets** if needed. Download **fear-vr-v1.7.1.zip** and
-   **fear-vr-v1.7.1.zip.sha256**. Ignore GitHub's automatic Source code archives.
+2. Expand **Assets** if needed. Download **fear-vr-v1.7.2.zip** and
+   **fear-vr-v1.7.2.zip.sha256**. Ignore GitHub's automatic Source code archives.
 3. Open the `.sha256` file in Notepad. Its first 64 characters are the expected hash.
 4. In the folder containing the ZIP, open PowerShell and run:
 
    ```powershell
-   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.7.1.zip'
+   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.7.2.zip'
    ```
 
 5. Compare all 64 characters. Letter case does not matter. A mismatch means

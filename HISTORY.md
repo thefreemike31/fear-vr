@@ -1,5 +1,12 @@
 # The road to F.E.A.R. VR by TheFreeMike
 
+## v1.7.2 - October 5, 2026
+
+Corrects tall-ladder top-platform selection, grounded body-height fitting and
+grenade hand-sample timing. Restores the calibration mirror head, improves arms,
+support cuffs and hand shadows, and enables the forehead flashlight gesture with
+either free hand. New/reset Body Height is 115%; saved values remain intact.
+
 ## v1.7.1 - October 2, 2026
 
 Important hotfix for the body-update water/ladder progression regression, including

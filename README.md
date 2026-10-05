@@ -1,26 +1,27 @@
 # F.E.A.R. VR Mod by TheFreeMike
 
-## v1.7.1 hotfix: ladder progression restored
+## v1.7.2 hotfix: ladder tops and grounded body calibration
 
-- **Important ladder fix:** repairs the regression introduced with the body update
-  that could block campaign progress. Water-to-ladder grabbing and climbing work
-  again, and top-out checks land you standing on the platform instead of beneath it.
-- The visible body stays present while swimming and transitioning onto ladders.
-- **Optional experimental OBS capture window:** record a complete right-eye view
-  through a separate window, with native-eye or fitted 16:9 framing and desktop
-  focus support. [OBS setup guide](INSTALLATION.md#recording-with-obs).
+- **Important ladder fix:** tall ladders select their actual top platform,
+  preventing an intermediate floor from replacing the intended exit.
+- **Body-height fitting:** grounded feet and moving legs, a visible mirror head,
+  and improved arms, support cuffs and hand shadows. New/reset Body Height starts
+  at 115%; saved fitting values stay intact.
+- **Either free hand can operate the forehead flashlight gesture.**
+- Physical grenade throws use the correct hand-sample timing.
 
 Upgrade with the complete package; saves and calibration are preserved. Full-body
 IK, [body fitting](CALIBRATION.md#full-body-ik-and-fit-visible-body),
-[kick/slide](CONTROLS.md#flying-kick-and-slide) and
-[general language import](INSTALLATION.md#import-game-text-and-voices) remain included.
+[kick/slide](CONTROLS.md#flying-kick-and-slide),
+[general language import](INSTALLATION.md#import-game-text-and-voices) and the
+optional experimental [OBS workflow](INSTALLATION.md#recording-with-obs) remain included.
 
 <img src="assets/alma.png" alt="Alma, F.E.A.R. VR artwork" width="240">
 
 Play the original F.E.A.R. campaign in PC VR, with tracked hands, physical
 weapon handling, configurable controls, and comfort options.
 
-**Current release: v1.7.1. Free, unofficial, and made by TheFreeMike.**
+**Current release: v1.7.2. Free, unofficial, and made by TheFreeMike.**
 You need a legitimate copy of the **GOG F.E.A.R. Platinum Collection** or the
 original **Steam F.E.A.R. base game**, and a Windows PC capable of PC VR. The base game is not included.
 
@@ -64,7 +65,7 @@ and a native installer with recovery support.
 ## Start here
 
 1. Confirm the unmodified GOG or Steam base game works on your PC.
-2. From the release's **Assets** list, download `fear-vr-v1.7.1.zip` and its
+2. From the release's **Assets** list, download `fear-vr-v1.7.2.zip` and its
    `.sha256` file. GitHub's automatic **Source code** downloads are not the mod.
 3. Verify and extract the complete ZIP. Keep **setup-files** beside
    **F.E.A.R. VR Setup.exe**.

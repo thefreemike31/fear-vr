@@ -1,6 +1,15 @@
 # Known limitations
 
-## v1.7.1 ladder and OBS capture scope
+## v1.7.2 ladder, body and flashlight scope
+
+The reported tall ladder's actual top-platform exit, grounded body-height fit,
+mirror head, arm/support improvements, hand shadows and either-hand flashlight
+received owner headset acceptance. No every-ladder, every-weapon, separate Steam
+or newly assembled-ZIP headset acceptance is claimed. A minor occasional hip/arm
+snap remains open. The grenade hand-sample timing correction is included;
+the slow-motion feel investigation closed without a demonstrated extra drag fix.
+
+## Retained v1.7.1 ladder and OBS capture scope
 
 The reproduced water-to-ladder climb and standing platform exit were owner-headset
 accepted after the body-update regression. Every ladder mode, campaign ladder,
@@ -21,7 +30,7 @@ See the [OBS guide](INSTALLATION.md#recording-with-obs).
 Full body/calibration, kick/slide, selected weapon weight, room-scale recovery and
 campaign door/padlock/glass changes received owner or affected-player acceptance.
 Separate Steam headset coverage of these combined changes and a new assembled-ZIP
-headset run are not claimed. The calibration mirror has no head; body pose is
+headset run are not claimed. The calibration mirror head is restored in v1.7.2. Body pose is
 inferred from headset/controllers, not full-body trackers. Perfect frame pacing
 and every weapon's weight feel are not established; Cannon feel remains untested.
 Auto Pickup and red-ladder follow-ups ship with offline coverage and no focused
