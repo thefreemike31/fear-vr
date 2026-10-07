@@ -130,3 +130,9 @@ If the room does not load, use Setup to repair/upgrade from the complete officia
 package. Do not fetch loose room files or a developer launcher from an old beta.
 For persistent problems, report the calibration page, headset/controller,
 play position, and exact adjustment in [GitHub Issues](https://github.com/thefreemike31/fear-vr/issues).
+
+## Hand fit while holding objects
+
+v1.7.5 keeps saved hand fitting active for held props and the manual-reload
+utility hand. Supported pickups and belt magazines seat against visible hand
+contact. Existing calibration is preserved; no reset is needed.

@@ -1,5 +1,22 @@
 # Known limitations
 
+## v1.7.5 interactions, tutorials and mirror scope
+
+The owner accepted visible-contact grabbing, door kicks, reload switching,
+tutorial persistence/lifetime and the single mirror with Alt-Tab and window
+shutdown. Separate Steam headset coverage, every object/door/weapon, every mirror
+mode, a new complete OBS recording matrix and an assembled-ZIP headset run are
+not claimed. Supported pickup geometry has improved contact; unsupported models
+and finger closure can still differ from the visible surface. Door kicks retain
+locks and scripts.
+
+Fill crops the right eye to 16:9; Native preserves the complete eye and may leave
+side bars on a widescreen canvas. Off is headset-only. A brief bootstrap window
+may appear before VR is ready; mirror failure can restore the original window
+as a fallback. The blank-window-on-exit issue is fixed. A previously observed
+native game-shutdown crash remains a separate, unresolved follow-up.
+See the [current OBS guide](INSTALLATION.md#recording-with-obs).
+
 ## v1.7.2 ladder, body and flashlight scope
 
 The reported tall ladder's actual top-platform exit, grounded body-height fit,
@@ -9,21 +26,16 @@ or newly assembled-ZIP headset acceptance is claimed. A minor occasional hip/arm
 snap remains open. The grenade hand-sample timing correction is included;
 the slow-motion feel investigation closed without a demonstrated extra drag fix.
 
-## Retained v1.7.1 ladder and OBS capture scope
+## Retained v1.7.1 ladder scope
 
 The reproduced water-to-ladder climb and standing platform exit were owner-headset
 accepted after the body-update regression. Every ladder mode, campaign ladder,
 separate Steam headset run and the assembled public ZIP are not claimed tested.
 The body remains visible in water. Earlier untested red-ladder cases are separate.
 
-OBS capture is optional, experimental and off by default. GOG gameplay recordings
-cover windowed native-eye/16:9 and borderless native-eye. Borderless 16:9 reached
-the menu and OBS hook but lacks a completed gameplay recording; full Steam physical
-mode coverage is also pending. An intermittent control glitch and native Quit/exit
-crashes were observed and remain unresolved; no accepted-baseline comparison
-established their cause. Compare capture-off performance if needed. Synthetic
-minimization/framing checks do not establish every physical headset behavior.
-See the [OBS guide](INSTALLATION.md#recording-with-obs).
+The old separate OBS checkbox and window/borderless capture workflow were
+replaced by the single-mirror choices in v1.7.5. Historical recordings from that
+older workflow do not establish a complete new-mode or Steam recording matrix.
 
 ## v1.7 body and interaction coverage
 
@@ -109,10 +121,9 @@ unreported. Package checks do not substitute for those headset tests.
 - Releases are unsigned. Local download verification is not a guarantee that
   every antivirus or reputation service will accept the same archive.
 
-- The ordinary desktop mirror and the optional OBS helper are separate windows.
-  The helper has offline minimization checks and the bounded gameplay coverage
-  above. Check a short recording before relying on any minimized configuration.
-- Small held props can still sit farther from the hand than ideal.
+- The desktop and OBS use the same mirror. Check a short recording before
+  relying on a minimized configuration; the headset and recording need separate
+  checks on your own setup.
 
 Read the latest release notes and open issues before assuming an old workaround
 still applies. Development tools and the local Level Select menu are not shipped.

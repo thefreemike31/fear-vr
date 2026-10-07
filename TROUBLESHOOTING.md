@@ -1,8 +1,8 @@
-# Troubleshooting F.E.A.R. VR v1.7.2
+# Troubleshooting F.E.A.R. VR v1.7.5
 
 ## Ladder progression after the body update
 
-Upgrade to **v1.7.2** with the complete package. Tall ladders now choose the actual
+Upgrade to **v1.7.5** with the complete package. Tall ladders now choose the actual
 top platform instead of an intermediate floor. The earlier water-to-ladder and
 standing-exit fixes remain included. No save or calibration reset is needed.
 If a ladder still fails, include the level/checkpoint, selected ladder mode,
@@ -11,7 +11,7 @@ cases were owner-tested; every campaign ladder has not been tested.
 
 ## Feet float or legs stop moving after adjusting Body Height
 
-Upgrade to **v1.7.2**, then revisit **Calibration & Body Fit > Fit Visible Body**.
+Upgrade to **v1.7.5**, then revisit **Calibration & Body Fit > Fit Visible Body**.
 Body Height now adjusts upper-body fitting while preserving grounded feet and
 leg motion. Existing percentages are kept. Use the separate Reach and Fullness
 controls if needed; no full calibration reset is required. New/reset body fits
@@ -26,30 +26,49 @@ battery must still have charge. See [controls](CONTROLS.md#flashlight-gesture).
 
 ## OBS capture window
 
-Follow the [OBS workflow](INSTALLATION.md#recording-with-obs). Enable **OBS capture
-window** in the launcher before starting the game, then use OBS **Game Capture >
-Capture specific window > F.E.A.R. VR Capture (FEARVR-Capture.exe)**.
+In v1.7.5 choose **16:9 - fill screen** or **Native - full view** in the launcher,
+then **Play in VR**. In OBS use **Game Capture > Capture specific window >
+F.E.A.R. VR Capture (FEARVR-Capture.exe)**. There is no separate OBS checkbox.
+Follow the [step-by-step guide](INSTALLATION.md#recording-with-obs).
 
-- **Missing/black source:** confirm the helper window exists and that OBS targets
-  FEARVR-Capture.exe. Close the game and upgrade the complete package if the helper
-  is missing; do not mix old launcher, bridge and helper files.
-- **Cropped, stretched or changing framing:** reset transform, Fit to Screen and
-  remove cropping. Native-eye capture keeps its dimensions through menus/loading.
-  Fitting a near-square eye to 16:9 intentionally leaves side bars. Set the OBS
-  canvas/output to the source dimensions for a recording at its native aspect.
-- **Control glitch or performance change:** compare a new launch with capture
-  disabled. Capture adds GPU work; record the mode, format, runtime, resolution
-  and whether OBS had focus. Intermittent controls and normal Quit/exit crashes
-  remain under investigation. Save progress and stop recording before quitting.
-- Verify a short recording, including audio, before relying on a longer take.
-  Menu capture and offline tests do not establish every gameplay/display mode.
+- **No mirror/source:** Off is headset-only. Select Fill or Native before the
+  next launch. If you closed the mirror manually, restart the game to reopen it.
+  If the helper is missing, upgrade the complete package.
+- **Side bars:** Native preserves the full eye, whose aspect may differ from
+  16:9. Use Fill for a centered widescreen crop, or match your OBS canvas to Native.
+- **Unexpected crop/stretch:** reset the source transform, remove old cropping,
+  then Fit to Screen. Fill intentionally crops the eye to 16:9 without stretching;
+  select Native if you need the whole eye. Neither changes headset framing.
+- **Alt-Tab or control problem:** update all launcher/bridge/helper files together.
+  v1.7.5 retains VR activity while Windows focus moves. Report edition, runtime,
+  mirror mode and the action that fails if it persists.
+- **Blank window after quitting:** v1.7.5 fixes the hidden original game window
+  reappearing at shutdown. A separate native exit crash has previously been
+  observed and is not claimed fixed. If it recurs, include the launcher log and
+  Windows Application error details; distinguish it from the blank-window issue.
+- Make a short recording, including audio, before a long take. Compare a fresh
+  launch with **Off - headset only** if investigating capture-related performance.
+
+## Tutorial cards repeat or will not disappear
+
+Upgrade to v1.7.5. Cards finish after their action succeeds or ten seconds of
+visible gameplay; you do not need to spend a grenade, medkit or ammunition.
+Continue, loading and settings preserve progress. An older lost completion flag
+can cause a one-time repeat after updating. New Game and tutorial replay reset
+progress intentionally; Tutorial Cards can disable the cards entirely.
+
+## Weapon selection during a reload
+
+v1.7.5 allows switching weapons before a manual reload is finished. Upgrade the
+complete package if selection gets stuck. Report the weapon and reload stage
+if the issue persists; no calibration reset is needed.
 
 ## Full body, calibration, kick and slide
 
-Upgrade with the complete v1.7.1 package so all body meshes are installed. If the
+Upgrade with the complete v1.7.5 package so all body meshes are installed. If the
 body is hidden, check **Immersion & Interaction > Visible Body**; a saved Off is
 preserved. Use **Calibration & Body Fit > Fit Visible Body** for proportions and
-reach. The mirror's absent head is a known limitation. Exit fitting with X on
+reach. The calibration mirror includes the head. Exit fitting with X on
 Touch to restore normal weapon selection. See the [fitting guide](CALIBRATION.md#full-body-ik-and-fit-visible-body).
 
 Kick uses a second up flick during a real jump; holding up or walking off a ledge
@@ -200,7 +219,7 @@ For builds from another author or repository, use that project's support
 channels. Include your mod version and original download URL when reporting a
 problem here, and do not mix files from different VR mods.
 
-[Main guide](README.md) · [Installation](INSTALLATION.md) · [Known limitations](KNOWN-LIMITATIONS.md)
+[Main guide](README.md) Â· [Installation](INSTALLATION.md) Â· [Known limitations](KNOWN-LIMITATIONS.md)
 
 This guide is for the public native-installer package. You can troubleshoot and
 report problems through GitHub; joining Discord is optional. Change one thing

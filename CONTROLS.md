@@ -21,6 +21,10 @@ is not guaranteed. Slow motion slows the attack. Menus, calibration and invalid
 movement states prevent activation. Landing ends kick damage; jumping or losing
 stable ground cancels a slide. Your tracked view remains under headset control.
 
+In v1.7.5, a flying kick can open a closed door when the boot makes contact.
+Normal locks, scripted progression and opening direction still apply; it does
+not break locks or close an already open door.
+
 ## Flashlight gesture
 
 In v1.7.2, use **either free physical hand**, including while the opposite hand
@@ -233,9 +237,26 @@ re-grabs. Not every campaign ladder or reported pushback case has been verified.
 
 ## Interaction hints
 
-Tutorial hints can be enabled in VR settings. **New Game** resets tutorial
-progress; Continue and loading retain it. Reload cards wait until a reload is
-actionable and withdraw when the weapon is full, stowed, or lacks reserve ammo.
+Use **Options > VR Settings > Guidance Cards > Tutorial Cards** to enable or disable cards. In v1.7.5 a
+card retires when its action succeeds or after **ten seconds of visible gameplay**.
+Menus, cinematics and hidden cards do not consume that time. You do not need to
+throw a grenade, use a medkit or spend ammunition to dismiss a lesson.
+
+Completed cards stay completed across Continue, loading and settings changes.
+**New Game** or intentionally replaying tutorials resets progress. If an older
+version already lost a completion flag, that lesson may appear once more, then
+retire normally; no profile reset is needed.
+
+Cards follow your current mappings, handedness and pickup/reload options. The
+early kick/slide cards explain the stick gestures, and pickup reminders reflect
+your selected interaction mode. Reload cards appear only when actionable and
+withdraw when the weapon is full, stowed or has no reserve ammunition. You can
+switch weapons during an unfinished reload.
+
+For supported pickups and belt magazines, grab at the visible hand contact you
+want to keep. Close contact preserves the object's pose; nearby grabs retain
+bounded assistance. Saved hand fitting also applies to held props and the
+manual-reload utility hand. This is not individual finger tracking.
 
 ## Aiming
 

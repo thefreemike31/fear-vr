@@ -1,13 +1,12 @@
 # Installation, updates, and recovery
 
-## Upgrading to v1.7.2
+## Upgrading to v1.7.5
 
-This hotfix corrects tall-ladder exits and body-height fitting after the body update.
-Close the game, extract the complete v1.7.2 ZIP, keep setup-files beside Setup,
-and choose **Upgrade**. Keep all body meshes and the capture helper together;
-do not copy only the DLL. Saves, language backups and calibration remain intact.
-No profile or calibration reset is required. The optional OBS workflow is
-explained [below](#recording-with-obs).
+Close the game, extract the complete v1.7.5 ZIP, keep setup-files beside Setup,
+and choose **Upgrade**. Install the complete launcher, mirror helper and gameplay
+files together; do not copy only a DLL. Saves, language backups, calibration and
+tutorial progress are preserved. No profile or calibration reset is required.
+The simpler launcher/OBS workflow is explained [below](#recording-with-obs).
 
 <a id="import-spanish-game-text-and-voices"></a>
 ## Import game text and voices
@@ -64,13 +63,13 @@ your normal save backups. This release covers the original single-player campaig
 ## Download and verify
 
 1. Open [GitHub Releases](https://github.com/thefreemike31/fear-vr/releases/latest).
-2. Expand **Assets** if needed. Download **fear-vr-v1.7.2.zip** and
-   **fear-vr-v1.7.2.zip.sha256**. Ignore GitHub's automatic Source code archives.
+2. Expand **Assets** if needed. Download **fear-vr-v1.7.5.zip** and
+   **fear-vr-v1.7.5.zip.sha256**. Ignore GitHub's automatic Source code archives.
 3. Open the `.sha256` file in Notepad. Its first 64 characters are the expected hash.
 4. In the folder containing the ZIP, open PowerShell and run:
 
    ```powershell
-   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.7.2.zip'
+   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.7.5.zip'
    ```
 
 5. Compare all 64 characters. Letter case does not matter. A mismatch means
@@ -141,45 +140,51 @@ Meta Quest Link and Air Link are unsupported, including through SteamVR.
 
 ## Recording with OBS
 
-The optional experimental capture window provides the complete rendered **right
-eye** through a separate desktop helper. OBS is installed separately. No OBS
-OpenXR layer or extra capture plugin is required. Capture is off by default.
+The launcher now uses **one mirror for both the desktop and OBS**. There is no
+separate OBS checkbox, window/fullscreen choice or desktop-resolution selector.
+OBS is installed separately; no OBS OpenXR layer or extra capture plugin is needed.
+The mirror shows the rendered **right eye**, while the headset keeps its normal
+stereo view.
 
-1. Close the game and open **F.E.A.R. VR.exe**. Enable **OBS capture window**.
-2. Choose **Windowed** or **Borderless (desktop size)**. Capture disables exclusive
-   fullscreen so the Windows desktop keeps its resolution.
-3. Choose **Capture: native eye (1:1)** for the full eye at its rendered resolution,
-   or **Capture: 16:9 (fit full eye)** for a 3840 x 2160 source containing the whole
-   eye. These choices change capture framing, not headset resolution.
-4. Select **Play in VR**. In OBS, add a **Game Capture** source, choose
-   **Capture specific window**, and select **F.E.A.R. VR Capture**
-   (**FEARVR-Capture.exe**). Select the capture helper, not FEAR.exe.
-5. Select the OBS source, reset its transform (**Ctrl+R**) and **Fit to Screen**
-   (**Ctrl+F**). Leave cropping at zero. Native capture keeps the same eye-sized
-   source through menus and loading; menu content is fitted inside it.
-6. For a recording at the eye's exact resolution, set OBS **Base (Canvas)** and
-   **Output (Scaled)** resolutions to the capture source's dimensions. Those
-   dimensions depend on your headset/runtime settings; do not copy someone else's.
-   For a 16:9 recording, use a 16:9 canvas/output and Fit to Screen. A near-square
-   eye has side bars when fitted to 16:9; removing them requires cropping or
-   distortion. The capture mode preserves the complete view.
-7. Make a short recording and check framing, audio and smoothness before a long
-   session. You can bring OBS to the foreground while VR stays live.
-   Stop OBS recording before quitting the game.
+1. Close the game and open **F.E.A.R. VR.exe**.
+2. Choose the mirror you want:
 
-To return to ordinary play, close the game, turn **OBS capture window** off and
-launch again. Format changes take effect on the next launch. If you close the
-capture window manually, restart the game to reopen it. The helper closes when
-the game ends. Recording is controlled in OBS; this launcher option alone does
-not record a video. Use Game Capture: Window Capture sees the smaller desktop
-preview. The launcher's desktop 720p/1080p setting does not set capture resolution.
+   | Launcher choice | Result |
+   | --- | --- |
+   | **16:9 - fill screen** | A 3840 x 2160 mirror, filled by a centered crop without stretching or added side bars. A tall eye loses some top/bottom content. Recommended for a widescreen recording. |
+   | **Native - full view** | The complete eye at its native resolution and aspect. A widescreen OBS canvas may have side bars. |
+   | **Off - headset only** | No desktop/OBS mirror after VR starts. Choose a visible mode to record. |
 
-This first capture release has known follow-ups: an intermittent control glitch
-and native Quit/exit crashes have been observed; their causes are unconfirmed.
-Compare a fresh launch with capture off if controls or performance change.
-GOG gameplay recordings cover windowed native/16:9 and borderless native;
-borderless 16:9 gameplay and the full Steam capture matrix remain unverified.
-See [capture troubleshooting](TROUBLESHOOTING.md#obs-capture-window).
+3. Select **Play in VR**. In OBS, add **Game Capture**, choose **Capture specific
+   window**, and select **F.E.A.R. VR Capture (FEARVR-Capture.exe)**. Existing scenes
+   targeting that window can keep using it.
+4. Select the OBS source, reset its transform (**Ctrl+R**), then **Fit to Screen
+   (Ctrl+F)**. Remove any old source cropping. For Fill, use a 16:9 canvas/output
+   such as 1920 x 1080 or 3840 x 2160. For Native without side bars, match the
+   canvas/output aspect to the source's actual dimensions.
+5. Make a short recording and check framing, audio and smoothness. **Alt-Tab** can
+   bring OBS or another app forward while VR continues. Stop recording in OBS
+   before quitting the game normally.
+
+Recording is controlled in OBS; choosing a mirror does not record a video.
+Use **Game Capture** for the source; Window Capture sees the smaller desktop
+preview. Mirror choices do not change headset resolution or framing.
+
+New installations default to **16:9 - fill screen**. Previous full-eye preferences
+migrate to **Native** and previous wide capture to **Fill**. An old unchecked OBS
+box does not automatically select Off. Choosing **Play in VR** saves preferences;
+previewing or canceling does not. Changes take effect on the next launch.
+
+Closing only the mirror leaves VR running without a mirror; restart the game to
+bring it back. A brief original game window may appear during startup, then hides
+when VR/the mirror is ready. If the helper fails, the original game window can
+return as a fallback. The mirror closes when the game ends. The fixed blank-window
+issue is separate from a previously observed native exit crash; see
+[troubleshooting](TROUBLESHOOTING.md#obs-capture-window).
+
+The owner accepted the new mirror, Alt-Tab and window shutdown. A new recording
+of every mode and separate Steam headset coverage are not claimed; check your
+own short recording before a long session.
 
 ## Launcher language
 
@@ -200,14 +205,12 @@ Use **F.E.A.R. VR.exe**, not **FEAR.exe** or an existing store shortcut that sta
 the flat game. You can make a desktop shortcut to the VR executable. Leave it
 beside the installed game; do not move the executable itself to the desktop.
 
-Choose **Fullscreen** (the first-run default), **Windowed**, or **Borderless
-(desktop size)**. Windowed offers **1280 x 720** or **1920 x 1080**. Select
-**Play in VR** when ready. Your choice is
-remembered across launches and editions; closing without playing does not save
-changes. These settings control the desktop mirror, not headset resolution.
-The game may also remember the desktop resolution in its normal display settings.
+Choose **16:9 - fill screen**, **Native - full view**, or **Off - headset only**,
+then select **Play in VR**. Fill is the first-run default. **Play in VR** saves
+your choice; canceling or previewing does not. These choices affect the desktop
+mirror, not the headset. See [mirror choices and OBS](#recording-with-obs).
 **Controls** opens the player guide; **Open log folder** opens support logs.
-Leave the launcher running while playing in windowed mode.
+Leave the launcher running during startup and play.
 
 Wake both controllers before launch. In **Options > VR Settings**, review
 [movement and controls](CONTROLS.md), then [calibration](CALIBRATION.md).

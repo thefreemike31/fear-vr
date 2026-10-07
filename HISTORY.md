@@ -1,5 +1,13 @@
 # The road to F.E.A.R. VR by TheFreeMike
 
+## v1.7.5 - October 7, 2026
+
+Visible-contact pickup and magazine seating, flying-kick door activation, weapon
+switching during unfinished reloads, persistent and time-bounded tutorials, and
+one simpler desktop/OBS mirror. Fill 16:9, Native or Off replaces the separate
+capture toggle; Alt-Tab and blank-window shutdown are corrected. Previous ladder,
+body calibration and language-import improvements remain included.
+
 ## v1.7.2 - October 5, 2026
 
 Corrects tall-ladder top-platform selection, grounded body-height fitting and

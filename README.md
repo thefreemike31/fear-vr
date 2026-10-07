@@ -1,32 +1,33 @@
 # F.E.A.R. VR Mod by TheFreeMike
 
-## v1.7.2 hotfix: ladder tops and grounded body calibration
+## v1.7.5: better interactions, tutorials and capture
 
-- **Important ladder fix:** tall ladders select their actual top platform,
-  preventing an intermediate floor from replacing the intended exit.
-- **Body-height fitting:** grounded feet and moving legs, a visible mirror head,
-  and improved arms, support cuffs and hand shadows. New/reset Body Height starts
-  at 115%; saved fitting values stay intact.
-- **Either free hand can operate the forehead flashlight gesture.**
-- Physical grenade throws use the correct hand-sample timing.
+- **One desktop/OBS mirror:** choose filled 16:9, the complete native eye, or
+  headset-only play. Easier setup, free Alt-Tab and cleaner window shutdown.
+- **Improved tutorials:** completed cards stay completed and disappear after
+  ten seconds or a successful action; no need to spend items to dismiss them.
+- **Better grabs:** pickups and belt magazines meet your visible hand contact.
+- **Kick doors open** with a flying kick; normal locks and scripts still apply.
+- **Switch weapons during unfinished reloads.**
 
-Upgrade with the complete package; saves and calibration are preserved. Full-body
-IK, [body fitting](CALIBRATION.md#full-body-ik-and-fit-visible-body),
-[kick/slide](CONTROLS.md#flying-kick-and-slide),
-[general language import](INSTALLATION.md#import-game-text-and-voices) and the
-optional experimental [OBS workflow](INSTALLATION.md#recording-with-obs) remain included.
+Upgrade with the complete package; saves and calibration are preserved. Follow
+the [launcher and OBS tutorial](INSTALLATION.md#recording-with-obs) and
+[tutorial guidance](CONTROLS.md#interaction-hints). Full-body IK,
+[body fitting](CALIBRATION.md#full-body-ik-and-fit-visible-body), ladder fixes,
+[kick/slide](CONTROLS.md#flying-kick-and-slide) and
+[language import](INSTALLATION.md#import-game-text-and-voices) remain included.
 
 <img src="assets/alma.png" alt="Alma, F.E.A.R. VR artwork" width="240">
 
 Play the original F.E.A.R. campaign in PC VR, with tracked hands, physical
 weapon handling, configurable controls, and comfort options.
 
-**Current release: v1.7.2. Free, unofficial, and made by TheFreeMike.**
+**Current release: v1.7.5. Free, unofficial, and made by TheFreeMike.**
 You need a legitimate copy of the **GOG F.E.A.R. Platinum Collection** or the
 original **Steam F.E.A.R. base game**, and a Windows PC capable of PC VR. The base game is not included.
 
-[Official website & trailer](https://thefreemike.com/fear-vr/) · [Download the latest release](https://github.com/thefreemike31/fear-vr/releases/latest)
-· [Installation](INSTALLATION.md) · [Troubleshooting](TROUBLESHOOTING.md)
+[Official website & trailer](https://thefreemike.com/fear-vr/) Â· [Download the latest release](https://github.com/thefreemike31/fear-vr/releases/latest)
+Â· [Installation](INSTALLATION.md) Â· [Troubleshooting](TROUBLESHOOTING.md)
 
 **Defender blocked the mod or Setup says a file is missing?**
 [Allow the official mod and restore missing files](TROUBLESHOOTING.md#download-or-antivirus-problem).
@@ -38,7 +39,7 @@ original **Steam F.E.A.R. base game**, and a Windows PC capable of PC VR. The ba
 [![Watch the F.E.A.R. VR trailer by WunderbarVR](https://i.ytimg.com/vi/pRqdUyzCBeI/hqdefault.jpg)](https://www.youtube.com/watch?v=pRqdUyzCBeI)
 
 Trailer created by **[WunderbarVR](https://www.youtube.com/@WunderbarVR)**.
-Click the image to watch on the creator’s YouTube channel, or watch the embedded
+Click the image to watch on the creatorâ€™s YouTube channel, or watch the embedded
 trailer on the [F.E.A.R. VR website](https://thefreemike.com/fear-vr/#trailer).
 
 ## Make sure you have the right mod
@@ -65,7 +66,7 @@ and a native installer with recovery support.
 ## Start here
 
 1. Confirm the unmodified GOG or Steam base game works on your PC.
-2. From the release's **Assets** list, download `fear-vr-v1.7.2.zip` and its
+2. From the release's **Assets** list, download `fear-vr-v1.7.5.zip` and its
    `.sha256` file. GitHub's automatic **Source code** downloads are not the mod.
 3. Verify and extract the complete ZIP. Keep **setup-files** beside
    **F.E.A.R. VR Setup.exe**.
@@ -103,7 +104,7 @@ does not mean that hardware has been physically tested.
 
 ## Player guides
 
-| Guide | Find out how to… |
+| Guide | Find out how toâ€¦ |
 | --- | --- |
 | [Installation](INSTALLATION.md) | Install, connect the runtime, launch, update, remove, or recover the mod |
 | [Controls](CONTROLS.md) | Navigate menus, choose weapon handling, reload, remap, and use comfort settings |
@@ -126,7 +127,7 @@ Start with [Troubleshooting](TROUBLESHOOTING.md). If the problem remains, use
 template at the end of that guide. Search existing issues first. Review logs
 before posting; keep personal paths and crash dumps private.
 
-[Join the Discord community](https://discord.gg/NtAnbK6z9B) ·
+[Join the Discord community](https://discord.gg/NtAnbK6z9B) Â·
 [Support TheFreeMike on Ko-fi](https://ko-fi.com/thefreemike)
 
 The mod is free. Donations are optional and do not purchase support, access,

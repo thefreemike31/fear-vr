@@ -1,31 +1,35 @@
-# F.E.A.R. VR v1.7.2 - Ladder and body calibration hotfix
+# F.E.A.R. VR v1.7.5 - Better interactions, tutorials and capture
 
-- **Important ladder fix:** tall ladders with multiple nearby floors now select
-  the actual top platform before checking the standing exit. An intermediate
-  floor can no longer replace the intended landing and block progression.
-- **Grounded body-height calibration:** adjusting Body Height keeps the feet
-  grounded and the legs animated. It adjusts upper-body height without shrinking
-  the boots, legs or arm reach. New/reset body fits start at **115%**; existing
-  saved values are preserved. [Body fitting guide](CALIBRATION.md#full-body-ik-and-fit-visible-body).
-- Restores the head in the body-calibration mirror and improves resting arms,
-  support-arm cuffs and matching hand shadows.
-- **Either free hand can toggle the flashlight:** bring it to your forehead
-  with Grip released, then squeeze once. Held objects and other interactions
-  retain priority. [Gesture instructions](CONTROLS.md#flashlight-gesture).
-- Corrects the time interval used to calculate physical grenade throws from
-  sampled hand movement. No change to native slow-motion physics is claimed.
+- **Simpler launcher and OBS setup:** one desktop mirror with three choices:
+  **16:9 - fill screen**, **Native - full view**, or **Off - headset only**.
+  Fill uses a centered crop without stretching; Native keeps the complete right
+  eye. Neither changes your headset view. OBS captures the same mirror window.
+  Alt-Tab works freely, and the hidden original game window stays hidden on exit.
+- **Tutorials that finish and stay finished:** cards retire when their action
+  succeeds or after ten seconds of visible gameplay. Progress is saved correctly,
+  so completed movement/holster lessons no longer cycle back. No lesson requires
+  spending a grenade, medkit or ammunition. Added kick/slide and option-aware
+  pickup guidance follows your current controls.
+- **Better physical grabbing:** supported pickups and belt magazines seat at
+  your visible hand contact, preserving close grabs and saved hand fitting.
+- **Kick doors open:** the existing flying kick can activate a closed door when
+  the boot makes contact. Locks and scripted progression still apply.
+- **Switch weapons during an unfinished reload:** weapon selection no longer
+  gets stuck waiting for the reload to finish.
 
 Close the game, extract the complete ZIP and choose **Setup > Upgrade**. Keep
 setup-files beside Setup. Saves, calibration and language backups are preserved;
-no reset is required. Package version: 1.7.2. The earlier water/ladder fix,
-full-body IK, flying kick/slide, general language import and optional experimental
-[OBS capture workflow](INSTALLATION.md#recording-with-obs) remain included.
+no reset is required. Previous mirror preferences migrate automatically. New
+installations default to Fill. See the [launcher and OBS tutorial](INSTALLATION.md#recording-with-obs)
+and [tutorial guidance](CONTROLS.md#interaction-hints).
 
-The reported tall-ladder fix and body/flashlight improvements received owner
-headset acceptance. Every campaign ladder, separate Steam coverage and a new
-assembled-package headset run are not claimed. A minor occasional hip/arm snap
-and the existing OBS control/exit follow-ups remain; see
-[known limitations](KNOWN-LIMITATIONS.md).
-Language import is intended to work with original language media plus its
-matching 1.08 patch across languages in theory; only Spanish has official
-real-media testing.
+The ladder fixes, grounded body fitting, either-hand flashlight, full-body IK,
+kick/slide and language import remain included. Original language media plus its
+matching-language 1.08 patch are intended to work across languages in theory;
+only Spanish has official real-media testing.
+
+These changes received owner acceptance on the installed development build.
+Separate Steam coverage, every capture mode/door/weapon and a new headset run of
+the assembled public ZIP are not claimed. The mirror-window exit correction
+does not claim to fix the previously observed native crash during game shutdown.
+See [known limitations](KNOWN-LIMITATIONS.md).
