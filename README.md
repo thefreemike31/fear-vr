@@ -26,8 +26,8 @@ weapon handling, configurable controls, and comfort options.
 You need a legitimate copy of the **GOG F.E.A.R. Platinum Collection** or the
 original **Steam F.E.A.R. base game**, and a Windows PC capable of PC VR. The base game is not included.
 
-[Official website & trailer](https://thefreemike.com/fear-vr/) Â· [Download the latest release](https://github.com/thefreemike31/fear-vr/releases/latest)
-Â· [Installation](INSTALLATION.md) Â· [Troubleshooting](TROUBLESHOOTING.md)
+[Official website & trailer](https://thefreemike.com/fear-vr/) · [Download the latest release](https://github.com/thefreemike31/fear-vr/releases/latest)
+· [Installation](INSTALLATION.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
 **Defender blocked the mod or Setup says a file is missing?**
 [Allow the official mod and restore missing files](TROUBLESHOOTING.md#download-or-antivirus-problem).
@@ -39,7 +39,7 @@ original **Steam F.E.A.R. base game**, and a Windows PC capable of PC VR. The ba
 [![Watch the F.E.A.R. VR trailer by WunderbarVR](https://i.ytimg.com/vi/pRqdUyzCBeI/hqdefault.jpg)](https://www.youtube.com/watch?v=pRqdUyzCBeI)
 
 Trailer created by **[WunderbarVR](https://www.youtube.com/@WunderbarVR)**.
-Click the image to watch on the creatorâ€™s YouTube channel, or watch the embedded
+Click the image to watch on the creator’s YouTube channel, or watch the embedded
 trailer on the [F.E.A.R. VR website](https://thefreemike.com/fear-vr/#trailer).
 
 ## Make sure you have the right mod
@@ -104,7 +104,7 @@ does not mean that hardware has been physically tested.
 
 ## Player guides
 
-| Guide | Find out how toâ€¦ |
+| Guide | Find out how to… |
 | --- | --- |
 | [Installation](INSTALLATION.md) | Install, connect the runtime, launch, update, remove, or recover the mod |
 | [Controls](CONTROLS.md) | Navigate menus, choose weapon handling, reload, remap, and use comfort settings |
@@ -127,7 +127,7 @@ Start with [Troubleshooting](TROUBLESHOOTING.md). If the problem remains, use
 template at the end of that guide. Search existing issues first. Review logs
 before posting; keep personal paths and crash dumps private.
 
-[Join the Discord community](https://discord.gg/NtAnbK6z9B) Â·
+[Join the Discord community](https://discord.gg/NtAnbK6z9B) ·
 [Support TheFreeMike on Ko-fi](https://ko-fi.com/thefreemike)
 
 The mod is free. Donations are optional and do not purchase support, access,
