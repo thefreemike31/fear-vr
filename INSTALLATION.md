@@ -1,12 +1,18 @@
 # Installation, updates, and recovery
 
-## Upgrading to v1.7.5
+## Upgrading to v1.7.6
 
-Close the game, extract the complete v1.7.5 ZIP, keep setup-files beside Setup,
+Close the game, extract the complete v1.7.6 ZIP, keep setup-files beside Setup,
 and choose **Upgrade**. Install the complete launcher, mirror helper and gameplay
 files together; do not copy only a DLL. Saves, language backups, calibration and
 tutorial progress are preserved. No profile or calibration reset is required.
 The simpler launcher/OBS workflow is explained [below](#recording-with-obs).
+
+v1.7.6 also handles an inherited SteamVR 64-bit runtime selection automatically
+when a valid 32-bit counterpart is present. Start through **F.E.A.R. VR.exe**.
+No global runtime change is required. If the launcher reports a missing or invalid
+counterpart, see [SteamVR startup repair](TROUBLESHOOTING.md#steamvr-runtime-selection-edge-case).
+Confirmation from affected headset users is still pending.
 
 <a id="import-spanish-game-text-and-voices"></a>
 ## Import game text and voices
@@ -63,13 +69,13 @@ your normal save backups. This release covers the original single-player campaig
 ## Download and verify
 
 1. Open [GitHub Releases](https://github.com/thefreemike31/fear-vr/releases/latest).
-2. Expand **Assets** if needed. Download **fear-vr-v1.7.5.zip** and
-   **fear-vr-v1.7.5.zip.sha256**. Ignore GitHub's automatic Source code archives.
+2. Expand **Assets** if needed. Download **fear-vr-v1.7.6.zip** and
+   **fear-vr-v1.7.6.zip.sha256**. Ignore GitHub's automatic Source code archives.
 3. Open the `.sha256` file in Notepad. Its first 64 characters are the expected hash.
 4. In the folder containing the ZIP, open PowerShell and run:
 
    ```powershell
-   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.7.5.zip'
+   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.7.6.zip'
    ```
 
 5. Compare all 64 characters. Letter case does not matter. A mismatch means

@@ -1,28 +1,25 @@
 # F.E.A.R. VR Mod by TheFreeMike
 
-## v1.7.5: better interactions, tutorials and capture
+## v1.7.6: SteamVR startup and stable weapon holsters
 
-- **One desktop/OBS mirror:** choose filled 16:9, the complete native eye, or
-  headset-only play. Easier setup, free Alt-Tab and cleaner window shutdown.
-- **Improved tutorials:** completed cards stay completed and disappear after
-  ten seconds or a successful action; no need to spend items to dismiss them.
-- **Better grabs:** pickups and belt magazines meet your visible hand contact.
-- **Kick doors open** with a flying kick; normal locks and scripts still apply.
-- **Switch weapons during unfinished reloads.**
+- **SteamVR launcher edge case:** repairs an inherited 64-bit SteamVR runtime
+  selection by using its valid 32-bit counterpart. The code and diagnostic checks
+  are complete; confirmation from affected headset users is still pending.
+- **Stable weapon holsters:** unrelated pickups and inventory changes no longer
+  move your existing weapons between shoulders. Compatible replacements remember
+  the outgoing weapon's place, and the layout is saved with your game.
 
-Upgrade with the complete package; saves and calibration are preserved. Follow
-the [launcher and OBS tutorial](INSTALLATION.md#recording-with-obs) and
-[tutorial guidance](CONTROLS.md#interaction-hints). Full-body IK,
-[body fitting](CALIBRATION.md#full-body-ik-and-fit-visible-body), ladder fixes,
-[kick/slide](CONTROLS.md#flying-kick-and-slide) and
-[language import](INSTALLATION.md#import-game-text-and-voices) remain included.
+Upgrade with the complete package; no profile or calibration reset is needed.
+The existing [launcher/OBS tutorial](INSTALLATION.md#recording-with-obs),
+[tutorial guidance](CONTROLS.md#interaction-hints), full-body IK, ladder fixes,
+body fitting, kick/slide and language import remain included.
 
 <img src="assets/alma.png" alt="Alma, F.E.A.R. VR artwork" width="240">
 
 Play the original F.E.A.R. campaign in PC VR, with tracked hands, physical
 weapon handling, configurable controls, and comfort options.
 
-**Current release: v1.7.5. Free, unofficial, and made by TheFreeMike.**
+**Current release: v1.7.6. Free, unofficial, and made by TheFreeMike.**
 You need a legitimate copy of the **GOG F.E.A.R. Platinum Collection** or the
 original **Steam F.E.A.R. base game**, and a Windows PC capable of PC VR. The base game is not included.
 
@@ -66,7 +63,7 @@ and a native installer with recovery support.
 ## Start here
 
 1. Confirm the unmodified GOG or Steam base game works on your PC.
-2. From the release's **Assets** list, download `fear-vr-v1.7.5.zip` and its
+2. From the release's **Assets** list, download `fear-vr-v1.7.6.zip` and its
    `.sha256` file. GitHub's automatic **Source code** downloads are not the mod.
 3. Verify and extract the complete ZIP. Keep **setup-files** beside
    **F.E.A.R. VR Setup.exe**.

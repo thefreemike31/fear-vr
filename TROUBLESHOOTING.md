@@ -1,4 +1,28 @@
-# Troubleshooting F.E.A.R. VR v1.7.5
+# Troubleshooting F.E.A.R. VR v1.7.6
+
+## SteamVR runtime-selection edge case
+
+Upgrade to **v1.7.6** and start through **F.E.A.R. VR.exe**. Some startup
+environments supply SteamVR's 64-bit OpenXR runtime to this 32-bit game. The
+launcher now validates that selection and uses a valid neighboring 32-bit
+SteamVR runtime. Missing or invalid counterparts produce a repair message before
+the game starts; repair/update the SteamVR installation and retry. Do not point
+the game at a 64-bit runtime or change global settings just to work around this.
+
+This correction passed code and diagnostic checks; affected-headset confirmation
+is still pending. Other valid custom 32-bit runtime selections remain selected.
+If startup still fails, preserve the same-run launcher/startup logs and report the
+headset, connection method, selected runtime and exact error. This fix does not
+resolve every possible SteamVR launch problem.
+
+## Weapons change shoulders after picking up another gun
+
+Upgrade to **v1.7.6**. Weapon assignments now remain stable across unrelated
+pickups, inventory reordering and swaps, and are remembered in saves. Old saves
+use the normal default layout. A heavy weapon or a third long gun can still
+trigger the normal back-slot rule; only the weapons involved should move.
+No calibration reset is needed. If it recurs, report the before/after loadout,
+which gun moved, whether you used a button or physical swap, and handedness.
 
 ## Ladder progression after the body update
 

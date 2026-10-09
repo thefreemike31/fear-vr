@@ -1,5 +1,13 @@
 # The road to F.E.A.R. VR by TheFreeMike
 
+## v1.7.6 - October 9, 2026
+
+Repairs an inherited 64-bit SteamVR runtime selection before startup and keeps
+weapon holster assignments stable across pickups, inventory reordering and swaps.
+Holster layouts persist in saves; normal heavy/back-slot rules remain. Holster
+behavior is owner-accepted; the launcher correction has diagnostic coverage and
+still awaits confirmation from affected headset users.
+
 ## v1.7.5 - October 7, 2026
 
 Visible-contact pickup and magazine seating, flying-kick door activation, weapon

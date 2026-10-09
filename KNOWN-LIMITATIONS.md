@@ -1,5 +1,20 @@
 # Known limitations
 
+## v1.7.6 launcher and holster scope
+
+The inherited SteamVR win64-to-win32 selection repair passed unit tests and
+diagnostic checks of both edition launchers. Confirmation from affected headset
+users is still pending. It does not claim complete Steam Frame compatibility or
+resolution of unrelated SteamVR launch problems. Valid custom 32-bit overrides
+remain selected; other invalid explicit overrides fail with a repair message.
+Registry/global runtime settings are unchanged.
+
+The remembered-holster behavior received overall owner headset acceptance.
+Separate editions, every weapon/handedness combination and every save/load path
+were not individually enumerated. Save compatibility has source/fixture coverage;
+old or invalid layout data falls back to the default. The existing heavy/back-slot
+rule can still move the involved weapons. No assembled-ZIP headset run is claimed.
+
 ## v1.7.5 interactions, tutorials and mirror scope
 
 The owner accepted visible-contact grabbing, door kicks, reload switching,

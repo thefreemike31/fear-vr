@@ -150,6 +150,19 @@ draw/reload locations still work. Calibration references remain visible.
 **Wrist HUD** on the same page hides or shows the wrist display. It defaults
 to Yes and is saved independently; immersion presets do not change it.
 
+### Remembered weapon holsters
+
+In v1.7.6, unrelated pickups, inventory reordering and weapon selection keep
+existing weapons in their assigned body slots. Drawing a weapon does not free
+its holster. A new ordinary long gun uses a free shoulder; a compatible swap
+inherits the outgoing gun's place, including a physical drop followed by pickup.
+Removing a weapon does not shuffle the remaining ones.
+
+Pistols keep their hip slots. Heavy weapons and three-long-gun loadouts still
+apply the normal back-slot rule, so the involved weapons can move when necessary.
+The layout is saved with your game. Old saves use the normal default arrangement;
+New Game resets it. No calibration reset or button change is needed.
+
 ## Subtitles
 
 For dialogue subtitles, open **Options > VR Settings > Guidance Cards** and
