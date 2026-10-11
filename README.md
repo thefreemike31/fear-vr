@@ -1,25 +1,29 @@
 # F.E.A.R. VR Mod by TheFreeMike
 
-## v1.7.6: SteamVR startup and stable weapon holsters
+## v1.7.7: optional Improved Sights and clearer calibration
 
-- **SteamVR launcher edge case:** repairs an inherited 64-bit SteamVR runtime
-  selection by using its valid 32-bit counterpart. The code and diagnostic checks
-  are complete; confirmation from affected headset users is still pending.
-- **Stable weapon holsters:** unrelated pickups and inventory changes no longer
-  move your existing weapons between shoulders. Compatible replacements remember
-  the outgoing weapon's place, and the layout is saved with your game.
+**Improved Sights by Eskess (Discord: `.eskess`)** reshape the sights on seven
+weapon types for easier VR aiming. They are **off by default**: existing profiles
+keep Stock sights so the update does not disturb your sight calibration.
+We highly encourage you to try them!
 
-Upgrade with the complete package; no profile or calibration reset is needed.
-The existing [launcher/OBS tutorial](INSTALLATION.md#recording-with-obs),
-[tutorial guidance](CONTROLS.md#interaction-hints), full-body IK, ladder fixes,
-body fitting, kick/slide and language import remain included.
+Open **Options > VR Settings > Aiming & Crosshair > Weapon Sights**, choose
+**Improved**, then recalibrate the affected weapons under **Calibration & Body Fit
+> Advanced Sight Alignment**. Switching Stock/Improved works without restarting.
+Calibration shows your selected version when you cycle weapons. Saved sight
+alignments are shared between the two versions, so check/recalibrate after changing.
+
+A separate **Reset Calibration...** page provides individual resets and a complete
+Reset All Calibration. This update also improves close-range door retries and
+adds desktop-mirror resize, maximize and fullscreen controls. Existing saves and
+settings are preserved; no blanket reset is needed. Earlier features remain included.
 
 <img src="assets/alma.png" alt="Alma, F.E.A.R. VR artwork" width="240">
 
 Play the original F.E.A.R. campaign in PC VR, with tracked hands, physical
 weapon handling, configurable controls, and comfort options.
 
-**Current release: v1.7.6. Free, unofficial, and made by TheFreeMike.**
+**Current release: v1.7.7. Free, unofficial, and made by TheFreeMike.**
 You need a legitimate copy of the **GOG F.E.A.R. Platinum Collection** or the
 original **Steam F.E.A.R. base game**, and a Windows PC capable of PC VR. The base game is not included.
 
@@ -63,7 +67,7 @@ and a native installer with recovery support.
 ## Start here
 
 1. Confirm the unmodified GOG or Steam base game works on your PC.
-2. From the release's **Assets** list, download `fear-vr-v1.7.6.zip` and its
+2. From the release's **Assets** list, download `fear-vr-v1.7.7.zip` and its
    `.sha256` file. GitHub's automatic **Source code** downloads are not the mod.
 3. Verify and extract the complete ZIP. Keep **setup-files** beside
    **F.E.A.R. VR Setup.exe**.

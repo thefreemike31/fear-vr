@@ -278,3 +278,17 @@ defaults to On to distinguish the two pistols; Off uses the shared main color.
 Use **Weapon Grip Calibration** to change how the gun sits in your hand, and
 **Advanced Sight Alignment** only when its aiming direction needs adjustment.
 These are different calibrations with separate resets.
+
+## Improved Sights and calibration resets
+
+**Options > VR Settings > Aiming & Crosshair > Weapon Sights** selects Stock or
+Improved, without restarting. Improved Sights by **Eskess (`.eskess`)** are off
+by default to preserve existing sight calibration. We encourage you to try them,
+then recalibrate in **Calibration & Body Fit > Advanced Sight Alignment**.
+The calibration view follows the selected sights as you cycle weapons. Aim
+alignments are shared between sight versions; recheck them after switching.
+Grip/support-hand/reload controls are unchanged. Reset tools now have their own
+**Reset Calibration...** page; [see the calibration guide](CALIBRATION.md).
+
+For a close-range door retry, withdraw your hand and deliberately push again.
+Resting contact does not automatically retrigger the door; locks/scripts still apply.

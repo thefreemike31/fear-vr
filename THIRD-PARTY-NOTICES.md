@@ -37,3 +37,11 @@ redistribute the original game or use its assets outside that permission.
 
 The launcher language importer statically links zlib for bounded archive decompression.
 Copyright and license: `licenses/zlib.txt`. No game-language data is redistributed.
+
+## Eskess improved weapon sights
+
+The optional improved iron-sight geometry is contributed by **Eskess**
+(Discord: **`.eskess`**), from the F.E.A.R. VR Iron Sights v2 community patch.
+It covers AT-14 single/dual, RPL, G2A2, VK-12, HV Penetrator, Type-7 and MOD-3.
+TheFreeMike's integration adds the Stock/Improved setting and native VR behavior
+compatibility. Original F.E.A.R. asset rights remain with their respective owners.

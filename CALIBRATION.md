@@ -1,5 +1,27 @@
 # Calibration and body fit
 
+## Stock and Improved Sights
+
+Improved Sights by **Eskess (Discord: `.eskess`)** are **off by default** to avoid
+changing the sight picture underneath your saved aim calibration. We highly
+encourage trying them, followed by recalibration for the version you choose.
+
+1. Open **Options > VR Settings > Aiming & Crosshair > Weapon Sights**.
+2. Select **Improved** and back out to save. Stock is the default. The selection
+   applies without restarting; finish an active reload or pump before it changes.
+3. Open **Calibration & Body Fit > Advanced Sight Alignment**. It displays the
+   selected Stock/Improved model and label as you cycle weapons. Weapons outside
+   this community set use their Standard model.
+4. Recalibrate the affected weapons using the target/capture instructions, then
+   check aiming during play. Grips, support hands and reload controls stay the same.
+
+Supported weapons are AT-14 (single and dual), RPL, G2A2, VK-12, HV Penetrator,
+Type-7 and MOD-3; ASP and cannon retain their original geometry. Alignment saves
+are per weapon/hand and **shared between sight versions**, not two independent
+presets. Switching back does not restore an older calibration: check/recalibrate
+for the sight version you keep. Upgrade does not erase calibration or require a
+Reset All. Previously saved preview-build sight preferences are preserved.
+
 ## Full-body IK and Fit Visible Body
 
 **New in v1.7:** articulated arms, torso, legs and feet follow your headset and
@@ -115,11 +137,16 @@ feel. Revisit the affected weapon's grip if necessary.
 
 ## Undo a bad adjustment
 
-The same menu includes **Reset Height**, **Reset Holsters & Pouches**,
-**Reset Grip Alignments**, **Reset Sight Alignments**, and **Reset All Calibration**.
-Prefer the individual reset for the feature you changed. **Reset All Calibration**
-discards your calibration adjustments; it is not a troubleshooting requirement
-for unrelated startup or performance problems.
+Open **Options > VR Settings > Calibration & Body Fit > Reset Calibration...**.
+It contains **Reset Height**, **Reset Visible Body Fit**, **Reset Holsters &
+Pouches**, **Reset Hand Fit**, **Reset Weapon Grips**, **Reset Weapon Sizes**,
+**Reset Sight Alignments**, **Reset Ammo Pouch Layout**, and **Reset All Calibration**.
+
+Each individual reset changes only its named calibration group. **Reset All
+Calibration** asks for confirmation and resets all eight groups, including hand
+fitting, weapon sizes and ammo pouch layout. It leaves unrelated settings and
+your Stock/Improved choice intact. Prefer the individual reset for the feature you
+changed; Reset All is not required for startup or performance troubleshooting.
 
 For view distortion, use **Headset Display > Restore Display Defaults** or
 restore **Centered (Recommended)** projection and **100% View Width**. This is

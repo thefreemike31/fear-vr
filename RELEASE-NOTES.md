@@ -1,25 +1,43 @@
-# F.E.A.R. VR v1.7.6 - SteamVR startup and holster hotfix
+# F.E.A.R. VR v1.7.7 - Improved Sights and calibration
 
-- **SteamVR launcher edge case:** if the launcher inherits a selection of
-  SteamVR's 64-bit OpenXR runtime, it now checks and selects the valid 32-bit
-  counterpart required by F.E.A.R. VR. Invalid or missing counterparts produce
-  a repair message before the game starts. Valid custom 32-bit overrides remain
-  selected; global runtime settings and normal automatic routing are unchanged.
-- **Stable weapon holsters:** existing weapons keep their body slots across
-  unrelated pickups, inventory reordering and weapon selection. Compatible swaps
-  inherit the outgoing weapon's slot, including physical drop-then-pickup swaps.
-  Layouts persist in saves. The existing heavy-weapon/three-long-gun back-slot
-  rule still applies and only moves the weapons involved.
+- **Optional Improved Sights by Eskess (Discord: `.eskess`).** Adjusted sight
+  geometry for AT-14 (single/dual), RPL, G2A2, VK-12, HV Penetrator, Type-7 and
+  MOD-3. ASP and cannon keep their original geometry. Thank you, Eskess!
+- **Off by default to preserve your calibration.** Stock remains selected on
+  existing public profiles. Improved Sights need recalibration in **Options > VR
+  Settings > Calibration & Body Fit > Advanced Sight Alignment**, so enabling
+  them automatically would interfere with players' existing sight adjustments.
+  We highly encourage you to try them: select **Improved** under **Aiming &
+  Crosshair > Weapon Sights**, then calibrate your weapons.
+- **Switch without restarting.** Compare Stock and Improved during play; the
+  calibration system displays the selected version as you cycle weapons. Grip,
+  support-hand and reload behavior is preserved. A switch requested during an
+  active reload/pump waits for a safe moment. Sight calibrations are shared
+  between versions; check or recalibrate after changing your choice.
+- **Cleaner calibration menu.** **Reset Calibration...** opens a dedicated page
+  for height, visible body fit, holsters/pouches, hand fit, weapon grips, weapon
+  sizes, sight alignments and ammo pouch layout. **Reset All Calibration** now
+  covers every one of those groups.
+- **Close-range door interaction:** withdraw your hand and deliberately push
+  again to retry a stationary door, while respecting native locks and scripts.
+- **Desktop mirror controls:** resize/maximize, **F11** or **Alt+Enter** for
+  fullscreen, **Escape** to restore, and a close button that requests normal
+  game shutdown. The launcher's **16:9 - cropped view** label now describes
+  framing; it is separate from window/fullscreen size.
+- **Polish archive compatibility:** an already installed optional
+  `PL.FEAR.Arch00` is mounted. No translation files are included; Polish subtitle
+  and font rendering still needs in-game confirmation.
 
-Close the game, extract the complete ZIP, keep setup-files beside
-**F.E.A.R. VR Setup.exe**, and choose **Upgrade**. Saves, calibration, language
-backups and tutorial progress are preserved; no reset is required. Old saves
-without a remembered holster layout use the normal default arrangement.
+Close the game, extract the complete ZIP, keep **setup-files** beside
+**F.E.A.R. VR Setup.exe**, and choose **Upgrade**. Saves and calibration are kept.
+No reset is required to stay on Stock. If you used a preview build, your saved
+Stock/Improved preference is also preserved.
 
-The holster fix received owner headset acceptance. The launcher fix is implemented
-and passed GOG/Steam diagnostic checks, but confirmation from affected headset
-users is still pending. This is a targeted startup fix, not a claim that every
-SteamVR startup problem is resolved. No fresh assembled-ZIP headset run is claimed.
+Repeated live sight switching received owner headset acceptance. The earlier
+SteamVR runtime-selection repair has now also been accepted following affected-user
+confirmation. These results do not claim every weapon/runtime/edition combination
+or a new headset run of the assembled public ZIP. The known native exit crash
+remains unresolved; see [known limitations](KNOWN-LIMITATIONS.md).
 
-All v1.7.5 features remain included. See the [launcher/OBS guide](INSTALLATION.md#recording-with-obs),
-[controls](CONTROLS.md), and [known limitations](KNOWN-LIMITATIONS.md).
+See [sight calibration](CALIBRATION.md#stock-and-improved-sights),
+[controls](CONTROLS.md), and the [launcher/OBS guide](INSTALLATION.md#recording-with-obs).

@@ -1,4 +1,24 @@
-# Troubleshooting F.E.A.R. VR v1.7.6
+# Troubleshooting F.E.A.R. VR v1.7.7
+
+## Improved Sights look different or aim feels offset
+
+Improved Sights by **Eskess (`.eskess`)** are **off by default** because their
+changed sight picture needs recalibration. Try **Aiming & Crosshair > Weapon
+Sights > Improved**, then **Calibration & Body Fit > Advanced Sight Alignment**.
+Calibration displays the selected version. Switch live without a game restart;
+finish an active reload/pump if the change is waiting. Sight alignments are shared
+between versions, so changing back also merits an aim check. Do not reset all
+calibration just to change sight models. [Full guide](CALIBRATION.md#stock-and-improved-sights).
+
+The missing-weapons bug from the preview live-toggle builds is fixed in v1.7.7.
+If it recurs, report the weapon, Stock/Improved direction, held/holstered state
+and whether a reload was underway.
+
+## Finding calibration resets
+
+Use **Calibration & Body Fit > Reset Calibration...** for individual height,
+body, holster/pouch, hand-fit, weapon-grip, weapon-size, sight and ammo-layout
+resets. Reset All now covers all those groups and asks for confirmation.
 
 ## SteamVR runtime-selection edge case
 
@@ -9,8 +29,8 @@ SteamVR runtime. Missing or invalid counterparts produce a repair message before
 the game starts; repair/update the SteamVR installation and retry. Do not point
 the game at a 64-bit runtime or change global settings just to work around this.
 
-This correction passed code and diagnostic checks; affected-headset confirmation
-is still pending. Other valid custom 32-bit runtime selections remain selected.
+The maintainer accepted this correction after affected-user confirmation.
+This does not establish every headset/runtime combination. Other valid custom 32-bit runtime selections remain selected.
 If startup still fails, preserve the same-run launcher/startup logs and report the
 headset, connection method, selected runtime and exact error. This fix does not
 resolve every possible SteamVR launch problem.
@@ -50,13 +70,13 @@ battery must still have charge. See [controls](CONTROLS.md#flashlight-gesture).
 
 ## OBS capture window
 
-In v1.7.5 choose **16:9 - fill screen** or **Native - full view** in the launcher,
+In v1.7.5 choose **16:9 - cropped view** or **Native - full view** in the launcher,
 then **Play in VR**. In OBS use **Game Capture > Capture specific window >
 F.E.A.R. VR Capture (FEARVR-Capture.exe)**. There is no separate OBS checkbox.
 Follow the [step-by-step guide](INSTALLATION.md#recording-with-obs).
 
-- **No mirror/source:** Off is headset-only. Select Fill or Native before the
-  next launch. If you closed the mirror manually, restart the game to reopen it.
+- **No mirror/source:** Off is headset-only. Select Cropped or Native before the
+  next launch. Closing the mirror requests normal game shutdown; restart through the launcher.
   If the helper is missing, upgrade the complete package.
 - **Side bars:** Native preserves the full eye, whose aspect may differ from
   16:9. Use Fill for a centered widescreen crop, or match your OBS canvas to Native.
@@ -657,3 +677,10 @@ Do not copy this DLL to GOG or replace it with another input wrapper. Setup and
 the launcher accept only this release's verified Steam input fix; other loader
 conflicts still require a clean installation. Uninstall restores the original
 files or removes the input DLL when Setup created it.
+
+## Desktop mirror resize and fullscreen
+
+In v1.7.7 use resize/maximize, **F11** or **Alt+Enter**, and **Escape** to restore.
+**16:9 - cropped view** controls framing, not fullscreen. **Native - full view**
+keeps the full eye; Off remains headset-only. Closing the mirror requests normal
+game shutdown. The separately observed native exit crash is not fixed by this update.

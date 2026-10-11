@@ -1,18 +1,21 @@
 # Installation, updates, and recovery
 
-## Upgrading to v1.7.6
+## Upgrading to v1.7.7
 
-Close the game, extract the complete v1.7.6 ZIP, keep setup-files beside Setup,
+Close the game, extract the complete v1.7.7 ZIP, keep setup-files beside Setup,
 and choose **Upgrade**. Install the complete launcher, mirror helper and gameplay
 files together; do not copy only a DLL. Saves, language backups, calibration and
 tutorial progress are preserved. No profile or calibration reset is required.
-The simpler launcher/OBS workflow is explained [below](#recording-with-obs).
+Improved Sights are optional and off by default to protect existing calibration.
+Enable them in **Aiming & Crosshair > Weapon Sights**, then use **Advanced Sight
+Alignment** to recalibrate. [Full instructions](CALIBRATION.md#stock-and-improved-sights).
+The launcher/OBS workflow is explained [below](#recording-with-obs).
 
-v1.7.6 also handles an inherited SteamVR 64-bit runtime selection automatically
+v1.7.7 also handles an inherited SteamVR 64-bit runtime selection automatically
 when a valid 32-bit counterpart is present. Start through **F.E.A.R. VR.exe**.
 No global runtime change is required. If the launcher reports a missing or invalid
 counterpart, see [SteamVR startup repair](TROUBLESHOOTING.md#steamvr-runtime-selection-edge-case).
-Confirmation from affected headset users is still pending.
+The inherited-runtime repair has received affected-user confirmation, relayed and accepted by the maintainer.
 
 <a id="import-spanish-game-text-and-voices"></a>
 ## Import game text and voices
@@ -69,13 +72,13 @@ your normal save backups. This release covers the original single-player campaig
 ## Download and verify
 
 1. Open [GitHub Releases](https://github.com/thefreemike31/fear-vr/releases/latest).
-2. Expand **Assets** if needed. Download **fear-vr-v1.7.6.zip** and
-   **fear-vr-v1.7.6.zip.sha256**. Ignore GitHub's automatic Source code archives.
+2. Expand **Assets** if needed. Download **fear-vr-v1.7.7.zip** and
+   **fear-vr-v1.7.7.zip.sha256**. Ignore GitHub's automatic Source code archives.
 3. Open the `.sha256` file in Notepad. Its first 64 characters are the expected hash.
 4. In the folder containing the ZIP, open PowerShell and run:
 
    ```powershell
-   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.7.6.zip'
+   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.7.7.zip'
    ```
 
 5. Compare all 64 characters. Letter case does not matter. A mismatch means
@@ -157,7 +160,7 @@ stereo view.
 
    | Launcher choice | Result |
    | --- | --- |
-   | **16:9 - fill screen** | A 3840 x 2160 mirror, filled by a centered crop without stretching or added side bars. A tall eye loses some top/bottom content. Recommended for a widescreen recording. |
+   | **16:9 - cropped view** | A 3840 x 2160 mirror, filled by a centered crop without stretching or added side bars. A tall eye loses some top/bottom content. Recommended for a widescreen recording. |
    | **Native - full view** | The complete eye at its native resolution and aspect. A widescreen OBS canvas may have side bars. |
    | **Off - headset only** | No desktop/OBS mirror after VR starts. Choose a visible mode to record. |
 
@@ -165,7 +168,7 @@ stereo view.
    window**, and select **F.E.A.R. VR Capture (FEARVR-Capture.exe)**. Existing scenes
    targeting that window can keep using it.
 4. Select the OBS source, reset its transform (**Ctrl+R**), then **Fit to Screen
-   (Ctrl+F)**. Remove any old source cropping. For Fill, use a 16:9 canvas/output
+   (Ctrl+F)**. Remove any old source cropping. For Cropped, use a 16:9 canvas/output
    such as 1920 x 1080 or 3840 x 2160. For Native without side bars, match the
    canvas/output aspect to the source's actual dimensions.
 5. Make a short recording and check framing, audio and smoothness. **Alt-Tab** can
@@ -176,13 +179,15 @@ Recording is controlled in OBS; choosing a mirror does not record a video.
 Use **Game Capture** for the source; Window Capture sees the smaller desktop
 preview. Mirror choices do not change headset resolution or framing.
 
-New installations default to **16:9 - fill screen**. Previous full-eye preferences
-migrate to **Native** and previous wide capture to **Fill**. An old unchecked OBS
+New installations default to **16:9 - cropped view**. Previous full-eye preferences
+migrate to **Native** and previous wide capture to **Cropped**. An old unchecked OBS
 box does not automatically select Off. Choosing **Play in VR** saves preferences;
 previewing or canceling does not. Changes take effect on the next launch.
 
-Closing only the mirror leaves VR running without a mirror; restart the game to
-bring it back. A brief original game window may appear during startup, then hides
+Resize or maximize the mirror normally. Press **F11** or **Alt+Enter** to toggle
+fullscreen, and **Escape** to restore the window. The system menu also offers
+fullscreen. Closing the mirror requests normal game shutdown; save first.
+Framing (Cropped/Native) and window size/fullscreen are independent. A brief original game window may appear during startup, then hides
 when VR/the mirror is ready. If the helper fails, the original game window can
 return as a fallback. The mirror closes when the game ends. The fixed blank-window
 issue is separate from a previously observed native exit crash; see
@@ -211,7 +216,7 @@ Use **F.E.A.R. VR.exe**, not **FEAR.exe** or an existing store shortcut that sta
 the flat game. You can make a desktop shortcut to the VR executable. Leave it
 beside the installed game; do not move the executable itself to the desktop.
 
-Choose **16:9 - fill screen**, **Native - full view**, or **Off - headset only**,
+Choose **16:9 - cropped view**, **Native - full view**, or **Off - headset only**,
 then select **Play in VR**. Fill is the first-run default. **Play in VR** saves
 your choice; canceling or previewing does not. These choices affect the desktop
 mirror, not the headset. See [mirror choices and OBS](#recording-with-obs).
@@ -281,3 +286,10 @@ tested with Russian menus on GOG. Other languages, Steam automatic-font coverage
 non-menu fonts and full campaigns remain experimental. VR-specific text may
 remain English. A different retail executable is not supported merely because
 its language is different.
+
+## Existing Polish translation archive
+
+v1.7.7 recognizes an already installed main-game **PL.FEAR.Arch00** translation
+archive. Its absence is harmless. The VR update does not download or include
+translation data, executable patches or expansion translations. Polish subtitle
+and font rendering still needs in-game confirmation; custom VR text is unchanged.

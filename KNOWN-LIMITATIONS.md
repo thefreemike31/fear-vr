@@ -1,10 +1,28 @@
 # Known limitations
 
+## v1.7.7 sights, calibration and mirror scope
+
+Repeated live Stock/Improved switching received owner headset acceptance after
+the preview disappearing-model bug was corrected. Earlier feedback accepted the
+grip/reload correction and reset-page readability. Every weapon/handedness,
+calibration capture and separate edition session was not individually enumerated;
+a new assembled-ZIP headset run is not claimed.
+
+Improved Sights by Eskess (`.eskess`) cover seven weapon types, not every gun.
+They are off by default to preserve existing sight calibration. Recalibrate in
+Advanced Sight Alignment after enabling them. Sight alignments are shared across
+versions; switching back does not restore an earlier alignment automatically.
+
+The close-range door and desktop-mirror bundle was owner-accepted. Optional
+Polish archive mounting is included, but Polish fonts/subtitles remain unvalidated.
+No fix is claimed for the unresolved native game-exit crash or all flat-launch
+reports. OBS capture should still be checked with a short recording on your setup.
+
 ## v1.7.6 launcher and holster scope
 
 The inherited SteamVR win64-to-win32 selection repair passed unit tests and
-diagnostic checks of both edition launchers. Confirmation from affected headset
-users is still pending. It does not claim complete Steam Frame compatibility or
+diagnostic checks of both edition launchers. The maintainer subsequently accepted the repair after affected-user confirmation;
+the report did not enumerate edition or the full runtime matrix. It does not claim complete Steam Frame compatibility or
 resolution of unrelated SteamVR launch problems. Valid custom 32-bit overrides
 remain selected; other invalid explicit overrides fail with a repair message.
 Registry/global runtime settings are unchanged.

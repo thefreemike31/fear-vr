@@ -1,5 +1,14 @@
 # The road to F.E.A.R. VR by TheFreeMike
 
+## v1.7.7 - October 11, 2026
+
+Optional Improved Sights by **Eskess (Discord: `.eskess`)** for seven weapon types,
+with live Stock/Improved switching and matching calibration previews. Off by
+default to preserve existing calibration; enable and recalibrate in Advanced Sight
+Alignment. A separate complete calibration-reset page, close-range door retries,
+desktop mirror resize/fullscreen controls and optional Polish archive mounting
+are included. The earlier SteamVR runtime repair now has affected-user acceptance.
+
 ## v1.7.6 - October 9, 2026
 
 Repairs an inherited 64-bit SteamVR runtime selection before startup and keeps
