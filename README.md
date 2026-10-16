@@ -28,12 +28,20 @@ You need a legitimate copy of the **GOG F.E.A.R. Platinum Collection** or the
 original **Steam F.E.A.R. base game**, and a Windows PC capable of PC VR. The base game is not included.
 
 [Official website & trailer](https://thefreemike.com/fear-vr/) · [Download the latest release](https://github.com/thefreemike31/fear-vr/releases/latest)
-· [Installation](INSTALLATION.md) · [Troubleshooting](TROUBLESHOOTING.md)
+· [Calibration & settings video](https://www.youtube.com/watch?v=BUJLpW-l5yI) · [Installation](INSTALLATION.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
 **Defender blocked the mod or Setup says a file is missing?**
 [Allow the official mod and restore missing files](TROUBLESHOOTING.md#download-or-antivirus-problem).
 **Game always starts flat despite correct VR setup?**
 [Check the ReShade OpenXR conflict](TROUBLESHOOTING.md#always-starts-flat-reshade-openxr-conflict).
+
+## Calibration & settings video guide
+
+[![Watch TheFreeMike’s full F.E.A.R. VR calibration and settings guide](https://i.ytimg.com/vi/BUJLpW-l5yI/hqdefault.jpg)](https://www.youtube.com/watch?v=BUJLpW-l5yI)
+
+**[Watch the full calibration & settings guide by TheFreeMike](https://www.youtube.com/watch?v=BUJLpW-l5yI)** — an in-depth, roughly 40-minute walkthrough. Use the YouTube chapters to jump to the setting or calibration you need.
+
+Keep the written [calibration guide](CALIBRATION.md) and [controls guide](CONTROLS.md) handy alongside the video. You can also [watch it on the website](https://thefreemike.com/fear-vr/#settings-guide).
 
 ## Watch the F.E.A.R. VR trailer
 

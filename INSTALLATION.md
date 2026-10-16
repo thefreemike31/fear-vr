@@ -1,5 +1,7 @@
 # Installation, updates, and recovery
 
+**Video walkthrough:** [Full Calibrations & Settings Guide by TheFreeMike](https://www.youtube.com/watch?v=BUJLpW-l5yI). Around 40 minutes, with YouTube chapters so you can jump to the part you need.
+
 ## Upgrading to v1.7.7
 
 Close the game, extract the complete v1.7.7 ZIP, keep setup-files beside Setup,

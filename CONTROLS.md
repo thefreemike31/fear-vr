@@ -1,5 +1,7 @@
 # Controls and weapon handling
 
+**Video walkthrough:** [Full Calibrations & Settings Guide by TheFreeMike](https://www.youtube.com/watch?v=BUJLpW-l5yI). Around 40 minutes, with YouTube chapters so you can jump to the part you need.
+
 ## Flying kick and slide
 
 Use the **jump/turn stick**: normally the right stick, or the opposite stick when
