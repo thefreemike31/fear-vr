@@ -1,43 +1,35 @@
-# F.E.A.R. VR v1.7.7 - Improved Sights and calibration
+# F.E.A.R. VR v1.8.0 — physical weapons and bHaptics
 
-- **Optional Improved Sights by Eskess (Discord: `.eskess`).** Adjusted sight
-  geometry for AT-14 (single/dual), RPL, G2A2, VK-12, HV Penetrator, Type-7 and
-  MOD-3. ASP and cannon keep their original geometry. Thank you, Eskess!
-- **Off by default to preserve your calibration.** Stock remains selected on
-  existing public profiles. Improved Sights need recalibration in **Options > VR
-  Settings > Calibration & Body Fit > Advanced Sight Alignment**, so enabling
-  them automatically would interfere with players' existing sight adjustments.
-  We highly encourage you to try them: select **Improved** under **Aiming &
-  Crosshair > Weapon Sights**, then calibrate your weapons.
-- **Switch without restarting.** Compare Stock and Improved during play; the
-  calibration system displays the selected version as you cycle weapons. Grip,
-  support-hand and reload behavior is preserved. A switch requested during an
-  active reload/pump waits for a safe moment. Sight calibrations are shared
-  between versions; check or recalibrate after changing your choice.
-- **Cleaner calibration menu.** **Reset Calibration...** opens a dedicated page
-  for height, visible body fit, holsters/pouches, hand fit, weapon grips, weapon
-  sizes, sight alignments and ammo pouch layout. **Reset All Calibration** now
-  covers every one of those groups.
-- **Close-range door interaction:** withdraw your hand and deliberately push
-  again to retry a stationary door, while respecting native locks and scripts.
-- **Desktop mirror controls:** resize/maximize, **F11** or **Alt+Enter** for
-  fullscreen, **Escape** to restore, and a close button that requests normal
-  game shutdown. The launcher's **16:9 - cropped view** label now describes
-  framing; it is separate from window/fullscreen size.
-- **Polish archive compatibility:** an already installed optional
-  `PL.FEAR.Arch00` is mounted. No translation files are included; Polish subtitle
-  and font rendering still needs in-game confirmation.
+- **Optional Physical Weapons (Prototype).** Hold Grip to retain a firearm;
+  release at a compatible free holster to store, or elsewhere to drop/throw.
+  Catch and use supported firearms in either hand. A temporary borrowed gun
+  can be used when three weapons are stored. Mixed firearm dual wielding is
+  not supported.
+- **Reload and holster refinements.** Empty single-pistol reloads include a slide
+  pull; dual pistols retain hip reloads. Either pistol can use either free hip
+  socket. Nonphysical modes can hold Reload for 1.25 seconds to discard one
+  pistol. Physical mode uses release. Tutorials explain the different rules.
+- **Optional bHaptics wearables.** TactSuit Pro, TactSleeve and TactVisor feedback
+  for damage, recoil, melee, health/armor/healing, slow motion and selected
+  environmental events. Device and effect strengths are independent. Use
+  bHaptics Player; no developer account or API key is required.
+- **More control.** Jump and Crouch remaps, 0–200% Controller Vibration, and
+  individual 0–200% Weapon Weight & Lag settings with their own resets.
+- **Body, contact and presentation refinements.** Body/holster alignment,
+  close-contact vents, weapon presentation and slow-motion ragdoll handling
+  improvements, plus shotgun shell/pump sounds. Native headset projection is
+  retained, with optional View Width treated as an experimental framing control.
+- **More reliable close-range doors.** Touching the same door with your second
+  hand no longer immediately reverses the first hand's opening action.
+- **Release cleanup.** Normal play skips diagnostic timing/trace collection;
+  launcher errors point to the real log-folder action. Player guides now match
+  the current controls and handling modes.
 
-Close the game, extract the complete ZIP, keep **setup-files** beside
-**F.E.A.R. VR Setup.exe**, and choose **Upgrade**. Saves and calibration are kept.
-No reset is required to stay on Stock. If you used a preview build, your saved
-Stock/Improved preference is also preserved.
+Install the complete package through Setup > Upgrade. Saves and calibration
+are preserved; no blanket profile reset is required. Improved Sights by Eskess
+remain optional and off by default; recalibrate sight alignment after switching.
 
-Repeated live sight switching received owner headset acceptance. The earlier
-SteamVR runtime-selection repair has now also been accepted following affected-user
-confirmation. These results do not claim every weapon/runtime/edition combination
-or a new headset run of the assembled public ZIP. The known native exit crash
-remains unresolved; see [known limitations](KNOWN-LIMITATIONS.md).
-
-See [sight calibration](CALIBRATION.md#stock-and-improved-sights),
-[controls](CONTROLS.md), and the [launcher/OBS guide](INSTALLATION.md#recording-with-obs).
+See [installation](INSTALLATION.md), [controls](CONTROLS.md), and
+[known limitations](KNOWN-LIMITATIONS.md). Residual hitches, slow Steam loading
+and the native Quit crash remain open; this release does not claim every
+headset, weapon/scene combination or bHaptics device model has been tested.

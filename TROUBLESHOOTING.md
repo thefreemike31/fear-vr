@@ -1,289 +1,11 @@
-# Troubleshooting F.E.A.R. VR v1.7.7
+# Troubleshooting F.E.A.R. VR v1.8.0
 
-## Improved Sights look different or aim feels offset
+Start with the checks below, then use the section matching the actual symptom.
+Current [installation](INSTALLATION.md), [controls](CONTROLS.md),
+[calibration](CALIBRATION.md) and [known limitations](KNOWN-LIMITATIONS.md) are
+maintained separately. Old release notes describe historical behavior.
 
-Improved Sights by **Eskess (`.eskess`)** are **off by default** because their
-changed sight picture needs recalibration. Try **Aiming & Crosshair > Weapon
-Sights > Improved**, then **Calibration & Body Fit > Advanced Sight Alignment**.
-Calibration displays the selected version. Switch live without a game restart;
-finish an active reload/pump if the change is waiting. Sight alignments are shared
-between versions, so changing back also merits an aim check. Do not reset all
-calibration just to change sight models. [Full guide](CALIBRATION.md#stock-and-improved-sights).
-
-The missing-weapons bug from the preview live-toggle builds is fixed in v1.7.7.
-If it recurs, report the weapon, Stock/Improved direction, held/holstered state
-and whether a reload was underway.
-
-## Finding calibration resets
-
-Use **Calibration & Body Fit > Reset Calibration...** for individual height,
-body, holster/pouch, hand-fit, weapon-grip, weapon-size, sight and ammo-layout
-resets. Reset All now covers all those groups and asks for confirmation.
-
-## SteamVR runtime-selection edge case
-
-Upgrade to **v1.7.6** and start through **F.E.A.R. VR.exe**. Some startup
-environments supply SteamVR's 64-bit OpenXR runtime to this 32-bit game. The
-launcher now validates that selection and uses a valid neighboring 32-bit
-SteamVR runtime. Missing or invalid counterparts produce a repair message before
-the game starts; repair/update the SteamVR installation and retry. Do not point
-the game at a 64-bit runtime or change global settings just to work around this.
-
-The maintainer accepted this correction after affected-user confirmation.
-This does not establish every headset/runtime combination. Other valid custom 32-bit runtime selections remain selected.
-If startup still fails, preserve the same-run launcher/startup logs and report the
-headset, connection method, selected runtime and exact error. This fix does not
-resolve every possible SteamVR launch problem.
-
-## Weapons change shoulders after picking up another gun
-
-Upgrade to **v1.7.6**. Weapon assignments now remain stable across unrelated
-pickups, inventory reordering and swaps, and are remembered in saves. Old saves
-use the normal default layout. A heavy weapon or a third long gun can still
-trigger the normal back-slot rule; only the weapons involved should move.
-No calibration reset is needed. If it recurs, report the before/after loadout,
-which gun moved, whether you used a button or physical swap, and handedness.
-
-## Ladder progression after the body update
-
-Upgrade to **v1.7.5** with the complete package. Tall ladders now choose the actual
-top platform instead of an intermediate floor. The earlier water-to-ladder and
-standing-exit fixes remain included. No save or calibration reset is needed.
-If a ladder still fails, include the level/checkpoint, selected ladder mode,
-entry direction, edition and short steps. The reported tall and flooded ladder
-cases were owner-tested; every campaign ladder has not been tested.
-
-## Feet float or legs stop moving after adjusting Body Height
-
-Upgrade to **v1.7.5**, then revisit **Calibration & Body Fit > Fit Visible Body**.
-Body Height now adjusts upper-body fitting while preserving grounded feet and
-leg motion. Existing percentages are kept. Use the separate Reach and Fullness
-controls if needed; no full calibration reset is required. New/reset body fits
-start at 115%, and the calibration mirror now shows the head.
-
-## Flashlight gesture with the other hand
-
-Either free hand works in v1.7.2. Bring it to the forehead with Grip released,
-then squeeze once. A hand already holding/supporting an object, climbing or
-reloading keeps that interaction. Release Grip before trying again. The native
-battery must still have charge. See [controls](CONTROLS.md#flashlight-gesture).
-
-## OBS capture window
-
-In v1.7.5 choose **16:9 - cropped view** or **Native - full view** in the launcher,
-then **Play in VR**. In OBS use **Game Capture > Capture specific window >
-F.E.A.R. VR Capture (FEARVR-Capture.exe)**. There is no separate OBS checkbox.
-Follow the [step-by-step guide](INSTALLATION.md#recording-with-obs).
-
-- **No mirror/source:** Off is headset-only. Select Cropped or Native before the
-  next launch. Closing the mirror requests normal game shutdown; restart through the launcher.
-  If the helper is missing, upgrade the complete package.
-- **Side bars:** Native preserves the full eye, whose aspect may differ from
-  16:9. Use Fill for a centered widescreen crop, or match your OBS canvas to Native.
-- **Unexpected crop/stretch:** reset the source transform, remove old cropping,
-  then Fit to Screen. Fill intentionally crops the eye to 16:9 without stretching;
-  select Native if you need the whole eye. Neither changes headset framing.
-- **Alt-Tab or control problem:** update all launcher/bridge/helper files together.
-  v1.7.5 retains VR activity while Windows focus moves. Report edition, runtime,
-  mirror mode and the action that fails if it persists.
-- **Blank window after quitting:** v1.7.5 fixes the hidden original game window
-  reappearing at shutdown. A separate native exit crash has previously been
-  observed and is not claimed fixed. If it recurs, include the launcher log and
-  Windows Application error details; distinguish it from the blank-window issue.
-- Make a short recording, including audio, before a long take. Compare a fresh
-  launch with **Off - headset only** if investigating capture-related performance.
-
-## Tutorial cards repeat or will not disappear
-
-Upgrade to v1.7.5. Cards finish after their action succeeds or ten seconds of
-visible gameplay; you do not need to spend a grenade, medkit or ammunition.
-Continue, loading and settings preserve progress. An older lost completion flag
-can cause a one-time repeat after updating. New Game and tutorial replay reset
-progress intentionally; Tutorial Cards can disable the cards entirely.
-
-## Weapon selection during a reload
-
-v1.7.5 allows switching weapons before a manual reload is finished. Upgrade the
-complete package if selection gets stuck. Report the weapon and reload stage
-if the issue persists; no calibration reset is needed.
-
-## Full body, calibration, kick and slide
-
-Upgrade with the complete v1.7.5 package so all body meshes are installed. If the
-body is hidden, check **Immersion & Interaction > Visible Body**; a saved Off is
-preserved. Use **Calibration & Body Fit > Fit Visible Body** for proportions and
-reach. The calibration mirror includes the head. Exit fitting with X on
-Touch to restore normal weapon selection. See the [fitting guide](CALIBRATION.md#full-body-ik-and-fit-visible-body).
-
-Kick uses a second up flick during a real jump; holding up or walking off a ledge
-does not qualify. Slide requires forward movement held and two down flicks within
-about half a second while grounded. Use the jump/turn stick, which changes with
-Movement Stick/Southpaw. A single down remains crouch; ease the stick back between
-flicks. See [controls](CONTROLS.md#flying-kick-and-slide). Report the exact gesture,
-handedness, movement-stick setting, terrain and whether slow motion was active.
-
-v1.7 improves padlock/glass strikes and close door touch; native locks and
-unbreakable story objects still apply. Report the level and exact object if a
-strike fails. Auto Pickup and red-ladder follow-ups have offline coverage but
-remain without a focused headset result; do not assume every ladder is fixed.
-
-## Language import and reset
-
-Follow the [complete tutorial](INSTALLATION.md#import-game-text-and-voices).
-Use **v1.6.1 or later**: v1.6.0 accidentally restricted import to Spanish media.
-Use your original language DVD/ISO and the **1.08 patch in that same language**.
-All language editions are intended to work in theory; only Spanish is officially
-tested. Other languages are not rejected merely for being non-Spanish.
-
-Mount one F.E.A.R. ISO as a DVD drive before importing; the file picker asks for
-the updater EXE, not the ISO. Eject other F.E.A.R. discs. All cabinet files must
-be available. Damaged/incomplete archives, missing update archives and unsupported
-cabinet formats are refused before replacing game language data. A valid checksum
-does not identify the spoken language: choose a matching disc and patch yourself.
-
-Keep **FEAR-VR-Language** and its backups. Close the game and use **Reset language**
-before switching languages. Existing v1.6 Spanish backups remain restorable.
-If import was interrupted or reset is refused, keep the backups and exact error;
-do not delete the recovery folder or manually mix archives. Report edition,
-source media, patch version and the shortest reproduction steps.
-
-Import/reset preserves saves and calibration. Launcher UI language is independent.
-Spanish GOG gameplay was officially tested; Steam Spanish VR, other real-language
-media and full-campaign coverage remain unverified.
-
-## Mission and save/load shortcuts
-
-Y+B toggles missions; release both before pressing again. Hold Y+A for two seconds
-to quick save, X+B for two seconds to quick load the quick-save slot. Release one
-early to cancel; release all face buttons before retrying. These combinations
-ignore handedness/remapping and require supported face inputs. Save/load is blocked
-in menus, dialogs, calibration and other non-gameplay contexts. No quick-save slot
-means quick load is unavailable; it does not load the latest checkpoint instead.
-See [controls](CONTROLS.md#mission-screen-quick-save-and-quick-load) for equivalents.
-
-## v1.5 save, effect and interaction fixes
-
-Upgrade to v1.5 if checkpoints hitch, wall-impact particles stall in slow motion,
-small stone marks appear to float, or remote turret pitch feels inverted.
-Save buffering improved the owner's tested hotspots; unrelated loading stalls
-and slow Steam loading remain possible. Existing saves and calibration are kept.
-Ladder landing camera handoff also changed based on internal regression tests;
-report the location and action if a landing still snaps you back.
-
-## Height changes or stubborn vent covers
-
-Upgrade to v1.4.2 if standing height changes after moving your head during a load,
-or a vent takes repeated empty-hand strikes to break. It preserves the automatic
-vertical reference and fixes vent impact routing. Do not reset your profile. If
-the issue persists, report the edition, level/save, hand pose and exact action.
-
-## v1.4.0: disappearing magazines or stuck reload/calibration instructions
-
-Upgrade to **v1.4.2**. It fixes scaled pistol/dual-pistol magazines disappearing
-or moving away during manual reload, reserve magazine size updates, shotgun
-fore-end takeover while handling a shell, and calibration text leaking into
-tutorial cards. It also separates magazine/cell lessons from the actual charging
-stage, so tactical G2A2/ASP reloads no longer leave an unnecessary bolt prompt.
-
-No calibration or tutorial reset is needed. Until updated, reset the affected
-weapon to **100%** for the reported magazine issue. For a partial shotgun reload,
-insert the shell, release Grip, then freshly grab and pump the fore-end.
-If a problem persists, report weapon, size percentage, handedness, reload stage
-and edition, with a short video if possible.
-
-## New settings in v1.4
-
-**Launcher language:** use its language selector to override Automatic; Play
-saves the selection. This does not translate the game. For incorrect wording or
-automatic selection, report the chosen language and Windows UI-language order.
-
-**Weapon size:** use Calibration & Body Fit > Weapon Size Calibration. Center
-the stick between 5% adjustments and wait for weapon switches to finish. Stick
-movement, turning and jumping are intentionally blocked while this mode is open;
-X exits. Reset Grip/Sight Alignments does not reset size; down resets the selected
-weapon to 100%, while Reset All Calibration resets every weapon's size.
-
-**Ladders:** check Comfort & Movement > Ladder Mode. Manual and Auto (Both Grips)
-use grips; Joystick uses the movement stick, with forward/backward to climb,
-neutral to hold and Jump to release. Center the stick before re-engaging. Report
-the level, ladder, approach and selected mode if entry or top-out still fails.
-
-**Cinema aspect:** movies and camera-driven scenes now fit the complete frame
-without stretching or cropping it. Letterboxing may be intentional. If a scene
-still looks distorted, include its exact location and desktop resolution.
-
-## Stuck at Press any key to continue
-
-Update v1.3.0 to **v1.4.2** using Setup > Upgrade. This fixes the missing
-pointer, laggy headset view and unresponsive controllers at the loading prompt.
-Release and press either trigger to continue. Until updated, a keyboard key
-can pass the prompt.
-
-
-## Steam memory preparation
-
-The first normal Steam **Play in VR** prepares the verified original executable
-for up to 4 GB of address space on 64-bit Windows, then starts VR automatically.
-Allow that one-time process to finish. Keep **FEAR.exe.fearvr-memory-original**
-beside FEAR.exe; it is the original backup. No separate 4 GB patch or EchoPatch
-installation is required. GOG's executable stays unchanged.
-
-If preparation fails, preserve **FEARVR-Launcher.log** and the exact error.
-Do not replace FEAR.exe with a downloaded executable. To restore and opt out,
-close the game and create a Windows shortcut to **F.E.A.R. VR.exe**; in its
-Properties, append ** --restore-memory** after the closing quote in Target,
-then run that shortcut. It restores the supported prepared executable from the
-verified backup and creates **fearvr-memory-disabled.flag**. Remove that flag
-only if you want normal startup to prepare the executable again.
-
-The v1.3 uninstaller also restores the original when its verified backup exists.
-If you want to downgrade, uninstall v1.3 with its own uninstaller first, then
-install the older package. Steam Verify Files can restore the original; normal
-VR startup will prepare it again unless the disabled flag is present.
-
-Point of Entry passed owner tests on Virtual Desktop and SteamVR, but this is
-not a universal memory fix. Keep render resolution reasonable and report the
-level, settings and repeat rate for remaining failures. The game stays 32-bit.
-A known native cleanup crash after choosing Quit predates this change and is
-still unresolved; report it separately from an in-game crash or loading failure.
-
-## Experimental language support
-
-Use official language data already installed with a supported GOG/Steam game.
-The mod preserves those archives and applies a readable fallback to Cyrillic
-menu text requesting the original menu font. It does not translate VR-specific
-text, select a Windows language, or ship language archives/fonts. Russian menus
-on GOG were tested with the automatic correction; other paths remain experimental.
-For unreadable text, report the language, edition and exact screen. Do not copy
-loose test databases, foreign executables or old developer language fixtures.
-
-Support here covers **F.E.A.R. VR by TheFreeMike**, downloaded from
-[thefreemike31/fear-vr](https://github.com/thefreemike31/fear-vr/releases).
-For builds from another author or repository, use that project's support
-channels. Include your mod version and original download URL when reporting a
-problem here, and do not mix files from different VR mods.
-
-[Main guide](README.md) · [Installation](INSTALLATION.md) · [Known limitations](KNOWN-LIMITATIONS.md)
-
-This guide is for the public native-installer package. You can troubleshoot and
-report problems through GitHub; joining Discord is optional. Change one thing
-at a time, and save logs from the failing attempt before relaunching.
-
-## GOG: Setup says another mod loader is present: dinput8.dll
-
-The v1.1.0 installer and launcher incorrectly rejected GOG's original Input
-wrapper. Use **v1.4.2 or later**; the verified original GOG file is allowed and
-preserved. Its presence does not mean you installed another mod.
-
-If you moved your original file to bypass that warning, close F.E.A.R., restore
-that same `dinput8.dll` to the GOG game folder and install v1.4.2. If it is lost,
-repair the game through GOG, then reinstall the VR mod. Do not substitute a DLL
-from a download site or the Steam edition. Unknown or modified loaders still
-need their own uninstall instructions or a clean supported installation.
-
-If frame times still worsen after restoring the original wrapper and updating,
-report that separately with your mod version, runtime and logs. A performance
-fix has not been confirmed for that report.
+[Start with these checks](#start-with-these-checks) · [Download or antivirus problem](#download-or-antivirus-problem) · [Launcher error or game only on the monitor](#launcher-error-or-game-only-on-the-monitor) · [Weapon, reload, holster, or interaction problem](#weapon-reload-holster-or-interaction-problem) · [No bHaptics feedback](#no-bhaptics-feedback) · [Collect logs without Discord](#collect-logs-without-discord)
 
 ## Start with these checks
 
@@ -369,7 +91,7 @@ and [antivirus exclusions](https://support.microsoft.com/en-us/defender/antiviru
 Read the complete error. Close F.E.A.R., check the selected folder contains the
 base game's **FEAR.exe**, verify the archive, and extract it again into a new
 folder if its contents are incomplete. Use the new Setup's **Upgrade** action
-for an existing beta. Unsupported executable errors require a verified original GOG or Steam
+for an existing installation. Unsupported executable errors require a verified original GOG or Steam
 base-game executable, not bypassing the check.
 
 For access-denied errors in a protected folder, close Setup and run that same
@@ -380,6 +102,22 @@ If Setup reports an interrupted operation, select **Recover interrupted setup**
 for the same game folder, then retry. If recovery says a file changed afterward
 or a backup is damaged, preserve the error and **FEAR-VR-Install** folder and
 open a GitHub issue. Do not delete state/receipt files or recovery snapshots.
+
+## GOG: Setup says another mod loader is present: dinput8.dll
+
+The original GOG input wrapper is required and is preserved by the current
+installer. Its presence does not mean another mod is installed. An obsolete
+installer may reject it; use the complete **v1.8.0** package.
+
+If you moved your original file to bypass that warning, close F.E.A.R., restore
+that same `dinput8.dll` to the GOG game folder and install v1.8.0. If it is lost,
+repair the game through GOG, then reinstall the VR mod. Do not substitute a DLL
+from a download site or the Steam edition. Unknown or modified loaders still
+need their own uninstall instructions or a clean supported installation.
+
+If frame times still worsen after restoring the original wrapper and updating,
+report that separately with your mod version, runtime and logs. A performance
+fix has not been confirmed for that report.
 
 ## Launcher error or game only on the monitor
 
@@ -475,6 +213,61 @@ the JSON file or the whole registry key, and do not change **ActiveRuntime**.
 
 The enable/disable values follow the [Khronos OpenXR loader specification](https://registry.khronos.org/OpenXR/specs/1.1/loader.html#windows-manifest-registry-usage).
 
+## Steam startup or handoff failure
+
+Sign into the Steam account that owns the base game. Start the VR launcher from
+the same game folder registered with Steam, and leave it open while Steam starts
+F.E.A.R. Close the failed game/launcher and retry after correcting the reported
+problem. Do not replace the Steam executable with the GOG executable or apply
+DRM/LAA patches. A copied Steam folder outside its registered library is rejected.
+
+If Setup reports a conflicting loader, use that mod's own removal instructions
+or select a clean installation. Verifying Steam files does not remove additional
+mod DLLs. Long level loads are a known Steam limitation; hangs and startup errors
+should still be reported with the exact error and launcher log.
+
+## SteamVR runtime-selection edge case
+
+Upgrade to **v1.8.0** and start through **F.E.A.R. VR.exe**. Some startup
+environments supply SteamVR's 64-bit OpenXR runtime to this 32-bit game. The
+launcher now validates that selection and uses a valid neighboring 32-bit
+SteamVR runtime. Missing or invalid counterparts produce a repair message before
+the game starts; repair/update the SteamVR installation and retry. Do not point
+the game at a 64-bit runtime or change global settings just to work around this.
+
+The maintainer accepted this correction after affected-user confirmation.
+This does not establish every headset/runtime combination. Other valid custom 32-bit runtime selections remain selected.
+If startup still fails, preserve the same-run launcher/startup logs and report the
+headset, connection method, selected runtime and exact error. This fix does not
+resolve every possible SteamVR launch problem.
+
+## Steam memory preparation
+
+The first normal Steam **Play in VR** prepares the verified original executable
+for up to 4 GB of address space on 64-bit Windows, then starts VR automatically.
+Allow that one-time process to finish. Keep **FEAR.exe.fearvr-memory-original**
+beside FEAR.exe; it is the original backup. No separate 4 GB patch or EchoPatch
+installation is required. GOG's executable stays unchanged.
+
+If preparation fails, preserve **FEARVR-Launcher.log** and the exact error.
+Do not replace FEAR.exe with a downloaded executable. To restore and opt out,
+close the game and create a Windows shortcut to **F.E.A.R. VR.exe**; in its
+Properties, append ** --restore-memory** after the closing quote in Target,
+then run that shortcut. It restores the supported prepared executable from the
+verified backup and creates **fearvr-memory-disabled.flag**. Remove that flag
+only if you want normal startup to prepare the executable again.
+
+The current uninstaller restores the original when its verified backup exists.
+Before downgrading to a pre-memory-support installer, uninstall the current mod
+with its own uninstaller, then install the older package. Steam Verify Files can restore the original; normal
+VR startup will prepare it again unless the disabled flag is present.
+
+Point of Entry passed owner tests on Virtual Desktop and SteamVR, but this is
+not a universal memory fix. Keep render resolution reasonable and report the
+level, settings and repeat rate for remaining failures. The game stays 32-bit.
+A known native cleanup crash after choosing Quit predates this change and is
+still unresolved; report it separately from an in-game crash or loading failure.
+
 ## Black, frozen, boxed, or distorted headset view
 
 First note whether audio and the game process continue and whether the runtime
@@ -482,15 +275,16 @@ dashboard still works. If the dashboard also fails, restore the headset/runtime
 connection before relaunching the game. A lost runtime session may require a
 full game restart.
 
-Restore **Options > VR Settings > Headset Display** to **Centered (Recommended)**
-projection and **100% View Width**, or use **Restore Display Defaults**. Turn
+Restore **Options > VR Settings > Headset Display** to **100% View Width**,
+or use **Restore Display Defaults**. Projection follows the headset automatically. Turn
 off optional Flashlight Shadows while isolating the issue. If it began after
 a resolution change, quit and relaunch; render-resolution settings apply next launch.
 
 If opening a SteamVR dashboard caused it, close the dashboard and allow focus
 to return. Persistent black imagery after focus returns needs a report with
 the runtime version, transition, and logs. Do not repeatedly change unrelated
-calibration settings. Wider/canted headset modes remain experimental.
+calibration settings. Include the exact mod version in the report; older builds
+may still show a Projection Mode selector.
 
 ## Controllers, menus, or pause
 
@@ -508,6 +302,65 @@ If tracking works but the game reports no usable controller profile, provide
 the exact headset, controller, runtime, and detected profile. Non-Touch profiles
 have not all been tested on physical hardware.
 
+## Stuck at Press any key to continue
+
+Release both triggers, then press either trigger once the continue prompt is
+ready; pointing at it is unnecessary. If an old build loses its pointer or
+controller updates here, upgrade to **v1.8.0**. In a current build, report the
+runtime/controller profile and preserve the same-run logs if the problem remains.
+
+## Weapon, reload, holster, or interaction problem
+
+**Grip & Holsters** intentionally disables weapon-button cycling and the wheel.
+Draw from the body slots, or select **Classic Sticky** if you want tap/wheel
+selection. A stowed gun does not respond to Reload in Grip & Holsters.
+
+In **Sticky & Holsters**, release Grip after drawing; the weapon remains held.
+Press Grip again at its holster to store it. In **Physical Weapons (Prototype)**,
+releasing Grip away from a compatible free holster deliberately drops the gun.
+Check the selected mode first if a weapon drops unexpectedly. An occupied or
+incompatible slot cannot accept it. Mixed firearm dual wielding is not supported.
+
+For an empty single pistol, complete the magazine step and pull the slide using
+the free hand. Dual pistols use hip reloads. In the other modes, a long Reload
+hold can discard one pistol from a pair; use a short tap for ordinary reload.
+
+For invisible body weapons, set **Immersion & Interaction > Visible Holstered
+Weapons** to Yes. No hides the models; slots and reload interactions still exist.
+If a draw/pouch is uncomfortable, adjust its location in calibration.
+
+Check reserve ammo and whether the current weapon is waiting for a chamber,
+bolt, or rack action. Keep the support grip held while completing a physical
+pull, and move relative to the gun. Follow the weapon's tutorial card. A full,
+stowed, or reserve-empty gun may correctly have no reload card. Enable tutorial
+hints if needed; starting New Game resets lesson progress, but loading does not.
+
+If a second hand used to reverse a door on first touch, upgrade to the complete
+1.8 package. For a stopped-door retry, withdraw and deliberately push again;
+resting contact does not retrigger it. Locks and scripts still apply.
+
+For pickups and grip-based ladders, clear occupied hands and try a fresh Grip
+close to the interaction. In Joystick ladder mode, use the movement stick and
+center it before re-engaging. Sustained tracking loss can release a ladder anchor; brief recovery
+does not guarantee every headset avoids the original issue. Decorative props
+are not all interactive. If a particular grate, enemy, door, ladder endpoint,
+or weapon fails consistently, report that exact object/location and whether
+save/reload or a turret/cutscene transition changes it.
+
+## Improved Sights look different or aim feels offset
+
+Improved Sights by **Eskess (`.eskess`)** are **off by default** because their
+changed sight picture needs recalibration. Try **Aiming & Crosshair > Weapon
+Sights > Improved**, then **Calibration & Body Fit > Advanced Sight Alignment**.
+Calibration displays the selected version. Switch live without a game restart;
+finish an active reload/pump if the change is waiting. Sight alignments are shared
+between versions, so changing back also merits an aim check. Do not reset all
+calibration just to change sight models. [Full guide](CALIBRATION.md#stock-and-improved-sights).
+
+The missing-weapons bug from preview live-toggle builds is fixed in the current release.
+If it recurs, report the weapon, Stock/Improved direction, held/holstered state
+and whether a reload was underway.
+
 ## Calibration or player height
 
 Follow [Calibration](CALIBRATION.md). Choose the correct **Play Position**, check
@@ -521,29 +374,78 @@ do not use an old developer shortcut. Calibration during a campaign stays in
 that level. If Continue or a campaign save behaves incorrectly afterward,
 preserve the saves and report the exact steps rather than repeatedly saving over them.
 
-## Weapon, reload, holster, or interaction problem
+## Full body, calibration, kick and slide
 
-**Grip & Holsters** intentionally disables weapon-button cycling and the wheel.
-Draw from the body slots, or select **Classic Sticky** if you want tap/wheel
-selection. A stowed gun does not respond to Reload in Grip & Holsters.
+Install or upgrade with the complete v1.8.0 package so all body meshes are installed. If the
+body is hidden, check **Immersion & Interaction > Visible Body**; a saved Off is
+preserved. Use **Calibration & Body Fit > Fit Visible Body** for proportions and
+reach. The calibration mirror includes the head. Exit fitting with X on
+Touch to restore normal weapon selection. See the [fitting guide](CALIBRATION.md#full-body-ik-and-fit-visible-body).
 
-For invisible body weapons, set **Immersion & Interaction > Visible Holstered
-Weapons** to Yes. No hides the models; slots and reload interactions still exist.
-If a draw/pouch is uncomfortable, adjust its location in calibration.
+Kick uses a second up flick during a real jump; holding up or walking off a ledge
+does not qualify. Slide requires forward movement held and two down flicks within
+about half a second while grounded. Use the jump/turn stick, which changes with
+Movement Stick/Southpaw. A single down remains crouch; ease the stick back between
+flicks. See [controls](CONTROLS.md#flying-kick-and-slide). Report the exact gesture,
+handedness, movement-stick setting, terrain and whether slow motion was active.
 
-Check reserve ammo and whether the current weapon is waiting for a chamber,
-bolt, or rack action. Keep the support grip held while completing a physical
-pull, and move relative to the gun. Follow the weapon's tutorial card. A full,
-stowed, or reserve-empty gun may correctly have no reload card. Enable tutorial
-hints if needed; starting New Game resets lesson progress, but loading does not.
+Padlock/glass strikes and close door touch follow physical contact; native locks and
+unbreakable story objects still apply. Report the level and exact object if a
+strike fails. Auto Pickup and red-ladder follow-ups have offline coverage but
+remain without a focused headset result; do not assume every ladder is fixed.
 
-For pickups and grip-based ladders, clear occupied hands and try a fresh Grip
-close to the interaction. In Joystick ladder mode, use the movement stick and
-center it before re-engaging. Sustained tracking loss can release a ladder anchor; brief recovery
-does not guarantee every headset avoids the original issue. Decorative props
-are not all interactive. If a particular grate, enemy, door, ladder endpoint,
-or weapon fails consistently, report that exact object/location and whether
-save/reload or a turret/cutscene transition changes it.
+## Tutorial cards repeat or will not disappear
+
+Cards finish after their action succeeds or ten seconds of
+visible gameplay; you do not need to spend a grenade, medkit or ammunition.
+Continue, loading and settings preserve progress. An older lost completion flag
+can cause a one-time repeat after updating. New Game and tutorial replay reset
+progress intentionally; Tutorial Cards can disable the cards entirely.
+
+## No bHaptics feedback
+
+Check that bHaptics Player is running and your supported wearable is connected,
+then enable **VR Settings > bHaptics > Wearable Feedback**. Check Master, the
+device switch/strength and the relevant Effect Strength. Resume gameplay with
+the game focused; pause/loading deliberately suppress output. Controller
+Vibration does not control the wearables.
+
+Install the complete update so `fear-vr/haptics` and its runtime dependency are
+present. No API key or developer setup is required. If feedback remains absent,
+share the same-run startup log privately through the launcher's **Open log
+folder** action. Never include account credentials or personal keys.
+
+## OBS capture window
+
+Choose **16:9 - cropped view** or **Native - full view** in the launcher,
+then **Play in VR**. In OBS use **Game Capture > Capture specific window >
+F.E.A.R. VR Capture (FEARVR-Capture.exe)**. There is no separate OBS checkbox.
+Follow the [step-by-step guide](INSTALLATION.md#recording-with-obs).
+
+- **No mirror/source:** Off is headset-only. Select Cropped or Native before the
+  next launch. Closing the mirror requests normal game shutdown; restart through the launcher.
+  If the helper is missing, upgrade the complete package.
+- **Side bars:** Native preserves the full eye, whose aspect may differ from
+  16:9. Use Fill for a centered widescreen crop, or match your OBS canvas to Native.
+- **Unexpected crop/stretch:** reset the source transform, remove old cropping,
+  then Fit to Screen. Fill intentionally crops the eye to 16:9 without stretching;
+  select Native if you need the whole eye. Neither changes headset framing.
+- **Alt-Tab or control problem:** update all launcher/bridge/helper files together.
+  The mod retains VR activity while Windows focus moves. Report edition, runtime,
+  mirror mode and the action that fails if it persists.
+- **Blank window after quitting:** The current release fixes the hidden original game window
+  reappearing at shutdown. A separate native exit crash has previously been
+  observed and is not claimed fixed. If it recurs, include the launcher log and
+  Windows Application error details; distinguish it from the blank-window issue.
+- Make a short recording, including audio, before a long take. Compare a fresh
+  launch with **Off - headset only** if investigating capture-related performance.
+
+## Desktop mirror resize and fullscreen
+
+Use resize/maximize, **F11** or **Alt+Enter**, and **Escape** to restore.
+**16:9 - cropped view** controls framing, not fullscreen. **Native - full view**
+keeps the full eye; Off remains headset-only. Closing the mirror requests normal
+game shutdown. The separately observed native exit crash is not fixed by this update.
 
 ## Performance and recurring stalls
 
@@ -561,6 +463,57 @@ Desktop mirror resolution is not the per-eye render size. The game is 32-bit;
 more system RAM does not remove its process address-space limit. Capture guards
 bound some application polling, but do not establish that every periodic stall
 is fixed. Report CPU, GPU/VRAM, RAM, resolutions, refresh rate, and timing.
+
+## Steam input fix
+
+Setup installs the mod's own `dinput8.dll` only on Steam. It reduces legacy HID
+device polling while keeping keyboard, mouse and OpenXR input available. The
+owner reported smoother gameplay, including slow motion; it does not fix long
+Steam level loads or promise a particular frame rate on every PC.
+
+Legacy flat-game gamepads/joysticks are filtered while this fix is enabled.
+If you need them or want to compare behavior, close the game and create an empty
+file named `fearvr-hid-off.flag` beside **FEAR.exe**. Check that Windows has not
+added `.txt`. Remove that flag to re-enable the fix on the next launch. No Windows
+device needs disabling. `FEARVR-Input.log` records the selected mode and limited
+enumeration counts; it does not list device names.
+
+Do not copy this DLL to GOG or replace it with another input wrapper. Setup and
+the launcher accept only this release's verified Steam input fix; other loader
+conflicts still require a clean installation. Uninstall restores the original
+files or removes the input DLL when Setup created it.
+
+## Language import and reset
+
+Follow the [complete tutorial](INSTALLATION.md#import-game-text-and-voices).
+Use the current **v1.8.0** package; obsolete import restrictions do not apply.
+Use your original language DVD/ISO and the **1.08 patch in that same language**.
+All language editions are intended to work in theory; only Spanish is officially
+tested. Other languages are not rejected merely for being non-Spanish.
+
+Mount one F.E.A.R. ISO as a DVD drive before importing; the file picker asks for
+the updater EXE, not the ISO. Eject other F.E.A.R. discs. All cabinet files must
+be available. Damaged/incomplete archives, missing update archives and unsupported
+cabinet formats are refused before replacing game language data. A valid checksum
+does not identify the spoken language: choose a matching disc and patch yourself.
+
+Keep **FEAR-VR-Language** and its backups. Close the game and use **Reset language**
+before switching languages. Existing Spanish-import backups remain restorable.
+If import was interrupted or reset is refused, keep the backups and exact error;
+do not delete the recovery folder or manually mix archives. Report edition,
+source media, patch version and the shortest reproduction steps.
+
+Import/reset preserves saves and calibration. Launcher UI language is independent.
+Spanish GOG gameplay was officially tested; Steam Spanish VR, other real-language
+media and full-campaign coverage remain unverified.
+
+## Quit looks normal but Windows records a crash
+
+A known native cleanup fault can be recorded after the visible game window has
+closed. It predates 1.8 and remains unresolved. A normal-looking exit and a
+Windows crash record can therefore describe the same run. Report the faulting
+module/exception and same-run logs; distinguish this from an in-game crash,
+stuck process, blank leftover window or failure to save.
 
 ## Crash or repeatable campaign failure
 
@@ -621,6 +574,13 @@ Crash dumps contain process memory and should be shared only through an agreed
 private channel. A GitHub issue with the sanitized error and template below is
 enough to start; Discord membership is not required.
 
+## Mission and save/load shortcuts
+
+Use the physical pairs in [the control guide](CONTROLS.md#mission-screen-quick-save-and-quick-load).
+Release all face buttons before starting another pair. Save/load requires
+eligible single-player gameplay outside menus, calibration and scripted cameras;
+quick load uses the quick-save slot rather than the latest checkpoint.
+
 ## Report template
 
 Search [existing GitHub Issues](https://github.com/thefreemike31/fear-vr/issues),
@@ -646,41 +606,4 @@ Other mods/overlays and changes already tried:
 Responses depend on availability; neither a report nor a donation guarantees
 individual troubleshooting or a response deadline.
 
-## Steam startup or handoff failure
-
-Sign into the Steam account that owns the base game. Start the VR launcher from
-the same game folder registered with Steam, and leave it open while Steam starts
-F.E.A.R. Close the failed game/launcher and retry after correcting the reported
-problem. Do not replace the Steam executable with the GOG executable or apply
-DRM/LAA patches. A copied Steam folder outside its registered library is rejected.
-
-If Setup reports a conflicting loader, use that mod's own removal instructions
-or select a clean installation. Verifying Steam files does not remove additional
-mod DLLs. Long level loads are a known Steam limitation; hangs and startup errors
-should still be reported with the exact error and launcher log.
-
-## Steam input fix
-
-Setup installs the mod's own `dinput8.dll` only on Steam. It reduces legacy HID
-device polling while keeping keyboard, mouse and OpenXR input available. The
-owner reported smoother gameplay, including slow motion; it does not fix long
-Steam level loads or promise a particular frame rate on every PC.
-
-Legacy flat-game gamepads/joysticks are filtered while this fix is enabled.
-If you need them or want to compare behavior, close the game and create an empty
-file named `fearvr-hid-off.flag` beside **FEAR.exe**. Check that Windows has not
-added `.txt`. Remove that flag to re-enable the fix on the next launch. No Windows
-device needs disabling. `FEARVR-Input.log` records the selected mode and limited
-enumeration counts; it does not list device names.
-
-Do not copy this DLL to GOG or replace it with another input wrapper. Setup and
-the launcher accept only this release's verified Steam input fix; other loader
-conflicts still require a clean installation. Uninstall restores the original
-files or removes the input DLL when Setup created it.
-
-## Desktop mirror resize and fullscreen
-
-In v1.7.7 use resize/maximize, **F11** or **Alt+Enter**, and **Escape** to restore.
-**16:9 - cropped view** controls framing, not fullscreen. **Native - full view**
-keeps the full eye; Off remains headset-only. Closing the mirror requests normal
-game shutdown. The separately observed native exit crash is not fixed by this update.
+[Main guide](README.md) · [Installation](INSTALLATION.md) · [Controls](CONTROLS.md) · [Calibration](CALIBRATION.md) · [Troubleshooting](TROUBLESHOOTING.md)

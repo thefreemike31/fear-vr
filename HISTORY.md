@@ -1,5 +1,14 @@
 # The road to F.E.A.R. VR by TheFreeMike
 
+## v1.8.0 - October 30, 2026
+
+Optional Physical Weapons (Prototype) adds grip-held firearms, release-to-holster
+or drop/throw, supported catches and either-hand use. Optional bHaptics feedback
+works through bHaptics Player without a developer account or API key. Reload and
+holster refinements, Jump/Crouch remaps, per-weapon weight controls, body/contact
+polish and reliable first-touch doors accompany quieter normal-play diagnostics.
+Saves and calibration remain compatible; the physical mode is still a prototype.
+
 ## v1.7.7 - October 11, 2026
 
 Optional Improved Sights by **Eskess (Discord: `.eskess`)** for seven weapon types,

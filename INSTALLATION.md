@@ -1,63 +1,13 @@
 # Installation, updates, and recovery
 
-**Video walkthrough:** [Full Calibrations & Settings Guide by TheFreeMike](https://www.youtube.com/watch?v=BUJLpW-l5yI). Around 40 minutes, with YouTube chapters so you can jump to the part you need.
+Current instructions for **v1.8.0**, covering the original GOG and Steam base game.
+Install the complete package using Setup; existing users choose **Upgrade**.
+Saves, calibration, language backups and tutorial progress are preserved. Keep
+your own save backups and do not mix DLLs from different releases.
 
-## Upgrading to v1.7.7
+**Video walkthrough:** [Full Calibrations & Settings Guide by TheFreeMike](https://www.youtube.com/watch?v=BUJLpW-l5yI), with chapter navigation.
 
-Close the game, extract the complete v1.7.7 ZIP, keep setup-files beside Setup,
-and choose **Upgrade**. Install the complete launcher, mirror helper and gameplay
-files together; do not copy only a DLL. Saves, language backups, calibration and
-tutorial progress are preserved. No profile or calibration reset is required.
-Improved Sights are optional and off by default to protect existing calibration.
-Enable them in **Aiming & Crosshair > Weapon Sights**, then use **Advanced Sight
-Alignment** to recalibrate. [Full instructions](CALIBRATION.md#stock-and-improved-sights).
-The launcher/OBS workflow is explained [below](#recording-with-obs).
-
-v1.7.7 also handles an inherited SteamVR 64-bit runtime selection automatically
-when a valid 32-bit counterpart is present. Start through **F.E.A.R. VR.exe**.
-No global runtime change is required. If the launcher reports a missing or invalid
-counterpart, see [SteamVR startup repair](TROUBLESHOOTING.md#steamvr-runtime-selection-edge-case).
-The inherited-runtime repair has received affected-user confirmation, relayed and accepted by the maintainer.
-
-<a id="import-spanish-game-text-and-voices"></a>
-## Import game text and voices
-
-**Updated in v1.6.1:** use the launcher's **Import language** button with your
-original language DVD/ISO and the official **1.08 patch in that same language**.
-All original language editions are intended to work in theory; **only Spanish
-has been officially tested with real media and VR gameplay**. Other languages
-remain unverified. v1.6.1 removes the accidental Spanish-only media restriction.
-The reader supports the original InstallShield cabinet layout; incomplete,
-modified, split or different-format media can be refused. No language whitelist
-is imposed. You supply the ISO and patch; no game-language data is included.
-
-1. Close F.E.A.R. and install/upgrade the VR mod to **v1.6.1 or later**.
-2. Insert your original language DVD, or right-click its ISO in Windows and
-   choose **Mount**. It must appear as a DVD drive. Eject other F.E.A.R. discs so
-   only the intended language is mounted; keep all cabinet files available.
-3. Open **F.E.A.R. VR.exe from the GOG or Steam installation you want to change**.
-4. Click **Import language**, confirm, and select the original **1.08 updater EXE
-   in the same language as the disc**. For example, the tested Spanish updater is
-   `fear_update_es_100-107_108.exe`; it is an example, not the only accepted name.
-   Matching the disc and patch language is your responsibility; the launcher
-   validates archive structure and checksums, not the language of the voices.
-5. Wait for the completion message. The launcher reads the media and updater;
-   **it never runs the updater** or replaces the game executable.
-6. Keep **FEAR-VR-Language** in the game folder. It holds recovery information
-   and backups of the nine language archives replaced by the import.
-7. To return to the previous language, close the game, open the same launcher,
-   and click **Reset language**. v1.6 Spanish backups still work after upgrading.
-   Reset before importing a different language. Do not mix archives manually.
-
-Saves and VR calibration are preserved. The launcher language dropdown changes
-launcher text only; it is independent of the game-language import. Prompts are
-localized in all ten launcher languages. Other language ISOs, Steam Spanish VR
-and full-campaign language coverage are not established by the Spanish GOG test.
-
-If the disc is not detected, check the mounted drive and complete cabinet files.
-If the updater is refused, use the complete matching original 1.08 patch. Keep
-backups and the exact error if recovery fails; see
-[troubleshooting](TROUBLESHOOTING.md#language-import-and-reset).
+[Download and verify](#download-and-verify) · [Install or upgrade](#install-or-upgrade) · [Connect the headset](#connect-the-headset) · [bHaptics wearables](#bhaptics-wearables) · [Recording with OBS](#recording-with-obs) · [Import game text and voices](#import-game-text-and-voices)
 
 ## Before installing
 
@@ -74,13 +24,13 @@ your normal save backups. This release covers the original single-player campaig
 ## Download and verify
 
 1. Open [GitHub Releases](https://github.com/thefreemike31/fear-vr/releases/latest).
-2. Expand **Assets** if needed. Download **fear-vr-v1.7.7.zip** and
-   **fear-vr-v1.7.7.zip.sha256**. Ignore GitHub's automatic Source code archives.
+2. Expand **Assets** if needed. Download **fear-vr-v1.8.0.zip** and
+   **fear-vr-v1.8.0.zip.sha256**. Ignore GitHub's automatic Source code archives.
 3. Open the `.sha256` file in Notepad. Its first 64 characters are the expected hash.
 4. In the folder containing the ZIP, open PowerShell and run:
 
    ```powershell
-   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.7.7.zip'
+   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.8.0.zip'
    ```
 
 5. Compare all 64 characters. Letter case does not matter. A mismatch means
@@ -100,8 +50,8 @@ protection enabled and follow [download troubleshooting](TROUBLESHOOTING.md#down
 3. Check **Game folder**. It must contain the original **FEAR.exe**, not an
    expansion or the folder where you extracted the mod. Choose **Choose another
    game folder** if detection selected the wrong copy.
-4. Select **Install F.E.A.R. VR** or **Upgrade F.E.A.R. VR**. A prior beta can be
-   upgraded directly; uninstalling it first is not required.
+4. Select **Install F.E.A.R. VR** or **Upgrade F.E.A.R. VR**. Supported older releases can be
+   upgraded directly; uninstalling first is not required.
 5. Wait for the success message. Setup does not start the game.
 
 If Windows denies writes to a protected game folder, close Setup and use
@@ -113,8 +63,7 @@ Setup backs up replaced files and preserves modified managed files under
 **FEAR-VR-Install** folder and its backups while the mod is installed.
 
 On Steam, Setup also manages the included input polling fix. GOG does not receive
-that input DLL. Upgrades from the v1.0 tester package use the same **Upgrade**
-action; keep the original installation's recovery files.
+that input DLL. Keep the original installation's recovery files when upgrading.
 
 ## Connect the headset
 
@@ -149,9 +98,68 @@ See the [VDXR project](https://github.com/mbucchia/VirtualDesktop-OpenXR) and
 
 Meta Quest Link and Air Link are unsupported, including through SteamVR.
 
+## First launch
+
+Use **F.E.A.R. VR.exe**, not **FEAR.exe** or an existing store shortcut that starts
+the flat game. You can make a desktop shortcut to the VR executable. Leave it
+beside the installed game; do not move the executable itself to the desktop.
+
+Choose **16:9 - cropped view**, **Native - full view**, or **Off - headset only**,
+then select **Play in VR**. Fill is the first-run default. **Play in VR** saves
+your choice; canceling or previewing does not. These choices affect the desktop
+mirror, not the headset. See [mirror choices and OBS](#recording-with-obs).
+**Controls** opens the player guide; **Open log folder** opens support logs.
+Leave the launcher running during startup and play.
+
+Wake both controllers before launch. In **Options > VR Settings**, review
+[movement and controls](CONTROLS.md), then [calibration](CALIBRATION.md).
+Projection follows the headset automatically. Start with **100% View Width**.
+The initial movement mode is running; turning speed and comfort are adjustable.
+
+For later versions, follow that release's notes, download its complete ZIP,
+verify it, extract it into a new folder, and use **Upgrade**. Do not manually
+mix DLLs from different releases.
+
+## Steam installation and startup
+
+On the first normal Steam VR start, the launcher prepares the verified original
+executable for up to 4 GB of address space on 64-bit Windows, then continues into
+VR automatically. Press **Play in VR** once and let it finish. Keep
+**FEAR.exe.fearvr-memory-original**, the original backup beside FEAR.exe.
+GOG already supports the larger address space; its executable is unchanged.
+See [memory recovery](TROUBLESHOOTING.md#steam-memory-preparation) for opt-out
+and restoration. Do not apply a separate 4 GB patch or combine executable mods.
+
+If Setup detects multiple copies, select the Steam base-game folder you intend
+to test. Keep the original store executable. Sign into Steam with the owning
+account, then use **F.E.A.R. VR.exe** in that folder. Do not close the launcher
+during startup. A failed Steam VR handoff stops with an error instead of silently
+continuing in flat mode. Steam level loading may take several minutes.
+
+Setup rejects conflicting loaders, including unrecognized input wrappers. The
+exact Steam input fix included in this release is allowed on Steam only.
+Disable other mods using their own instructions, or use a clean installation.
+Store file verification may leave additional mod DLLs behind. GOG and Steam use
+the same public Documents save/profile location; keep your existing save backups.
+Setup does not start the game and uninstall retains saves and profiles.
+
+## bHaptics wearables
+
+Wearable feedback is optional. Install **bHaptics Player**, pair and connect your
+TactSuit Pro, TactSleeve(s) or TactVisor there, and leave Player running. In the
+game, open **Options > VR Settings > bHaptics** and enable **Wearable Feedback**.
+Choose a comfortable Master strength, then adjust devices and Effect Strengths.
+A vest alone or a partial kit works; the other accessories are not required.
+
+The mod supplies its local haptic configuration and runtime files. You do not
+need a developer account, SDK tools or an API key. Do not share account credentials
+or paste a developer key into files. Controller Vibration is a separate setting.
+Without Player or a connected supported wearable, normal gameplay continues.
+Other bHaptics device models are not claimed supported by this release.
+
 ## Recording with OBS
 
-The launcher now uses **one mirror for both the desktop and OBS**. There is no
+The launcher uses **one mirror for both the desktop and OBS**. There is no
 separate OBS checkbox, window/fullscreen choice or desktop-resolution selector.
 OBS is installed separately; no OBS OpenXR layer or extra capture plugin is needed.
 The mirror shows the rendered **right eye**, while the headset keeps its normal
@@ -195,9 +203,7 @@ return as a fallback. The mirror closes when the game ends. The fixed blank-wind
 issue is separate from a previously observed native exit crash; see
 [troubleshooting](TROUBLESHOOTING.md#obs-capture-window).
 
-The owner accepted the new mirror, Alt-Tab and window shutdown. A new recording
-of every mode and separate Steam headset coverage are not claimed; check your
-own short recording before a long session.
+The owner accepted the new mirror, Alt-Tab and window shutdown. Check your own short recording before a long session.
 
 ## Launcher language
 
@@ -212,27 +218,63 @@ installed language. Technical logs and the Controls guide remain in English.
 Native-speaker review and automatic selection on non-English Windows systems
 remain open to feedback.
 
-## First launch
+## Import game text and voices
 
-Use **F.E.A.R. VR.exe**, not **FEAR.exe** or an existing store shortcut that starts
-the flat game. You can make a desktop shortcut to the VR executable. Leave it
-beside the installed game; do not move the executable itself to the desktop.
+Use the launcher's **Import language** button with your
+original language DVD/ISO and the official **1.08 patch in that same language**.
+All original language editions are intended to work in theory; **only Spanish
+has been officially tested with real media and VR gameplay**. Other languages
+remain unverified.
+The reader supports the original InstallShield cabinet layout; incomplete,
+modified, split or different-format media can be refused. No language whitelist
+is imposed. You supply the ISO and patch; no game-language data is included.
 
-Choose **16:9 - cropped view**, **Native - full view**, or **Off - headset only**,
-then select **Play in VR**. Fill is the first-run default. **Play in VR** saves
-your choice; canceling or previewing does not. These choices affect the desktop
-mirror, not the headset. See [mirror choices and OBS](#recording-with-obs).
-**Controls** opens the player guide; **Open log folder** opens support logs.
-Leave the launcher running during startup and play.
+1. Close F.E.A.R. and install/upgrade the VR mod to **v1.8.0**.
+2. Insert your original language DVD, or right-click its ISO in Windows and
+   choose **Mount**. It must appear as a DVD drive. Eject other F.E.A.R. discs so
+   only the intended language is mounted; keep all cabinet files available.
+3. Open **F.E.A.R. VR.exe from the GOG or Steam installation you want to change**.
+4. Click **Import language**, confirm, and select the original **1.08 updater EXE
+   in the same language as the disc**. For example, the tested Spanish updater is
+   `fear_update_es_100-107_108.exe`; it is an example, not the only accepted name.
+   Matching the disc and patch language is your responsibility; the launcher
+   validates archive structure and checksums, not the language of the voices.
+5. Wait for the completion message. The launcher reads the media and updater;
+   **it never runs the updater** or replaces the game executable.
+6. Keep **FEAR-VR-Language** in the game folder. It holds recovery information
+   and backups of the nine language archives replaced by the import.
+7. To return to the previous language, close the game, open the same launcher,
+   and click **Reset language**. Existing Spanish-import backups remain compatible.
+   Reset before importing a different language. Do not mix archives manually.
 
-Wake both controllers before launch. In **Options > VR Settings**, review
-[movement and controls](CONTROLS.md), then [calibration](CALIBRATION.md).
-Start with **Centered (Recommended)** projection and **100% View Width**.
-The initial movement mode is running; turning speed and comfort are adjustable.
+Saves and VR calibration are preserved. The launcher language dropdown changes
+launcher text only; it is independent of the game-language import. Prompts are
+localized in all ten launcher languages. Other language ISOs, Steam Spanish VR
+and full-campaign language coverage are not established by the Spanish GOG test.
 
-For later versions, follow that release's notes, download its complete ZIP,
-verify it, extract it into a new folder, and use **Upgrade**. Do not manually
-mix DLLs from different releases.
+If the disc is not detected, check the mounted drive and complete cabinet files.
+If the updater is refused, use the complete matching original 1.08 patch. Keep
+backups and the exact error if recovery fails; see
+[troubleshooting](TROUBLESHOOTING.md#language-import-and-reset).
+
+## Experimental installed languages
+
+The mod preserves official language archives already installed with a supported
+GOG or Steam base game. Select/install your language through your game provider
+before installing the mod, where that language is available. The mod does not
+choose a language from Windows settings or include translation files.
+Cyrillic menu text uses an automatic readable font fallback; the runtime fix was
+tested with Russian menus on GOG. Other languages, Steam automatic-font coverage,
+non-menu fonts and full campaigns remain experimental. VR-specific text may
+remain English. A different retail executable is not supported merely because
+its language is different.
+
+## Existing Polish translation archive
+
+The launcher recognizes an already installed main-game **PL.FEAR.Arch00** translation
+archive. Its absence is harmless. The VR update does not download or include
+translation data, executable patches or expansion translations. Polish subtitle
+and font rendering still needs in-game confirmation; custom VR text is unchanged.
 
 ## Uninstall
 
@@ -254,44 +296,4 @@ If it reports changed files or a damaged snapshot, stop and preserve the error
 and the **FEAR-VR-Install** folder. Do not delete receipts/backups or repeatedly
 overwrite files. Follow [Setup recovery troubleshooting](TROUBLESHOOTING.md#setup-stops-or-recovery-fails).
 
-## Steam installation and startup
-
-On the first normal Steam VR start, the launcher prepares the verified original
-executable for up to 4 GB of address space on 64-bit Windows, then continues into
-VR automatically. Press **Play in VR** once and let it finish. Keep
-**FEAR.exe.fearvr-memory-original**, the original backup beside FEAR.exe.
-GOG already supports the larger address space; its executable is unchanged.
-See [memory recovery](TROUBLESHOOTING.md#steam-memory-preparation) for opt-out
-and restoration. Do not apply a separate 4 GB patch or combine executable mods.
-
-If Setup detects multiple copies, select the Steam base-game folder you intend
-to test. Keep the original store executable. Sign into Steam with the owning
-account, then use **F.E.A.R. VR.exe** in that folder. Do not close the launcher
-during startup. A failed Steam VR handoff stops with an error instead of silently
-continuing in flat mode. Steam level loading may take several minutes.
-
-Setup rejects conflicting loaders, including unrecognized input wrappers. The
-exact Steam input fix included in this release is allowed on Steam only.
-Disable other mods using their own instructions, or use a clean installation.
-Store file verification may leave additional mod DLLs behind. GOG and Steam use
-the same public Documents save/profile location; keep your existing save backups.
-Setup does not start the game and uninstall retains saves and profiles.
-
-## Experimental installed languages
-
-The mod preserves official language archives already installed with a supported
-GOG or Steam base game. Select/install your language through your game provider
-before installing the mod, where that language is available. The mod does not
-choose a language from Windows settings or include translation files.
-Cyrillic menu text uses an automatic readable font fallback; the runtime fix was
-tested with Russian menus on GOG. Other languages, Steam automatic-font coverage,
-non-menu fonts and full campaigns remain experimental. VR-specific text may
-remain English. A different retail executable is not supported merely because
-its language is different.
-
-## Existing Polish translation archive
-
-v1.7.7 recognizes an already installed main-game **PL.FEAR.Arch00** translation
-archive. Its absence is harmless. The VR update does not download or include
-translation data, executable patches or expansion translations. Polish subtitle
-and font rendering still needs in-game confirmation; custom VR text is unchanged.
+[Main guide](README.md) · [Installation](INSTALLATION.md) · [Controls](CONTROLS.md) · [Calibration](CALIBRATION.md) · [Troubleshooting](TROUBLESHOOTING.md)

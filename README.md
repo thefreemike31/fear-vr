@@ -1,39 +1,83 @@
 # F.E.A.R. VR Mod by TheFreeMike
 
-## v1.7.7: optional Improved Sights and clearer calibration
+**v1.8.0 · GOG and Steam · Free, unofficial PC VR mod**
 
-**Improved Sights by Eskess (Discord: `.eskess`)** reshape the sights on seven
-weapon types for easier VR aiming. They are **off by default**: existing profiles
-keep Stock sights so the update does not disturb your sight calibration.
-We highly encourage you to try them!
+Play the original F.E.A.R. campaign with tracked hands, physical weapon handling,
+manual reloads, body calibration and configurable comfort options. You need a
+legitimate supported copy of the game and a Windows PC capable of PC VR. The
+game is not included; this is not a standalone Quest app.
 
-Open **Options > VR Settings > Aiming & Crosshair > Weapon Sights**, choose
-**Improved**, then recalibrate the affected weapons under **Calibration & Body Fit
-> Advanced Sight Alignment**. Switching Stock/Improved works without restarting.
-Calibration shows your selected version when you cycle weapons. Saved sight
-alignments are shared between the two versions, so check/recalibrate after changing.
-
-A separate **Reset Calibration...** page provides individual resets and a complete
-Reset All Calibration. This update also improves close-range door retries and
-adds desktop-mirror resize, maximize and fullscreen controls. Existing saves and
-settings are preserved; no blanket reset is needed. Earlier features remain included.
+[Download v1.8.0](https://github.com/thefreemike31/fear-vr/releases/tag/v1.8.0) ·
+[Installation](INSTALLATION.md) · [Controls](CONTROLS.md) ·
+[Calibration](CALIBRATION.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
 <img src="assets/alma.png" alt="Alma, F.E.A.R. VR artwork" width="240">
 
-Play the original F.E.A.R. campaign in PC VR, with tracked hands, physical
-weapon handling, configurable controls, and comfort options.
+## Start here
 
-**Current release: v1.7.7. Free, unofficial, and made by TheFreeMike.**
-You need a legitimate copy of the **GOG F.E.A.R. Platinum Collection** or the
-original **Steam F.E.A.R. base game**, and a Windows PC capable of PC VR. The base game is not included.
+1. Confirm the unmodified GOG or Steam base game works on your PC.
+2. From the release's **Assets** list, download `fear-vr-v1.8.0.zip` and its
+   `.sha256` file. GitHub's automatic **Source code** downloads are not the mod.
+3. Verify and extract the complete ZIP. Keep **setup-files** beside
+   **F.E.A.R. VR Setup.exe**.
+4. Close F.E.A.R., open Setup, select the base game's folder, then install or
+   upgrade. Setup keeps saves and backs up replaced files.
+5. Connect your headset and controllers through one supported route below.
+6. Run **F.E.A.R. VR.exe** in the installed game folder, choose your desktop display mode, and select **Play in VR**.
 
-[Official website & trailer](https://thefreemike.com/fear-vr/) · [Download the latest release](https://github.com/thefreemike31/fear-vr/releases/latest)
-· [Calibration & settings video](https://www.youtube.com/watch?v=BUJLpW-l5yI) · [Installation](INSTALLATION.md) · [Troubleshooting](TROUBLESHOOTING.md)
+Follow the [step-by-step installation guide](INSTALLATION.md) for runtime setup,
+checksum verification, shortcuts, upgrading, uninstalling, and recovery.
 
-**Defender blocked the mod or Setup says a file is missing?**
-[Allow the official mod and restore missing files](TROUBLESHOOTING.md#download-or-antivirus-problem).
-**Game always starts flat despite correct VR setup?**
-[Check the ReShade OpenXR conflict](TROUBLESHOOTING.md#always-starts-flat-reshade-openxr-conflict).
+## Supported setup
+
+| Requirement | What to use |
+| --- | --- |
+| Game | Verified GOG or original Steam base game; Setup checks the exact executable |
+| PC | Windows 10/11; this is a PC VR mod, not a standalone headset app |
+| Quest connection | Virtual Desktop + VDXR, or Steam Link + SteamVR with Win32 OpenXR support |
+| Other PC VR headsets | SteamVR with Win32 OpenXR support; hardware coverage remains experimental |
+| Physically validated hardware | Quest 3 with Touch controllers |
+
+Meta Quest Link and Air Link are unsupported, including through SteamVR.
+Other retail executable variants, Extraction Point, Perseus Mandate, multiplayer, and
+Linux/Proton are outside this release's supported scope. A controller mapping
+does not mean that hardware has been physically tested.
+
+## What is new in 1.8
+
+- **Physical Weapons (Prototype):** optional grip-held firearms, release to
+  holster/drop/throw, supported catches and either-hand use. A temporary borrowed
+  gun can be used with three weapons stored; mixed firearm dual wielding is not
+  supported. [Handling modes](CONTROLS.md#choose-a-weapon-handling-mode).
+- **bHaptics:** optional TactSuit Pro, TactSleeve and TactVisor feedback through
+  bHaptics Player. Device/effect strengths are independent; no developer account
+  or API key is required. [Wearable setup](INSTALLATION.md#bhaptics-wearables).
+- **Controls and interactions:** Jump/Crouch remaps, controller-vibration strength,
+  per-weapon weight/lag, reload/body/holster refinements and more reliable
+  close-range door touches. Normal-play diagnostics are quieter.
+
+Saves and calibration are preserved; no blanket reset is required. Earlier
+features remain included. Improved Sights by **Eskess (`.eskess`)** are optional
+and off by default; recalibrate after switching sight versions.
+[Release notes](RELEASE-NOTES.md) · [Known limitations](KNOWN-LIMITATIONS.md).
+
+## Player guides
+
+| Guide | Find out how to… |
+| --- | --- |
+| [Installation](INSTALLATION.md) | Install, connect the runtime, launch, update, remove, or recover the mod |
+| [Controls](CONTROLS.md) | Navigate menus, choose weapon handling, reload, remap, and use comfort settings |
+| [Calibration](CALIBRATION.md) | Set height, fit hands, move holsters, and reset individual adjustments |
+| [Troubleshooting](TROUBLESHOOTING.md) | Work through startup, graphics, controllers, performance, audio, and save issues |
+| [Known limitations](KNOWN-LIMITATIONS.md) | Check hardware coverage and experimental features |
+| [Release notes](RELEASE-NOTES.md) | See the latest fixes and update instructions |
+| [Security and privacy](SECURITY.md) | Understand installation, unsigned files, and diagnostic privacy |
+| [Third-party notices](THIRD-PARTY-NOTICES.md) | Read component notices and licenses |
+
+The ZIP also includes **Controller Layouts.html**, with diagrams/tables for the
+supported mapping profiles. Download and open it in your browser; GitHub may
+show its HTML source instead of rendering it. These guides are also installed
+under **FEAR-VR-Install**, so you can read them without joining Discord.
 
 ## Calibration & settings video guide
 
@@ -62,72 +106,6 @@ For support here, use a release downloaded from
 [thefreemike31/fear-vr](https://github.com/thefreemike31/fear-vr/releases) and
 include its version and download URL in your report. Do not combine installers
 or files from different VR mods.
-
-## From prototype to public release
-
-The public launch follows weeks of development and private-beta testing, with
-retained milestones from July 21 through September 11, 2026: physical reloads
-and holsters, campaign interaction fixes, calibration, configurable controls,
-and a native installer with recovery support.
-
-[Read the development history and beta milestones](https://github.com/thefreemike31/fear-vr/blob/main/HISTORY.md).
-
-## Start here
-
-1. Confirm the unmodified GOG or Steam base game works on your PC.
-2. From the release's **Assets** list, download `fear-vr-v1.7.7.zip` and its
-   `.sha256` file. GitHub's automatic **Source code** downloads are not the mod.
-3. Verify and extract the complete ZIP. Keep **setup-files** beside
-   **F.E.A.R. VR Setup.exe**.
-4. Close F.E.A.R., open Setup, select the base game's folder, then install or
-   upgrade. Setup keeps saves and backs up replaced files.
-5. Connect your headset and controllers through one supported route below.
-6. Run **F.E.A.R. VR.exe** in the installed game folder, choose your desktop display mode, and select **Play in VR**.
-
-Follow the [step-by-step installation guide](INSTALLATION.md) for runtime setup,
-checksum verification, shortcuts, upgrading, uninstalling, and recovery.
-
-## Supported setup
-
-| Requirement | What to use |
-| --- | --- |
-| Game | Verified GOG or original Steam base game; Setup checks the exact executable |
-| PC | Windows 10/11; this is a PC VR mod, not a standalone headset app |
-| Quest connection | Virtual Desktop + VDXR, or Steam Link + SteamVR with Win32 OpenXR support |
-| Other PC VR headsets | SteamVR with Win32 OpenXR support; hardware coverage remains experimental |
-| Physically validated hardware | Quest 3 with Touch controllers |
-
-Meta Quest Link and Air Link are unsupported, including through SteamVR.
-Other retail executable variants, Extraction Point, Perseus Mandate, multiplayer, and
-Linux/Proton are outside this release's supported scope. A controller mapping
-does not mean that hardware has been physically tested.
-
-## What is included
-
-- Stereo VR rendering, tracked head and hands, and controller aiming.
-- **Grip & Holsters** for physical body draws, or **Classic Sticky** weapon handling.
-- Manual-reload options, physical interactions, ladder handling, and tutorial cards.
-- Height, controller hand fit, holster/pouch, grip, and sight calibration.
-- Configurable handedness, button layouts, movement, turning, and comfort settings.
-- Native install, upgrade, uninstall, and interrupted-install recovery.
-
-## Player guides
-
-| Guide | Find out how to… |
-| --- | --- |
-| [Installation](INSTALLATION.md) | Install, connect the runtime, launch, update, remove, or recover the mod |
-| [Controls](CONTROLS.md) | Navigate menus, choose weapon handling, reload, remap, and use comfort settings |
-| [Calibration](CALIBRATION.md) | Set height, fit hands, move holsters, and reset individual adjustments |
-| [Troubleshooting](TROUBLESHOOTING.md) | Work through startup, graphics, controllers, performance, audio, and save issues |
-| [Known limitations](KNOWN-LIMITATIONS.md) | Check hardware coverage and experimental features |
-| [Release notes](RELEASE-NOTES.md) | See the latest fixes and update instructions |
-| [Security and privacy](SECURITY.md) | Understand installation, unsigned files, and diagnostic privacy |
-| [Third-party notices](THIRD-PARTY-NOTICES.md) | Read component notices and licenses |
-
-The ZIP also includes **Controller Layouts.html**, with diagrams/tables for the
-supported mapping profiles. Download and open it in your browser; GitHub may
-show its HTML source instead of rendering it. These guides are also installed
-under **FEAR-VR-Install**, so you can read them without joining Discord.
 
 ## Help and support
 
@@ -171,12 +149,6 @@ It is not an open-source release. Third-party components retain their own
 licenses. F.E.A.R. belongs to its respective rights holders; this unofficial
 mod is not endorsed by them and includes no standalone copy of the game.
 
-## Steam edition
-
-The same Setup and launcher support verified GOG and Steam base-game copies.
-Choose the intended game folder in Setup. For Steam, stay signed into the account
-that owns F.E.A.R. and start **F.E.A.R. VR.exe** from that game's folder. The
-launcher passes VR startup through Steam automatically; leave it open while
-Steam starts the game. Steam ownership does not require the SteamVR runtime:
-Virtual Desktop with VDXR remains supported. Steam level loads can take several
-minutes; GOG remains recommended. Use a clean installation without other loaders.
+Earlier releases and private-beta milestones are documented separately in
+[development history](https://github.com/thefreemike31/fear-vr/blob/main/HISTORY.md).
+Use the current guides above for installation and play.

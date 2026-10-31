@@ -1,12 +1,200 @@
 # Controls and weapon handling
 
-**Video walkthrough:** [Full Calibrations & Settings Guide by TheFreeMike](https://www.youtube.com/watch?v=BUJLpW-l5yI). Around 40 minutes, with YouTube chapters so you can jump to the part you need.
+Current guide for **v1.8.0**. Open **Controller Layouts.html** from the ZIP or
+installed **FEAR-VR-Install** folder for diagrams and default buttons for your
+detected controller profile. The launcher’s **Controls** button opens that guide.
+An emulated runtime profile can differ from the controller’s product name;
+non-Touch hardware remains experimental.
+
+[Choose a weapon-handling mode](#choose-a-weapon-handling-mode) · [Reloading and interactions](#reloading-and-interactions) · [Handedness and remapping](#handedness-and-remapping) · [Flying kick and slide](#flying-kick-and-slide) · [Mission screen, quick save and quick load](#mission-screen-quick-save-and-quick-load) · [bHaptics wearable feedback](#bhaptics-wearable-feedback)
+
+## Menus and pause
+
+Use the controller pointer and trigger to select menu items. Runtime/system
+dashboard buttons are owned by the headset software and may never reach the game.
+For SteamVR Touch, press **Right A + Left X together** to pause. The suggested
+Index mapping uses **Right A + Left A together**. Press simultaneously; holding
+one button first can perform its normal action.
+
+## Handedness and remapping
+
+Open **Options > VR Settings > Controls & Layout**:
+
+- **Weapon Hand** selects your weapon hand.
+- **Movement Stick** selects the locomotion stick.
+- **Tap to Walk** controls the optional utility-button run/walk toggle.
+- **Weapon Button Tap** selects the tap behavior used in Classic Sticky.
+- **Button Layout / Remap** reassigns gameplay button roles. Assigning an
+  occupied button exchanges the two roles; menu controls remain fixed.
+- **Jump** and **Crouch** can use buttons or the turn-stick up/down inputs.
+- **Controller Vibration** adjusts ordinary controller feedback from 0–200%.
+  Zero disables it; the controller's maximum still limits stronger settings.
+  This is independent of bHaptics wearable feedback.
+
+Layouts are saved per reported controller profile and weapon hand. Use
+**Restore This Layout** on the remap page, or **Restore Defaults for This Hand**
+on the controls page, to undo changes. Check the displayed role labels after
+changing handedness; references to left/right defaults may no longer apply.
+
+## Movement and comfort
+
+You start in run mode. With default Touch controls and **Tap to Walk** enabled,
+tap the left stick to walk, and tap again to run. **Hold** that utility control
+for a medkit; tapping and holding are different actions.
+
+Use **Options > VR Settings > Comfort & Movement** for play position, turning, turn speed, and comfort
+options. Smooth turning defaults to 180 degrees/second; lower it or choose snap
+turning to suit you. Review vignette and camera-driven-scene options before play.
+
+**Movement Direction** on this page defaults to **Head**. Choose **Controller**
+to follow the hand assigned to your movement stick. If that hand loses tracking
+or points almost vertically, movement falls back to the head direction.
+
+Jump needs a deliberate upward stick push. After stick-crouching, briefly return
+the stick to center before pushing up to jump. A double tap is not required.
+
+**Damage Camera Motion** and **Explosion / Effects Shake** are independent.
+Keep explosion shake while disabling damage motion, or turn each off separately.
+The effects option also controls authored environmental camera shake.
+
+## Choose a weapon-handling mode
+
+Open **Options > VR Settings > Immersion & Interaction > Weapon Handling**.
+
+**Grip & Holsters:** reach to a body slot and use Grip to draw a weapon. Weapon-
+button taps and the selection wheel are intentionally unavailable. Reload acts
+on a held firearm; pressing it while the gun is stowed does nothing. Adjust the
+slot locations in calibration if reaching a holster is uncomfortable.
+
+**Classic Sticky:** keeps conventional tap switching and hold-to-open weapon
+selection, according to the selected layout. Locomotion is blocked while the
+world-anchored weapon selector is open. Release the selector to resume movement.
+
+**Sticky & Holsters:** press Grip at a body slot to draw, then release Grip while
+continuing to hold the weapon. Press Grip again at a compatible holster to stow.
+Use body slots for selection; weapon-button cycling and the wheel are unavailable.
+
+**Physical Weapons (Prototype):** hold Grip to keep a firearm in your hand.
+Release at a compatible free holster to store it; release elsewhere to drop or
+throw it. Catch with either hand and fire. The mode supports nine firearm types;
+mixed-weapon dual wielding is not supported. Native ammunition and damage rules
+still apply. This is optional; other handling modes remain available.
+
+With all three inventory slots full, you can temporarily borrow a world firearm
+without replacing a stored gun. A duplicate does not overwrite the stored gun's
+ammunition. Chest ammo intake needs an already stored matching firearm; excess
+ammunition stays in the source magazine. Follow the borrowing/unloading cards.
+
+An empty single pistol needs its slide pulled after inserting a magazine. Dual
+pistols retain hip reloads. In the nonphysical modes, holding Reload for 1.25
+seconds discards one pistol from a pair; release early to cancel. Physical mode
+uses the actual Grip release instead.
+
+Under **Immersion & Interaction**, **Visible Holstered Weapons** controls passive
+body weapon/belt models. Setting it to No hides their presentation; the body
+draw/reload locations still work. Calibration references remain visible.
+
+**Wrist HUD** on the same page hides or shows the wrist display. It defaults
+to Yes and is saved independently; immersion presets do not change it. The native
+wrist display includes weapon ammunition and a slow-motion charge meter.
+
+### Remembered weapon holsters
+
+unrelated pickups, inventory reordering and weapon selection keep
+existing weapons in their assigned body slots. Drawing a weapon does not free
+its holster. A new ordinary long gun uses a free shoulder; a compatible swap
+inherits the outgoing gun's place, including a physical drop followed by pickup.
+Removing a weapon does not shuffle the remaining ones.
+
+Pistols keep their hip slots. Heavy weapons and three-long-gun loadouts still
+apply the normal back-slot rule, so the involved weapons can move when necessary.
+The layout is saved with your game. Old saves use the normal default arrangement;
+New Game resets it. No calibration reset or button change is needed.
+
+## Reloading and interactions
+
+At the post-loading continue prompt, release and press either trigger; you do
+not need to point at the panel. Holding a trigger through loading does not skip
+the prompt. Normal readiness delays still apply.
+
+The new **Slow Motion** tutorial card displays your mapped button once the
+ability is available and charged. Activate it normally to complete the lesson.
+Existing tutorial progress is preserved; the usual Tutorial Cards setting and
+reset action apply.
+
+For ASP and G2A2, a tactical magazine change with a round still chambered does
+not need another bolt pull. Empty reloads still need racking. Keep the ASP scope
+close to your selected eye to acquire the view; it remains usable while tilting.
+
+Support hands now use native weapon grip poses. If an older custom alignment
+feels wrong, revisit grip calibration. The shotgun support hand follows the moving
+fore-end during pumping. [Weapon Size Calibration](CALIBRATION.md#weapon-size-calibration)
+adjusts the size of individual guns separately from grip and sight alignment.
+
+For the shotgun, reach toward the ammo pouch to reveal a shell and use Grip to
+pick it up, without pressing Reload. This also works when passive holster models
+are hidden. The shell hides when the tube is full. Load at the underside opening.
+
+Shell loading retains control while you carry or insert a shell;
+the shotgun support grip cannot take over that action. To finish a partial
+reload, insert a shell, release Grip, then freshly grab and pump the fore-end.
+
+Reload lessons follow the actual stage: inserting a magazine or seating a cell
+completes that lesson, and charging guidance appears only when required. G2A2/ASP
+tactical reloads do not need a bolt pull; Type-7 still uses cell then hammer.
+Existing lesson progress is preserved, with no reset needed.
+
+To put a grenade back, release it near its calibrated holster. The return region
+is more forgiving than the grab region; move away from the holster to throw.
+
+After throwing a remote charge, its detonator returns to your dominant hand
+while a charge is active. You can still draw a firearm with that hand: the
+detonator hides while the firearm is held and returns when you release it.
+This also works across repeated grabs and releases.
+
+Nearby eligible pickups take priority over hip holsters. Release Grip and reach
+away from the pickup to draw from a body slot deliberately. In Physical Weapons, a world firearm can be borrowed with all three slots full;
+storing a replacement still follows the inventory and compatible-slot rules.
+
+Manual reload uses weapon-specific actions and contextual cards. Hold the gun,
+use the reload/ammo-pouch interactions shown by the current lesson, and complete
+any required chambering/racking step. Different weapons do not all reload in
+the same way. For a rack or bolt pull, keep the support grip engaged and pull
+along the mechanism relative to the gun, not relative to your head. A release
+or tracking loss cancels an incomplete pull. Use the reload-mode option if you
+prefer button reloads.
+
+If a reload seems stuck, check the held weapon, reserve ammo, chamber/racking
+state, and selected reload mode before repeatedly pressing buttons. Recalibrate
+the pouch if its position is the problem. See [Troubleshooting](TROUBLESHOOTING.md#weapon-reload-holster-or-interaction-problem).
+
+Empty-hand melee works with either an open hand or a closed fist on enemies
+and breakable glass/planks. Keep the striking hand free: holding a prop,
+supporting a weapon, reloading, or climbing takes priority. Firing a held gun
+does not also add physical weapon-strike damage.
+
+Physical pickups, weapon exchange, melee, and ladders depend on eligible objects
+and free hands. A decorative prop is not necessarily grabbable. Clear held
+objects/weapons when an interaction requires an empty hand.
+
+## Ladder modes
+
+Under **Comfort & Movement**, choose **Ladder Mode**:
+
+- **Manual** (default): hold Grip at the ladder and move your hand to climb; releasing lets go.
+- **Auto (Both Grips)**: engage both grips for automatic climbing.
+- **Joystick**: use the assigned movement stick. Approach from below with forward input, or from the upper platform with backward input. Forward climbs up, backward climbs down and neutral holds position. Jump releases the ladder; return the stick to neutral before engaging again.
+
+Joystick entry supports straight, off-center and angled approaches within the
+ladder's normal reach and obstruction checks. Top-out suppresses immediate
+re-grabs. Not every campaign ladder or reported pushback case has been verified.
 
 ## Flying kick and slide
 
-Use the **jump/turn stick**: normally the right stick, or the opposite stick when
+With the default layout, use the **jump/turn stick**: normally the right stick, or the opposite stick when
 Movement Stick/Southpaw changes your locomotion hand. Weapon handedness alone does
-not select it. These are stick gestures, not face-button combinations.
+not select it. Jump and Crouch can also be remapped in Controls & Layout;
+use the assigned Jump/Crouch input for the same press, release and repeat actions.
 
 - **Flying kick:** flick up to jump, let the stick retreat, then flick up again
   while still airborne. One kick per jump. You do not need to reach the exact
@@ -23,13 +211,13 @@ is not guaranteed. Slow motion slows the attack. Menus, calibration and invalid
 movement states prevent activation. Landing ends kick damage; jumping or losing
 stable ground cancels a slide. Your tracked view remains under headset control.
 
-In v1.7.5, a flying kick can open a closed door when the boot makes contact.
+A flying kick can open a closed door when the boot makes contact.
 Normal locks, scripted progression and opening direction still apply; it does
 not break locks or close an already open door.
 
 ## Flashlight gesture
 
-In v1.7.2, use **either free physical hand**, including while the opposite hand
+Use **either free physical hand**, including while the opposite hand
 holds a gun. Bring the free hand to your forehead with **Grip released**, then
 squeeze Grip once to toggle the flashlight. Release before repeating; holding
 Grip does not repeatedly toggle it. This is independent of dominant-hand settings.
@@ -66,213 +254,6 @@ Other profiles: use the per-profile combinations in **Controller Layouts.html**.
 Profiles without both required face inputs cannot use that combination. Touch/GOG
 received owner testing; other hardware and separate Steam headset coverage remain open.
 
-## v1.5 turret aiming and ladder landings
-
-Remote turrets use the configured dominant hand for aiming and firing. Pitch and
-yaw follow changes from your settled entry direction; wrist roll does not steer.
-Left-handed turret pitch was owner-tested. Ladder landing camera handoff now
-starts within a verified standing destination while retaining collision checks.
-That ladder change has internal regression evidence, not new headset confirmation.
-
-## v1.4.2 vent interaction
-
-Physical empty-hand strikes now reliably reach scripted vent damage receivers,
-including after the cover bends. Withdraw your hand between distinct strikes;
-there is no need to repeatedly pound the cover. Native vent scripts still decide
-when it breaks.
-
-[Main guide](README.md) | [Calibration](CALIBRATION.md) | [Troubleshooting](TROUBLESHOOTING.md)
-
-Open **Controller Layouts.html** from the downloaded ZIP or the installed
-**FEAR-VR-Install** folder for the default buttons for your controller profile.
-The runtime may report an emulated profile; use the detected profile rather
-than relying solely on the controller's product name. Non-Touch profiles remain
-experimental.
-
-## Menus and pause
-
-Use the controller pointer and trigger to select menu items. Runtime/system
-dashboard buttons are owned by the headset software and may never reach the game.
-For SteamVR Touch, press **Right A + Left X together** to pause. The suggested
-Index mapping uses **Right A + Left A together**. Press simultaneously; holding
-one button first can perform its normal action.
-
-## Handedness and remapping
-
-Open **Options > VR Settings > Controls & Layout**:
-
-- **Weapon Hand** selects your weapon hand.
-- **Movement Stick** selects the locomotion stick.
-- **Tap to Walk** controls the optional utility-button run/walk toggle.
-- **Weapon Button Tap** selects the tap behavior used in Classic Sticky.
-- **Button Layout / Remap** reassigns gameplay button roles. Assigning an
-  occupied button exchanges the two roles; menu controls remain fixed.
-
-Layouts are saved per reported controller profile and weapon hand. Use
-**Restore This Layout** on the remap page, or **Restore Defaults for This Hand**
-on the controls page, to undo changes. Check the displayed role labels after
-changing handedness; references to left/right defaults may no longer apply.
-
-## Movement and comfort
-
-You start in run mode. With default Touch controls and **Tap to Walk** enabled,
-tap the left stick to walk, and tap again to run. **Hold** that utility control
-for a medkit; tapping and holding are different actions.
-
-Use **Options > VR Settings > Comfort & Movement** for play position, turning, turn speed, and comfort
-options. Smooth turning defaults to 180 degrees/second; lower it or choose snap
-turning to suit you. Review vignette and camera-driven-scene options before play.
-
-**Movement Direction** on this page defaults to **Head**. Choose **Controller**
-to follow the hand assigned to your movement stick. If that hand loses tracking
-or points almost vertically, movement falls back to the head direction.
-
-Jump needs a deliberate upward stick push. After stick-crouching, briefly return
-the stick to center before pushing up to jump. A double tap is not required.
-
-**Damage Camera Motion** and **Explosion / Effects Shake** are independent.
-Keep explosion shake while disabling damage motion, or turn each off separately.
-The effects option also controls authored environmental camera shake.
-
-## Choose a weapon-handling mode
-
-**Grip & Holsters:** reach to a body slot and use Grip to draw a weapon. Weapon-
-button taps and the selection wheel are intentionally unavailable. Reload acts
-on a held firearm; pressing it while the gun is stowed does nothing. Adjust the
-slot locations in calibration if reaching a holster is uncomfortable.
-
-**Classic Sticky:** keeps conventional tap switching and hold-to-open weapon
-selection, according to the selected layout. Locomotion is blocked while the
-world-anchored weapon selector is open. Release the selector to resume movement.
-
-Under **Immersion & Interaction**, **Visible Holstered Weapons** controls passive
-body weapon/belt models. Setting it to No hides their presentation; the body
-draw/reload locations still work. Calibration references remain visible.
-
-**Wrist HUD** on the same page hides or shows the wrist display. It defaults
-to Yes and is saved independently; immersion presets do not change it.
-
-### Remembered weapon holsters
-
-In v1.7.6, unrelated pickups, inventory reordering and weapon selection keep
-existing weapons in their assigned body slots. Drawing a weapon does not free
-its holster. A new ordinary long gun uses a free shoulder; a compatible swap
-inherits the outgoing gun's place, including a physical drop followed by pickup.
-Removing a weapon does not shuffle the remaining ones.
-
-Pistols keep their hip slots. Heavy weapons and three-long-gun loadouts still
-apply the normal back-slot rule, so the involved weapons can move when necessary.
-The layout is saved with your game. Old saves use the normal default arrangement;
-New Game resets it. No calibration reset or button change is needed.
-
-## Subtitles
-
-For dialogue subtitles, open **Options > VR Settings > Guidance Cards** and
-set **Subtitles** to **Yes**. **Subtitle Size** adjusts readability from 75% to
-150% (default 100%). This uses the same setting as the game's subtitle option.
-Long captions scroll within the panel.
-
-## Reloading and interactions
-
-At the post-loading continue prompt, release and press either trigger; you do
-not need to point at the panel. Holding a trigger through loading does not skip
-the prompt. Normal readiness delays still apply.
-
-The new **Slow Motion** tutorial card displays your mapped button once the
-ability is available and charged. Activate it normally to complete the lesson.
-Existing tutorial progress is preserved; the usual Tutorial Cards setting and
-reset action apply.
-
-For ASP and G2A2, a tactical magazine change with a round still chambered does
-not need another bolt pull. Empty reloads still need racking. Keep the ASP scope
-close to your selected eye to acquire the view; it remains usable while tilting.
-
-Support hands now use native weapon grip poses. If an older custom alignment
-feels wrong, revisit grip calibration. The shotgun support hand follows the moving
-fore-end during pumping. [Weapon Size Calibration](CALIBRATION.md#weapon-size-calibration)
-adjusts the size of individual guns separately from grip and sight alignment.
-
-For the shotgun, reach toward the ammo pouch to reveal a shell and use Grip to
-pick it up, without pressing Reload. This also works when passive holster models
-are hidden. The shell hides when the tube is full. Load at the underside opening.
-
-In v1.4.1, shell loading retains control while you carry or insert a shell;
-the shotgun support grip cannot take over that action. To finish a partial
-reload, insert a shell, release Grip, then freshly grab and pump the fore-end.
-
-Reload lessons follow the actual stage: inserting a magazine or seating a cell
-completes that lesson, and charging guidance appears only when required. G2A2/ASP
-tactical reloads do not need a bolt pull; Type-7 still uses cell then hammer.
-Existing lesson progress is preserved, with no reset needed.
-
-To put a grenade back, release it near its calibrated holster. The return region
-is more forgiving than the grab region; move away from the holster to throw.
-
-After throwing a remote charge, its detonator returns to your dominant hand
-while a charge is active. You can still draw a firearm with that hand: the
-detonator hides while the firearm is held and returns when you release it.
-This also works across repeated grabs and releases.
-
-Nearby eligible pickups take priority over hip holsters. Release Grip and reach
-away from the pickup to draw from a body slot deliberately. A weapon can be
-carried even with full inventory; storing it still requires the normal exchange.
-
-Manual reload uses weapon-specific actions and contextual cards. Hold the gun,
-use the reload/ammo-pouch interactions shown by the current lesson, and complete
-any required chambering/racking step. Different weapons do not all reload in
-the same way. For a rack or bolt pull, keep the support grip engaged and pull
-along the mechanism relative to the gun, not relative to your head. A release
-or tracking loss cancels an incomplete pull. Use the reload-mode option if you
-prefer button reloads.
-
-If a reload seems stuck, check the held weapon, reserve ammo, chamber/racking
-state, and selected reload mode before repeatedly pressing buttons. Recalibrate
-the pouch if its position is the problem. See [Troubleshooting](TROUBLESHOOTING.md#weapon-reload-holster-or-interaction-problem).
-
-Empty-hand melee works with either an open hand or a closed fist on enemies
-and breakable glass/planks. Keep the striking hand free: holding a prop,
-supporting a weapon, reloading, or climbing takes priority. Firing a held gun
-does not also add physical weapon-strike damage.
-
-Physical pickups, weapon exchange, melee, and ladders depend on eligible objects
-and free hands. A decorative prop is not necessarily grabbable. Clear held
-objects/weapons when an interaction requires an empty hand.
-
-## Ladder modes
-
-Under **Comfort & Movement**, choose **Ladder Mode**:
-
-- **Manual** (default): hold Grip at the ladder and move your hand to climb; releasing lets go.
-- **Auto (Both Grips)**: engage both grips for automatic climbing.
-- **Joystick**: use the assigned movement stick. Approach from below with forward input, or from the upper platform with backward input. Forward climbs up, backward climbs down and neutral holds position. Jump releases the ladder; return the stick to neutral before engaging again.
-
-Joystick entry supports straight, off-center and angled approaches within the
-ladder's normal reach and obstruction checks. Top-out suppresses immediate
-re-grabs. Not every campaign ladder or reported pushback case has been verified.
-
-## Interaction hints
-
-Use **Options > VR Settings > Guidance Cards > Tutorial Cards** to enable or disable cards. In v1.7.5 a
-card retires when its action succeeds or after **ten seconds of visible gameplay**.
-Menus, cinematics and hidden cards do not consume that time. You do not need to
-throw a grenade, use a medkit or spend ammunition to dismiss a lesson.
-
-Completed cards stay completed across Continue, loading and settings changes.
-**New Game** or intentionally replaying tutorials resets progress. If an older
-version already lost a completion flag, that lesson may appear once more, then
-retire normally; no profile reset is needed.
-
-Cards follow your current mappings, handedness and pickup/reload options. The
-early kick/slide cards explain the stick gestures, and pickup reminders reflect
-your selected interaction mode. Reload cards appear only when actionable and
-withdraw when the weapon is full, stowed or has no reserve ammunition. You can
-switch weapons during an unfinished reload.
-
-For supported pickups and belt magazines, grab at the visible hand contact you
-want to keep. Close contact preserves the object's pose; nearby grabs retain
-bounded assistance. Saved hand fitting also applies to held props and the
-manual-reload utility hand. This is not individual finger tracking.
-
 ## Aiming
 
 **VR Aiming** provides aim-indicator and brightness options. **Dual Pistol Colors**
@@ -292,5 +273,61 @@ alignments are shared between sight versions; recheck them after switching.
 Grip/support-hand/reload controls are unchanged. Reset tools now have their own
 **Reset Calibration...** page; [see the calibration guide](CALIBRATION.md).
 
-For a close-range door retry, withdraw your hand and deliberately push again.
-Resting contact does not automatically retrigger the door; locks/scripts still apply.
+## bHaptics wearable feedback
+
+Open **Options > VR Settings > bHaptics** after connecting supported wearables
+in Player. **Wearable Feedback** is the master switch. Master and individual
+device strengths apply to every effect; **Effect Strengths** adjusts Incoming
+Damage, Weapon Recoil, Low Health Heartbeat, Armor Pickup, Medkit Use, Slow Motion,
+Explosions, Melee Impacts and Environmental Effects independently.
+
+Effects follow confirmed gameplay events. Environmental feedback covers nearby
+blasts, authored rumbles and supported visible character scares; it does not
+promise feedback for every sound, video, hidden scare or scripted event. Pause,
+loading, focus loss and disabled feedback suppress output. Older queued impacts
+are discarded instead of replayed when you return. [Setup](INSTALLATION.md#bhaptics-wearables).
+
+## Subtitles
+
+For dialogue subtitles, open **Options > VR Settings > Guidance Cards** and
+set **Subtitles** to **Yes**. **Subtitle Size** adjusts readability from 75% to
+150% (default 100%). This uses the same setting as the game's subtitle option.
+Long captions scroll within the panel.
+
+## Interaction hints
+
+Use **Options > VR Settings > Guidance Cards > Tutorial Cards** to enable or disable cards. a
+Card retires when its action succeeds or after **ten seconds of visible gameplay**.
+Menus, cinematics and hidden cards do not consume that time. You do not need to
+throw a grenade, use a medkit or spend ammunition to dismiss a lesson.
+
+Completed cards stay completed across Continue, loading and settings changes.
+**New Game** or intentionally replaying tutorials resets progress. If an older
+version already lost a completion flag, that lesson may appear once more, then
+retire normally; no profile reset is needed.
+
+Cards follow your current mappings, handedness and pickup/reload options. The
+early kick/slide cards explain the stick gestures, and pickup reminders reflect
+your selected interaction mode. Reload cards appear only when actionable and
+withdraw when the weapon is full, stowed or has no reserve ammunition. You can
+switch weapons during an unfinished reload.
+
+For supported pickups and belt magazines, grab at the visible hand contact you
+want to keep. Close contact preserves the object's pose; nearby grabs retain
+bounded assistance. Saved hand fitting also applies to held props and the
+manual-reload utility hand. This is not individual finger tracking.
+
+## Doors, vents and turrets
+
+Touch a door with a free hand to activate it. A second hand touching the same
+door no longer reverses the first hand’s opening action. For a stopped-door
+retry, withdraw and deliberately push again. Resting contact does not repeatedly
+activate it; native locks, scripts, opening direction and obstructions still apply.
+
+For scripted vent covers, withdraw between distinct empty-hand strikes,
+including after a cover bends. Native scripts decide when it breaks.
+Remote turrets use your configured weapon hand for aiming and firing; pitch/yaw
+follow changes from your settled entry direction, while wrist roll does not steer.
+
+
+[Main guide](README.md) · [Installation](INSTALLATION.md) · [Controls](CONTROLS.md) · [Calibration](CALIBRATION.md) · [Troubleshooting](TROUBLESHOOTING.md)

@@ -1,182 +1,80 @@
 # Known limitations
 
-## v1.7.7 sights, calibration and mirror scope
+Current scope for **v1.8.0**. [Release notes](RELEASE-NOTES.md) cover what changed;
+[development history](https://github.com/thefreemike31/fear-vr/blob/main/HISTORY.md)
+holds earlier milestones. These limits apply even when installation checks pass.
 
-Repeated live Stock/Improved switching received owner headset acceptance after
-the preview disappearing-model bug was corrected. Earlier feedback accepted the
-grip/reload correction and reset-page readability. Every weapon/handedness,
-calibration capture and separate edition session was not individually enumerated;
-a new assembled-ZIP headset run is not claimed.
+## Game, headset and runtime support
 
-Improved Sights by Eskess (`.eskess`) cover seven weapon types, not every gun.
-They are off by default to preserve existing sight calibration. Recalibrate in
-Advanced Sight Alignment after enabling them. Sight alignments are shared across
-versions; switching back does not restore an earlier alignment automatically.
+- Supported game copies are the verified GOG and original Steam base-game
+  single-player campaigns on Windows 10/11. Other executable variants,
+  expansions, multiplayer and Linux/Proton are outside the supported scope.
+- **Quest 3 with Touch controllers** is the physical validation baseline.
+  Other headsets, controller profiles and wide/canted displays are experimental.
+  A listed mapping is not evidence that the hardware has been tested.
+- Use Virtual Desktop + VDXR or Steam Link/SteamVR with Win32 OpenXR support.
+  Meta Quest Link and Air Link are unsupported, including through SteamVR.
+- Other mod loaders, graphics/audio replacements and hook suites are not
+  validated together with this release. A lost OpenXR session can require a
+  game restart after restoring the headset connection.
 
-The close-range door and desktop-mirror bundle was owner-accepted. Optional
-Polish archive mounting is included, but Polish fonts/subtitles remain unvalidated.
-No fix is claimed for the unresolved native game-exit crash or all flat-launch
-reports. OBS capture should still be checked with a short recording on your setup.
+## Performance, loading and exit
 
-## v1.7.6 launcher and holster scope
+- Steam level loads can take several minutes; GOG remains recommended.
+- The game is 32-bit. Steam memory preparation enables up to 4 GB of address
+  space on 64-bit Windows; it does not eliminate memory pressure. High per-eye
+  resolution can still exhaust resources on a PC with plenty of system RAM.
+- Residual hitches and recurring stalls are not universally resolved. Runtime,
+  driver, loading and streaming waits can still stall; report timing and settings.
+- A pre-existing native cleanup crash after Quit remains unresolved. Windows
+  may record it after the visible window closes normally. It is distinct from
+  an in-game crash or a stuck leftover window.
+- Desktop/OBS capture needs a short recording check on your own setup, including
+  audio. Headset rendering and recording are separate checks.
 
-The inherited SteamVR win64-to-win32 selection repair passed unit tests and
-diagnostic checks of both edition launchers. The maintainer subsequently accepted the repair after affected-user confirmation;
-the report did not enumerate edition or the full runtime matrix. It does not claim complete Steam Frame compatibility or
-resolution of unrelated SteamVR launch problems. Valid custom 32-bit overrides
-remain selected; other invalid explicit overrides fail with a repair message.
-Registry/global runtime settings are unchanged.
+## Weapons, body and interaction
 
-The remembered-holster behavior received overall owner headset acceptance.
-Separate editions, every weapon/handedness combination and every save/load path
-were not individually enumerated. Save compatibility has source/fixture coverage;
-old or invalid layout data falls back to the default. The existing heavy/back-slot
-rule can still move the involved weapons. No assembled-ZIP headset run is claimed.
+- **Physical Weapons (Prototype)** is optional. Its nine firearm types use
+  hold-Grip and release-to-store/drop rules. Mixed firearm dual wielding is not
+  supported. See [handling modes](CONTROLS.md#choose-a-weapon-handling-mode).
+- Body pose is inferred from the headset/controllers, not full-body trackers.
+  Feet/elbows and holster placement may need personal fitting; occasional
+  hip/arm snaps, small-prop offsets and scene-dependent clipping can remain.
+- Not every ladder endpoint, vent, door, weapon/hand combination or campaign
+  transition has been individually verified. Native locks/scripts still apply.
+  The reported Blindside underwater tunnel has not been reproduced and verified
+  in a headset. Keep save backups and report the exact location/action.
+- Improved Sights by Eskess cover seven weapon types and are off by default.
+  Sight alignment is shared between Stock/Improved; recalibrate after switching.
+- Optional Flashlight Shadows is experimental and off by default. Detached
+  hands do not cast those shadows. Optional View Width is experimental framing;
+  native headset projection is retained. Start at 100% View Width.
 
-## v1.7.5 interactions, tutorials and mirror scope
+## Wearables, languages and other limits
 
-The owner accepted visible-contact grabbing, door kicks, reload switching,
-tutorial persistence/lifetime and the single mirror with Alt-Tab and window
-shutdown. Separate Steam headset coverage, every object/door/weapon, every mirror
-mode, a new complete OBS recording matrix and an assembled-ZIP headset run are
-not claimed. Supported pickup geometry has improved contact; unsupported models
-and finger closure can still differ from the visible surface. Door kicks retain
-locks and scripts.
+- bHaptics support covers **TactSuit Pro, TactSleeve and TactVisor**; a partial
+  kit works. Other device models are not claimed supported. Environmental
+  feedback follows specific supported events, not every sound, video or scare.
+- Language import needs original language media and a matching official 1.08
+  patch. Only Spanish import has official real-media/GOG VR testing; other
+  languages and Steam Spanish VR remain unverified. Russian menu-font fallback
+  was tested on GOG; non-menu fonts and full campaigns remain experimental.
+- An existing Polish archive can be mounted, but Polish fonts/subtitles still
+  need in-game confirmation. No translation data or original game archives ship.
+  Launcher language is separate; VR-specific text, logs and guides may stay English.
+- Steam’s input fix also filters legacy gamepads in flat launches while enabled.
+  Keyboard, mouse and OpenXR remain available; see the
+  [optional off switch](TROUBLESHOOTING.md#steam-input-fix).
+- Files are unsigned. SHA-256 confirms identity, not universal antivirus approval.
+  Developer Level Select, SDK tools, symbols and personal credentials do not ship.
 
-Fill crops the right eye to 16:9; Native preserves the complete eye and may leave
-side bars on a widescreen canvas. Off is headset-only. A brief bootstrap window
-may appear before VR is ready; mirror failure can restore the original window
-as a fallback. The blank-window-on-exit issue is fixed. A previously observed
-native game-shutdown crash remains a separate, unresolved follow-up.
-See the [current OBS guide](INSTALLATION.md#recording-with-obs).
+## Validation scope
 
-## v1.7.2 ladder, body and flashlight scope
-
-The reported tall ladder's actual top-platform exit, grounded body-height fit,
-mirror head, arm/support improvements, hand shadows and either-hand flashlight
-received owner headset acceptance. No every-ladder, every-weapon, separate Steam
-or newly assembled-ZIP headset acceptance is claimed. A minor occasional hip/arm
-snap remains open. The grenade hand-sample timing correction is included;
-the slow-motion feel investigation closed without a demonstrated extra drag fix.
-
-## Retained v1.7.1 ladder scope
-
-The reproduced water-to-ladder climb and standing platform exit were owner-headset
-accepted after the body-update regression. Every ladder mode, campaign ladder,
-separate Steam headset run and the assembled public ZIP are not claimed tested.
-The body remains visible in water. Earlier untested red-ladder cases are separate.
-
-The old separate OBS checkbox and window/borderless capture workflow were
-replaced by the single-mirror choices in v1.7.5. Historical recordings from that
-older workflow do not establish a complete new-mode or Steam recording matrix.
-
-## v1.7 body and interaction coverage
-
-Full body/calibration, kick/slide, selected weapon weight, room-scale recovery and
-campaign door/padlock/glass changes received owner or affected-player acceptance.
-Separate Steam headset coverage of these combined changes and a new assembled-ZIP
-headset run are not claimed. The calibration mirror head is restored in v1.7.2. Body pose is
-inferred from headset/controllers, not full-body trackers. Perfect frame pacing
-and every weapon's weight feel are not established; Cannon feel remains untested.
-Auto Pickup and red-ladder follow-ups ship with offline coverage and no focused
-headset acceptance. Existing slow Steam loading and Quit cleanup issues remain.
-
-## v1.6 language import and shortcut coverage
-
-v1.6.1 removes the Spanish-only import restriction. Original language DVD/ISOs
-with matching-language 1.08 patches are intended to work across all languages
-in theory; **only Spanish has official real-media/gameplay testing**. Other
-languages remain unverified. The native reader requires the original supported
-InstallShield cabinet layout; split, incomplete or different-format releases may
-be refused. The user must match disc and patch language. Synthetic metadata
-regressions do not establish real-language or native-speaker acceptance.
-Steam Spanish VR, original retail startup and full-campaign playback are not
-established. See the [tutorial](INSTALLATION.md#import-game-text-and-voices).
-No game data is redistributed; existing Spanish recovery records remain valid.
-Mission open/close, quick save and quick load were owner-accepted on GOG; separate
-Steam headset coverage and non-Touch physical combinations remain unclaimed.
-
-## v1.5 validation scope
-
-The owner accepted save-stutter improvement at two GOG hotspots, corrected slow-
-motion particles, small stone-impact appearance and left-handed turret aiming.
-Ladder landing was accepted on internal regression evidence; synthetic collision
-tests do not establish every campaign landing or physical comfort. Separate Steam
-headset coverage, a new right-handed turret run and an assembled-ZIP headset run
-are not claimed. Save buffering does not eliminate every possible loading hitch.
-
-## v1.4.2 validation scope
-
-The owner accepted the moving-head level-load height test and prompt vent breaking.
-Full per-edition, every-vent, both-hand/pose and scripted-return matrices remain
-unreported. Package checks do not substitute for those headset tests.
+Owner testing accepted key-free bHaptics feedback and the close-door fix on the
+Steam development installation, alongside earlier accepted gameplay work.
+Automated checks cover the exact release ZIP, original GOG/Steam startup files,
+fresh installs, supported upgrade paths, recovery and launcher preflight.
+Those checks do not constitute a new headset run of the assembled shipping ZIP,
+nor proof for every scene, device, controller or disconnected-network setup.
 
 [Main guide](README.md) · [Troubleshooting](TROUBLESHOOTING.md)
-
-- This release targets verified GOG and original Steam base-game single-player
-  campaigns. Other executable variants, expansions, multiplayer and Linux/Proton
-  are outside its supported scope.
-- Steam level loading can take several minutes. GOG remains recommended.
-  Other mod loaders and hook suites are not validated together with this mod.
-- Steam memory preparation enables up to 4 GB of address space on 64-bit Windows;
-  it does not eliminate memory pressure or prove every out-of-memory report fixed.
-  Point of Entry passed owner tests with Virtual Desktop and SteamVR. An existing
-  native cleanup crash after selecting Quit remains unresolved.
-- Language preservation and Cyrillic menu-font fallback are experimental.
-  The automatic correction was owner-tested with Russian menus on GOG; other
-  languages, Steam automatic-font coverage, non-menu fonts and full campaigns
-  are not comprehensively verified. VR-specific text may remain English.
-- Steam's included input fix filters legacy gamepad/joystick enumeration;
-  keyboard, mouse and OpenXR controllers remain available. This also applies
-  to flat launches from that installation while the fix is enabled. See
-  [Troubleshooting](TROUBLESHOOTING.md#steam-input-fix) for the optional off switch.
-- Some small props still sit slightly away from the hand. Ladder completion
-  improved in repeated owner testing; broader affected-player coverage remains.
-- Compact underwater collision is included, but the reported Blindside tunnel
-  has not yet been reproduced and verified in a headset.
-- Quest 3 with Touch controllers is the physical validation baseline. Other
-  headsets, controller profiles, and wide/canted-headset display adjustments
-  remain experimental. A listed mapping is not a guarantee of hardware coverage.
-- Meta Quest Link and Air Link are unsupported, even through SteamVR.
-- Optional **Flashlight Shadows** is experimental and off by default. Detached
-  hands do not cast those flashlight shadows. Other optional visual/body
-  features may have imperfect alignment or scene-dependent artifacts.
-- The game remains a 32-bit application. High per-eye resolutions can create
-  memory/GPU pressure even on a PC with plentiful system RAM. Start with the
-  supported display defaults and adjust one setting at a time.
-- Capture safeguards improve handling of a delayed GPU, but recurring stalls
-  reported on some systems have not been conclusively diagnosed or universally
-  resolved. Driver calls, runtime waits, loading, and streaming can still stall.
-- A runtime shutdown or lost OpenXR session may require quitting and relaunching
-  the game after restoring the headset connection.
-- Existing save/profile data and native game behavior still matter. Keep save
-  backups and report specific levels/actions for repeatable campaign problems.
-- Releases are unsigned. Local download verification is not a guarantee that
-  every antivirus or reputation service will accept the same archive.
-
-- The desktop and OBS use the same mirror. Check a short recording before
-  relying on a minimized configuration; the headset and recording need separate
-  checks on your own setup.
-
-Read the latest release notes and open issues before assuming an old workaround
-still applies. Development tools and the local Level Select menu are not shipped.
-
-## v1.4.1 hotfix scope
-
-The resized-magazine, shotgun shell ownership, lingering calibration-card and
-reload-lesson fixes are owner accepted. Automated checks cover the scale range
-and production state transitions; headset coverage was not enumerated for every
-weapon, size, controller or edition. Upgrade v1.4.0 rather than resetting profiles.
-
-## v1.4 additions
-
-Launcher translations have offline layout/catalog checks and owner UI review,
-but native-speaker review and automatic selection on non-English Windows remain
-open to feedback. They do not change the installed game's language; logs and the
-Controls guide remain English.
-
-Joystick climbing and the latest entry correction are owner accepted, but all
-campaign ladders and previously reported top-out pushback cases are not verified.
-Cinema aspect correction is owner accepted; confirmation of the affected player's
-exact scene/resolution is still pending. Older custom weapon grip alignments may
-need recalibration with the new native support-hand poses.

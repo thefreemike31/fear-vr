@@ -1,83 +1,11 @@
 # Calibration and body fit
 
-**Video walkthrough:** [Full Calibrations & Settings Guide by TheFreeMike](https://www.youtube.com/watch?v=BUJLpW-l5yI). Around 40 minutes, with YouTube chapters so you can jump to the part you need.
+Current guide for **v1.8.0**. Open **Options > VR Settings > Calibration & Body Fit**.
+The main menu opens the included calibration room; during a campaign you stay
+in the current level. Settings belong to your profile. Calibration does not
+replace campaign saves or Continue, and upgrading does not require Reset All.
 
-## Stock and Improved Sights
-
-Improved Sights by **Eskess (Discord: `.eskess`)** are **off by default** to avoid
-changing the sight picture underneath your saved aim calibration. We highly
-encourage trying them, followed by recalibration for the version you choose.
-
-1. Open **Options > VR Settings > Aiming & Crosshair > Weapon Sights**.
-2. Select **Improved** and back out to save. Stock is the default. The selection
-   applies without restarting; finish an active reload or pump before it changes.
-3. Open **Calibration & Body Fit > Advanced Sight Alignment**. It displays the
-   selected Stock/Improved model and label as you cycle weapons. Weapons outside
-   this community set use their Standard model.
-4. Recalibrate the affected weapons using the target/capture instructions, then
-   check aiming during play. Grips, support hands and reload controls stay the same.
-
-Supported weapons are AT-14 (single and dual), RPL, G2A2, VK-12, HV Penetrator,
-Type-7 and MOD-3; ASP and cannon retain their original geometry. Alignment saves
-are per weapon/hand and **shared between sight versions**, not two independent
-presets. Switching back does not restore an older calibration: check/recalibrate
-for the sight version you keep. Upgrade does not erase calibration or require a
-Reset All. Previously saved preview-build sight preferences are preserved.
-
-## Full-body IK and Fit Visible Body
-
-**New in v1.7:** articulated arms, torso, legs and feet follow your headset and
-hands, with procedural walking, crouching, landing and body shadows. No additional
-body trackers are required. This is an estimated pose, not measured full-body tracking.
-**Visible Body** is under **Options > VR Settings > Immersion & Interaction**.
-It defaults to On; a previously saved Off stays Off. Turning it off restores
-floating hands. The old experimental rigid-arms option has been retired.
-
-1. Set your seated/standing Play Position and calibrate height first.
-2. Open **Options > VR Settings > Calibration & Body Fit > Fit Visible Body**.
-   From the main menu this uses the calibration room; during play it uses your level.
-3. Use the mirror to adjust **height, reach, shoulder width, forward position and
-   fullness**. On Touch: **A** selects the previous field; **B or Y** selects the
-   next; flick either stick left/right to adjust, or down to reset the selected
-   field. Return the stick toward center between changes. **X** exits.
-4. Check relaxed arms, full reach, looking down and crouching. Changes save to
-   your profile. The fitter temporarily selects Unarmed and restores your prior
-   weapon/ammo selection on exit.
-5. Use **Reset Visible Body Fit** for the body fit alone. Existing hand, holster,
-   weapon-grip and sight tools remain separate. Avoid Reset All Calibration unless
-   you intend to clear the rest of your fitting too.
-
-**Updated in v1.7.2:** Body Height adjusts vertical upper-body fit while keeping
-the feet grounded and the legs moving. It no longer rescales boots, legs or arm
-reach; use the separate Reach and Fullness settings for those aspects of fit.
-New profiles and **Reset Visible Body Fit** start Body Height at **115%**.
-Upgrading preserves your saved percentage; reset only if you want the new default.
-The mirror now displays the head. Resting arms, support cuffs and hand shadows
-are improved, though a minor occasional hip/arm snap remains under investigation.
-Feet/elbows are inferred and can need personal fitting. Existing profiles and
-calibration are preserved during upgrade; no blanket reset is required.
-
-## Language and shortcut settings in v1.6
-
-Language import/reset preserves VR calibration. The launcher language selector
-changes launcher text; game text/voices use the separate [import/reset tutorial](INSTALLATION.md#import-game-text-and-voices).
-Mission **Y+B**, quick-save **Y+A (2 seconds)** and quick-load **X+B (2 seconds)**
-are physical combinations, unchanged by handedness or remapping. Save/load is
-disabled during calibration; see [shortcut behavior](CONTROLS.md#mission-screen-quick-save-and-quick-load).
-
-## v1.4.2 height preservation
-
-Automatic recentering during level loads and scripted transitions keeps the
-established vertical reference. Explicit recenter remains available. The fix
-does not reset or change saved calibration values.
-
-[Main guide](README.md) · [Controls](CONTROLS.md) · [Troubleshooting](TROUBLESHOOTING.md)
-
-Open **Options > VR Settings > Calibration & Body Fit**. From the main menu,
-calibration opens the included room. During a campaign it uses your current
-level. Calibration settings belong to your profile; use the same profile when
-returning to the game. The calibration room does not replace campaign progress
-saves or Continue.
+**Video walkthrough:** [Full Calibrations & Settings Guide by TheFreeMike](https://www.youtube.com/watch?v=BUJLpW-l5yI), with chapter navigation.
 
 ## Suggested order
 
@@ -113,6 +41,45 @@ alignment feels. Revisit the affected grip instead of repeatedly changing
 unrelated sight settings. Passive holster visibility can be off during play;
 calibration still shows its references.
 
+## Full-body IK and Fit Visible Body
+
+articulated arms, torso, legs and feet follow your headset and
+hands, with procedural walking, crouching, landing and body shadows. No additional
+body trackers are required. This is an estimated pose, not measured full-body tracking.
+**Visible Body** is under **Options > VR Settings > Immersion & Interaction**.
+It defaults to On; a previously saved Off stays Off. Turning it off restores
+floating hands. The old experimental rigid-arms option has been retired.
+
+1. Set your seated/standing Play Position and calibrate height first.
+2. Open **Options > VR Settings > Calibration & Body Fit > Fit Visible Body**.
+   From the main menu this uses the calibration room; during play it uses your level.
+3. Use the mirror to adjust **height, reach, shoulder width, forward position and
+   fullness**. On Touch: **A** selects the previous field; **B or Y** selects the
+   next; flick either stick left/right to adjust, or down to reset the selected
+   field. Return the stick toward center between changes. **X** exits.
+4. Check relaxed arms, full reach, looking down and crouching. Changes save to
+   your profile. The fitter temporarily selects Unarmed and restores your prior
+   weapon/ammo selection on exit.
+5. Use **Reset Visible Body Fit** for the body fit alone. Existing hand, holster,
+   weapon-grip and sight tools remain separate. Avoid Reset All Calibration unless
+   you intend to clear the rest of your fitting too.
+
+Body Height adjusts vertical upper-body fit while keeping
+the feet grounded and the legs moving. It does not rescale boots, legs or arm
+reach; use the separate Reach and Fullness settings for those aspects of fit.
+New profiles and **Reset Visible Body Fit** start Body Height at **115%**.
+Upgrading preserves your saved percentage; reset only if you want the new default.
+The mirror displays the head. Resting arms, support cuffs and hand shadows
+are improved, though a minor occasional hip/arm snap remains under investigation.
+Feet/elbows are inferred and can need personal fitting. Existing profiles and
+calibration are preserved during upgrade; no blanket reset is required.
+
+## Hand fit while holding objects
+
+keeps saved hand fitting active for held props and the manual-reload
+utility hand. Supported pickups and belt magazines seat against visible hand
+contact. Existing calibration is preserved; no reset is needed.
+
 ## Weapon size calibration
 
 Open **Weapon Size Calibration** under **Calibration & Body Fit**. It works in
@@ -126,8 +93,8 @@ weapon changes size immediately and the profile saves each weapon separately;
 both copies of a dual weapon share that weapon's setting. Stick locomotion,
 turning and jumping are suppressed in this calibration mode; physical tracking
 still works. Exiting calibration clears its temporary instructions and preserves
-your normal tutorial progress. v1.4.1 also keeps manual-reload magazines and
-reserve visuals aligned with resized weapons; upgrade v1.4.0 if magazines vanish.
+your normal tutorial progress. also keeps manual-reload magazines and
+reserve visuals aligned with resized weapons; upgrade if magazines vanish.
 
 100% uses the established weapon size. Held hands keep their existing scaling
 with the gun. This does not change ammunition, damage or inventory. Grip and
@@ -136,6 +103,36 @@ weapon size intact; **Reset All Calibration** also resets all weapon sizes.
 
 The new native support-hand poses may change how older custom grip alignments
 feel. Revisit the affected weapon's grip if necessary.
+
+## Weapon weight and movement lag
+
+Open **Calibration & Body Fit > Weapon Weight & Lag**. Select a weapon,
+then adjust **Weight / Lag**; all ten entries save independently. **100%** is the
+new default feel for that weapon, and **0%** removes its added weight/lag.
+Use **Reset This Weapon** or **Reset All Weapon Weights** on that page. These
+settings are separate from grip position, weapon size and sight alignment.
+
+## Stock and Improved Sights
+
+Improved Sights by **Eskess (Discord: `.eskess`)** are **off by default** to avoid
+changing the sight picture underneath your saved aim calibration. We highly
+encourage trying them, followed by recalibration for the version you choose.
+
+1. Open **Options > VR Settings > Aiming & Crosshair > Weapon Sights**.
+2. Select **Improved** and back out to save. Stock is the default. The selection
+   applies without restarting; finish an active reload or pump before it changes.
+3. Open **Calibration & Body Fit > Advanced Sight Alignment**. It displays the
+   selected Stock/Improved model and label as you cycle weapons. Weapons outside
+   this community set use their Standard model.
+4. Recalibrate the affected weapons using the target/capture instructions, then
+   check aiming during play. Grips, support hands and reload controls stay the same.
+
+Supported weapons are AT-14 (single and dual), RPL, G2A2, VK-12, HV Penetrator,
+Type-7 and MOD-3; ASP and cannon retain their original geometry. Alignment saves
+are per weapon/hand and **shared between sight versions**, not two independent
+presets. Switching back does not restore an older calibration: check/recalibrate
+for the sight version you keep. Upgrade does not erase calibration or require a
+Reset All. Previously saved preview-build sight preferences are preserved.
 
 ## Undo a bad adjustment
 
@@ -151,7 +148,7 @@ your Stock/Improved choice intact. Prefer the individual reset for the feature y
 changed; Reset All is not required for startup or performance troubleshooting.
 
 For view distortion, use **Headset Display > Restore Display Defaults** or
-restore **Centered (Recommended)** projection and **100% View Width**. This is
+restore **100% View Width**; projection follows the headset automatically. This is
 a display adjustment, not weapon calibration. Render-resolution changes apply
 on the next launch.
 
@@ -160,8 +157,4 @@ package. Do not fetch loose room files or a developer launcher from an old beta.
 For persistent problems, report the calibration page, headset/controller,
 play position, and exact adjustment in [GitHub Issues](https://github.com/thefreemike31/fear-vr/issues).
 
-## Hand fit while holding objects
-
-v1.7.5 keeps saved hand fitting active for held props and the manual-reload
-utility hand. Supported pickups and belt magazines seat against visible hand
-contact. Existing calibration is preserved; no reset is needed.
+[Main guide](README.md) · [Installation](INSTALLATION.md) · [Controls](CONTROLS.md) · [Calibration](CALIBRATION.md) · [Troubleshooting](TROUBLESHOOTING.md)
