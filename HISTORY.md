@@ -1,5 +1,12 @@
 # The road to F.E.A.R. VR by TheFreeMike
 
+## v1.8.1 - October 31, 2026
+
+bHaptics compatibility hotfix: X40/X16/Air and legacy vest/arm/head software
+support, explicit motor-layout adaptation, stale-pairing handling and clearer
+device diagnostics. Existing gameplay and Pro-kit effects are preserved.
+Additional models have automated validation, without author hardware testing.
+
 ## v1.8.0 - October 30, 2026
 
 A redesigned native-art wrist HUD adds clearer readouts and a slow-motion

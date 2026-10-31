@@ -410,10 +410,19 @@ device switch/strength and the relevant Effect Strength. Resume gameplay with
 the game focused; pause/loading deliberately suppress output. Controller
 Vibration does not control the wearables.
 
+For X40, X16, Air or older supported arm/head devices, upgrade to **v1.8.1**.
+v1.8.0's device filter could exclude a connected wearable that Player recognized.
+Use one connected device per body region; an old disconnected pairing can stay.
+See the [supported families and testing limits](INSTALLATION.md#bhaptics-wearables).
+
 Install the complete update so `fear-vr/haptics` and its runtime dependency are
 present. If feedback remains absent,
 share the same-run startup log privately through the launcher's **Open log
 folder** action. Never include account credentials or personal keys.
+The log now distinguishes Player connection, readiness, unsupported layouts and
+multiple devices at one position, and includes the outgoing motor-array sizes.
+An initial readiness message while starting does not by itself mean gameplay
+feedback has failed; include the later lines from the same run too.
 
 ## OBS capture window
 

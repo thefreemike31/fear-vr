@@ -146,7 +146,7 @@ Setup does not start the game and uninstall retains saves and profiles.
 ## bHaptics wearables
 
 Wearable feedback is optional. Install **bHaptics Player**, pair and connect your
-TactSuit Pro, TactSleeve(s) or TactVisor there, and leave Player running. In the
+supported wearable there, and leave Player running. In the
 game, open **Options > VR Settings > bHaptics** and enable **Wearable Feedback**.
 Choose a comfortable Master strength, then adjust devices and Effect Strengths.
 A vest alone or a partial kit works; the other accessories are not required.
@@ -155,7 +155,15 @@ Effects include directional hits, recoil, melee impacts, nearby explosions,
 low-health heartbeat, healing/armor cues and slow-motion feedback. Controller
 Vibration is a separate setting.
 Without Player or a connected supported wearable, normal gameplay continues.
-Other bHaptics device models are not claimed supported by this release.
+
+Supported families: **TactSuit Pro, Air, X40, X16 and legacy Tactot** vests;
+**TactSleeve and legacy Tactosy for Arms**; **TactVisor and legacy Tactal**.
+Use the existing Vest, left/right Sleeve and Visor controls for those body regions.
+Connect one wearable per body region. Disconnect a second vest or duplicate
+left/right accessory if the runtime reports an ambiguous position.
+The added models have software validation, including real SDK packet checks;
+they have not been physically tested by the author. Hand, foot and glove
+accessories do not yet have gameplay effects in this mod.
 
 ## Recording with OBS
 

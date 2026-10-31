@@ -1,13 +1,13 @@
 # F.E.A.R. VR Mod by TheFreeMike
 
-**v1.8.0 · GOG and Steam · Free, unofficial PC VR mod**
+**v1.8.1 · GOG and Steam · Free, unofficial PC VR mod**
 
 Play the original F.E.A.R. campaign with tracked hands, physical weapon handling,
 manual reloads, body calibration and configurable comfort options. You need a
 legitimate supported copy of the game and a Windows PC capable of PC VR. The
 game is not included; this is not a standalone Quest app.
 
-[Download v1.8.0](https://github.com/thefreemike31/fear-vr/releases/tag/v1.8.0) ·
+[Download v1.8.1](https://github.com/thefreemike31/fear-vr/releases/tag/v1.8.1) ·
 [Installation](INSTALLATION.md) · [Controls](CONTROLS.md) ·
 [Calibration](CALIBRATION.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
@@ -55,7 +55,9 @@ does not mean that hardware has been physically tested.
   supported. [Handling modes](CONTROLS.md#choose-a-weapon-handling-mode).
 - **bHaptics:** feel directional hits, gun recoil, melee impacts and nearby
   explosions, plus low-health heartbeat, healing/armor cues and slow-motion
-  feedback through TactSuit Pro, TactSleeve and TactVisor. Device/effect strengths
+  feedback through supported TactSuit vests, arm wearables and head wearables.
+  v1.8.1 adds software-validated X40, X16, Air and legacy arm/head compatibility.
+  Device/effect strengths
   are independent. [Wearable setup](INSTALLATION.md#bhaptics-wearables).
 - **Controls and interactions:** Jump/Crouch remaps, controller-vibration strength,
   per-weapon weight/lag, reload/body/holster refinements and more reliable

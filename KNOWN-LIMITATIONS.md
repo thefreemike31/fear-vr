@@ -52,9 +52,12 @@ holds earlier milestones. These limits apply even when installation checks pass.
 
 ## Wearables, languages and other limits
 
-- bHaptics support covers **TactSuit Pro, TactSleeve and TactVisor**; a partial
-  kit works. Other device models are not claimed supported. Environmental
-  feedback follows specific supported events, not every sound, video or scare.
+- bHaptics supports the [listed vest, arm and head families](INSTALLATION.md#bhaptics-wearables);
+  a partial kit works. X40/X16/Air and legacy arm/head compatibility is software
+  validated, without author hardware testing. Physical orientation and feel on
+  those models still need owner feedback. Hand, foot and glove effects are not
+  implemented. Connect one wearable per body region. Environmental feedback
+  follows specific supported events, not every sound, video or scare.
 - Language import needs original language media and a matching official 1.08
   patch. Only Spanish import has official real-media/GOG VR testing; other
   languages and Steam Spanish VR remain unverified. Russian menu-font fallback
@@ -72,6 +75,8 @@ holds earlier milestones. These limits apply even when installation checks pass.
 
 Owner testing accepted bHaptics feedback and the close-door fix on the
 Steam development installation, alongside earlier accepted gameplay work.
+The v1.8.1 compatibility hotfix was authorized on software checks; it adds no
+new headset or wearable-hardware acceptance claim.
 Automated checks cover the exact release ZIP, original GOG/Steam startup files,
 fresh installs, supported upgrade paths, recovery and launcher preflight.
 Those checks do not constitute a new headset run of the assembled shipping ZIP,

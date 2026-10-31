@@ -1,4 +1,19 @@
-# F.E.A.R. VR v1.8.0 — new wrist HUD, weapon handling and bHaptics
+# F.E.A.R. VR v1.8.1 — bHaptics compatibility hotfix
+
+- Adds software support for TactSuit X40, X16, Air and legacy Tactot vests, plus
+  legacy Tactosy arm and Tactal head devices alongside the existing kit.
+- Fixes connected models being excluded by the Pro-only vest filter. An old,
+  disconnected pairing no longer hides a connected replacement.
+- Adapts effects to the supported command layouts and improves connection and
+  device diagnostics. Existing Pro, TactSleeve and TactVisor effects are retained.
+- Install the complete package with **Setup > Upgrade**. Saves, calibration and
+  wearable strengths are preserved. v1.8.0 remains available as rollback.
+
+The additional devices passed software and real SDK packet checks, but were
+not physically tested by the author. Hand, foot and glove effects are not part
+of this hotfix. See [wearable setup](INSTALLATION.md#bhaptics-wearables).
+
+## Included v1.8.0 features — new wrist HUD, weapon handling and bHaptics
 
 ## New features
 
