@@ -45,6 +45,10 @@ does not mean that hardware has been physically tested.
 
 ## What is new in 1.8
 
+- **Redesigned wrist HUD:** larger native-art display with clearer ammo, health,
+  armor, medkit/grenade counts and a slow-motion charge/readiness meter.
+- **Sticky & Holsters:** tap Grip at a holster to draw, relax your hand while
+  carrying, and tap Grip again to return the gun. Each dual pistol toggles separately.
 - **Physical Weapons (Prototype):** optional grip-held firearms, release to
   holster/drop/throw, supported catches and either-hand use. A temporary borrowed
   gun can be used with three weapons stored; mixed firearm dual wielding is not
@@ -54,7 +58,9 @@ does not mean that hardware has been physically tested.
   or API key is required. [Wearable setup](INSTALLATION.md#bhaptics-wearables).
 - **Controls and interactions:** Jump/Crouch remaps, controller-vibration strength,
   per-weapon weight/lag, reload/body/holster refinements and more reliable
-  close-range door touches. Normal-play diagnostics are quieter.
+  close-range door touches. Fixes also cover close-contact vents, jump/body
+  clipping, sleeve twisting and physical-weapon ammo/save edge cases; slow-motion
+  ragdoll presentation is improved. Normal-play diagnostics are quieter.
 
 Saves and calibration are preserved; no blanket reset is required. Earlier
 features remain included. Improved Sights by **Eskess (`.eskess`)** are optional

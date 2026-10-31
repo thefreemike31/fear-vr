@@ -1,35 +1,34 @@
-# F.E.A.R. VR v1.8.0 — physical weapons and bHaptics
+# F.E.A.R. VR v1.8.0 — new wrist HUD, weapon handling and bHaptics
 
-- **Optional Physical Weapons (Prototype).** Hold Grip to retain a firearm;
-  release at a compatible free holster to store, or elsewhere to drop/throw.
-  Catch and use supported firearms in either hand. A temporary borrowed gun
-  can be used when three weapons are stored. Mixed firearm dual wielding is
-  not supported.
-- **Reload and holster refinements.** Empty single-pistol reloads include a slide
-  pull; dual pistols retain hip reloads. Either pistol can use either free hip
-  socket. Nonphysical modes can hold Reload for 1.25 seconds to discard one
-  pistol. Physical mode uses release. Tutorials explain the different rules.
-- **Optional bHaptics wearables.** TactSuit Pro, TactSleeve and TactVisor feedback
-  for damage, recoil, melee, health/armor/healing, slow motion and selected
-  environmental events. Device and effect strengths are independent. Use
-  bHaptics Player; no developer account or API key is required.
-- **More control.** Jump and Crouch remaps, 0–200% Controller Vibration, and
-  individual 0–200% Weapon Weight & Lag settings with their own resets.
-- **Body, contact and presentation refinements.** Body/holster alignment,
-  close-contact vents, weapon presentation and slow-motion ragdoll handling
-  improvements, plus shotgun shell/pump sounds. Native headset projection is
-  retained, with optional View Width treated as an experimental framing control.
-- **More reliable close-range doors.** Touching the same door with your second
-  hand no longer immediately reverses the first hand's opening action.
-- **Release cleanup.** Normal play skips diagnostic timing/trace collection;
-  launcher errors point to the real log-folder action. Player guides now match
-  the current controls and handling modes.
+## New features
 
-Install the complete package through Setup > Upgrade. Saves and calibration
-are preserved; no blanket profile reset is required. Improved Sights by Eskess
-remain optional and off by default; recalibrate sight alignment after switching.
+- **Redesigned wrist HUD.** A larger, clearer display sits closer to your hand and uses F.E.A.R.'s own artwork and digits. Ammo is prominent, with health, armor, grenade and medkit counts together. The new slow-motion meter shows your remaining charge, when it is ready to use, and when it is actively being consumed.
+- **Sticky & Holsters handling mode.** Tap Grip at a body holster to draw, then relax your grip while carrying the gun. Tap that hand's Grip again to return it from any position. Each dual pistol has its own toggle; the free hand still handles support grips, reloads, ladders, grenades and props. Classic Sticky and Grip & Holsters remain available.
+- **Physical Weapons (Prototype).** This separate optional mode supports all nine firearms: hold Grip to retain a gun, release at a compatible free holster to store, or release elsewhere to drop/throw. Catch and use supported guns in either hand. With three weapons stored, you can temporarily borrow a world/enemy gun without replacing one. Mixed firearm dual wielding remains unsupported.
+- **Optional bHaptics wearables.** TactSuit Pro, TactSleeve and TactVisor feedback covers damage, recoil, melee, health/armor/healing, slow motion and selected environmental events. Device and effect strengths are independent. Use bHaptics Player; no developer account or API key is required, and a partial kit works.
+- **More control over feel.** Remap Jump and Crouch, set Controller Vibration from 0–200%, and adjust individual Weapon Weight & Lag settings from 0–200%, with separate resets.
 
-See [installation](INSTALLATION.md), [controls](CONTROLS.md), and
-[known limitations](KNOWN-LIMITATIONS.md). Residual hitches, slow Steam loading
-and the native Quit crash remain open; this release does not claim every
-headset, weapon/scene combination or bHaptics device model has been tested.
+## Handling, reloads and body improvements
+
+- **More flexible holsters.** Either pistol can crossdraw or return to either free hip socket. Long guns can use compatible empty shoulder/back sockets, with occupancy and holster feedback kept consistent.
+- **Pistol reloads and discarding.** An empty single pistol now needs a slide pull after the magazine; dual pistols retain hip reloads. In nonphysical modes, hold Reload for 1.25 seconds to discard one pistol. Physical mode uses Grip release. Tutorials explain the selected mode's gestures.
+- **Body fit and sleeves.** Improved physical body fitting, arm/leg extension, sleeve seating and body/holster alignment. More natural near-face arm placement and wrist bending make checking your wrist HUD more comfortable visually.
+- **Weapon presentation and audio.** Refined either-hand firing/support/reload poses, dropped-weapon presentation, and shotgun shell/pump sounds. Native headset projection is retained; optional View Width remains an experimental framing control.
+
+## Important fixes
+
+- **Doors at close range:** touching the same door with a second hand no longer immediately reverses the first hand's opening action. A stopped door can still be retried by withdrawing and pushing again.
+- **Close-contact vents:** corrected a grounding-state rejection that could make the Bishop vent ignore punches when standing right next to it. Native locks, collision and scripted interactions remain authoritative.
+- **Jump/body clipping:** body, hands and holsters now follow the same collision-resolved eye height, correcting the chest rising into view during the reported jump/railing case.
+- **Sleeve twisting:** corrected the unnecessary sleeve unwind during small turns with your hands held near your chest or hips.
+- **Slow-motion ragdolls:** improved interpolation and turn handling to reduce snapping during rotating-body motion; this is not a guarantee that every spin or hitch is eliminated.
+- **Physical-weapon edge cases:** corrected first-pickup firing, duplicate/borrowed-gun ammunition accounting and dropped-weapon save/presentation behavior. Excess ammunition stays in its source magazine rather than disappearing at the cap.
+- **Cleaner normal play and support:** diagnostic timing/trace collection is disabled during normal play, launcher errors identify the actual log-folder action, and player guides have been consolidated around the current setup and controls.
+
+## Updating
+
+Download **fear-vr-v1.8.0.zip** from Assets below, verify its `.sha256`, extract the complete ZIP and use **Setup > Upgrade**. Keep **setup-files** beside Setup. Saves and calibration are preserved; no blanket profile reset is required. GitHub's automatic Source code downloads are not the mod.
+
+Improved Sights by **Eskess** remain optional and off by default; recalibrate sight alignment after switching.
+
+See [installation](INSTALLATION.md), [controls](CONTROLS.md), and [known limitations](KNOWN-LIMITATIONS.md). Residual hitches, slow Steam loading and the pre-existing late Quit cleanup fault remain open; the latter can be recorded by Windows after the game window closes normally. Physical Weapons remains a prototype, and not every headset, weapon/scene combination or bHaptics device model has been tested.

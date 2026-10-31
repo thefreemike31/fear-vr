@@ -2,11 +2,15 @@
 
 ## v1.8.0 - October 30, 2026
 
+A redesigned native-art wrist HUD adds clearer readouts and a slow-motion
+charge/readiness meter. Sticky & Holsters adds tap-to-draw/tap-to-return handling.
 Optional Physical Weapons (Prototype) adds grip-held firearms, release-to-holster
 or drop/throw, supported catches and either-hand use. Optional bHaptics feedback
 works through bHaptics Player without a developer account or API key. Reload and
 holster refinements, Jump/Crouch remaps, per-weapon weight controls, body/contact
 polish and reliable first-touch doors accompany quieter normal-play diagnostics.
+Fixes address close-contact vents, jump/body clipping, sleeve twisting and
+physical-weapon ammo/save edge cases, with improved slow-motion ragdoll motion.
 Saves and calibration remain compatible; the physical mode is still a prototype.
 
 ## v1.7.7 - October 11, 2026
