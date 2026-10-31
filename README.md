@@ -53,9 +53,10 @@ does not mean that hardware has been physically tested.
   holster/drop/throw, supported catches and either-hand use. A temporary borrowed
   gun can be used with three weapons stored; mixed firearm dual wielding is not
   supported. [Handling modes](CONTROLS.md#choose-a-weapon-handling-mode).
-- **bHaptics:** optional TactSuit Pro, TactSleeve and TactVisor feedback through
-  bHaptics Player. Device/effect strengths are independent; no developer account
-  or API key is required. [Wearable setup](INSTALLATION.md#bhaptics-wearables).
+- **bHaptics:** feel directional hits, gun recoil, melee impacts and nearby
+  explosions, plus low-health heartbeat, healing/armor cues and slow-motion
+  feedback through TactSuit Pro, TactSleeve and TactVisor. Device/effect strengths
+  are independent. [Wearable setup](INSTALLATION.md#bhaptics-wearables).
 - **Controls and interactions:** Jump/Crouch remaps, controller-vibration strength,
   per-weapon weight/lag, reload/body/holster refinements and more reliable
   close-range door touches. Fixes also cover close-contact vents, jump/body

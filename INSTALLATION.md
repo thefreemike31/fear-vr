@@ -151,9 +151,9 @@ game, open **Options > VR Settings > bHaptics** and enable **Wearable Feedback**
 Choose a comfortable Master strength, then adjust devices and Effect Strengths.
 A vest alone or a partial kit works; the other accessories are not required.
 
-The mod supplies its local haptic configuration and runtime files. You do not
-need a developer account, SDK tools or an API key. Do not share account credentials
-or paste a developer key into files. Controller Vibration is a separate setting.
+Effects include directional hits, recoil, melee impacts, nearby explosions,
+low-health heartbeat, healing/armor cues and slow-motion feedback. Controller
+Vibration is a separate setting.
 Without Player or a connected supported wearable, normal gameplay continues.
 Other bHaptics device models are not claimed supported by this release.
 

@@ -411,7 +411,7 @@ the game focused; pause/loading deliberately suppress output. Controller
 Vibration does not control the wearables.
 
 Install the complete update so `fear-vr/haptics` and its runtime dependency are
-present. No API key or developer setup is required. If feedback remains absent,
+present. If feedback remains absent,
 share the same-run startup log privately through the launcher's **Open log
 folder** action. Never include account credentials or personal keys.
 

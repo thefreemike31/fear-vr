@@ -70,7 +70,7 @@ holds earlier milestones. These limits apply even when installation checks pass.
 
 ## Validation scope
 
-Owner testing accepted key-free bHaptics feedback and the close-door fix on the
+Owner testing accepted bHaptics feedback and the close-door fix on the
 Steam development installation, alongside earlier accepted gameplay work.
 Automated checks cover the exact release ZIP, original GOG/Steam startup files,
 fresh installs, supported upgrade paths, recovery and launcher preflight.
