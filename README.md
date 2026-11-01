@@ -1,13 +1,13 @@
 # F.E.A.R. VR Mod by TheFreeMike
 
-**v1.8.1 · GOG and Steam · Free, unofficial PC VR mod**
+**v1.8.2 · GOG and Steam · Free, unofficial PC VR mod**
 
 Play the original F.E.A.R. campaign with tracked hands, physical weapon handling,
 manual reloads, body calibration and configurable comfort options. You need a
 legitimate supported copy of the game and a Windows PC capable of PC VR. The
 game is not included; this is not a standalone Quest app.
 
-[Download v1.8.1](https://github.com/thefreemike31/fear-vr/releases/tag/v1.8.1) ·
+[Download v1.8.2](https://github.com/thefreemike31/fear-vr/releases/tag/v1.8.2) ·
 [Installation](INSTALLATION.md) · [Controls](CONTROLS.md) ·
 [Calibration](CALIBRATION.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
@@ -16,7 +16,7 @@ game is not included; this is not a standalone Quest app.
 ## Start here
 
 1. Confirm the unmodified GOG or Steam base game works on your PC.
-2. From the release's **Assets** list, download `fear-vr-v1.8.0.zip` and its
+2. From the release's **Assets** list, download `fear-vr-v1.8.2.zip` and its
    `.sha256` file. GitHub's automatic **Source code** downloads are not the mod.
 3. Verify and extract the complete ZIP. Keep **setup-files** beside
    **F.E.A.R. VR Setup.exe**.
@@ -43,7 +43,18 @@ Other retail executable variants, Extraction Point, Perseus Mandate, multiplayer
 Linux/Proton are outside this release's supported scope. A controller mapping
 does not mean that hardware has been physically tested.
 
-## What is new in 1.8
+## New in 1.8.2
+
+Physical Weapons now preserves held guns during ammo pickup and weapon selection,
+accepts spare-gun chest ammo while your matching gun is held, and supports a found
+pistol paired with one of your holstered originals. Borrowing a third pistol keeps
+the unused original holstered, with each magazine preserved.
+
+bHaptics adds helicopter feedback, a progressive heartbeat from 40 displayed
+health, effect/connection corrections, and experimental hand/foot/glove effects.
+The additional peripherals are software-tested but physically untested.
+
+## Included 1.8 features
 
 - **Redesigned wrist HUD:** larger native-art display with clearer ammo, health,
   armor, medkit/grenade counts and a slow-motion charge/readiness meter.
@@ -56,7 +67,7 @@ does not mean that hardware has been physically tested.
 - **bHaptics:** feel directional hits, gun recoil, melee impacts and nearby
   explosions, plus low-health heartbeat, healing/armor cues and slow-motion
   feedback through supported TactSuit vests, arm wearables and head wearables.
-  v1.8.1 adds software-validated X40, X16, Air and legacy arm/head compatibility.
+  Includes software-validated X40, X16, Air and legacy arm/head compatibility.
   Device/effect strengths
   are independent. [Wearable setup](INSTALLATION.md#bhaptics-wearables).
 - **Controls and interactions:** Jump/Crouch remaps, controller-vibration strength,

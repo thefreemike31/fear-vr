@@ -1,4 +1,47 @@
-# F.E.A.R. VR v1.8.1 — bHaptics compatibility hotfix
+# F.E.A.R. VR v1.8.2 — physical weapon fixes and bHaptics polish
+
+## Physical weapon fixes
+
+- Held pistols no longer disappear when collecting ammo or selecting another
+  weapon. Stow or release a held physical gun before switching.
+- Chest ammo intake works while the matching owned gun is held, including the
+  SMG. Full reserves preserve the pickup; partial intake leaves unused rounds.
+- Pair a found pistol with your holstered pistol. With two originals already
+  stored, borrow a third and draw either original while the unused one stays
+  holstered. You can swap which original you use without losing the third gun.
+- Individual magazines survive stowing, switching and save/load. Rapid drops,
+  delayed replies, failed pickups and ammo-cap transitions preserve ownership
+  and ammunition. Release a borrowed pistol before reloading or switching.
+
+## bHaptics improvements
+
+- Helicopter feedback, corrected effect maps and improved Player position
+  compatibility.
+- A gentle heartbeat starts at **40 displayed health**, grows stronger as health
+  falls and stops above 40. Health upgrades do not change the threshold.
+- Experimental Tactosy hand/foot and TactGlove DK2/DK3 effects are included:
+  **software-tested, physically untested, expected to work**. Hands/gloves share
+  Sleeve controls and feet share Vest controls. Physical feel/orientation remains
+  unverified; no finger tracking, new footstep/grabbing feedback or recorder
+  overlay display of these extra outputs is added.
+
+The weapon fixes and heartbeat/helicopter feel have owner headset acceptance;
+this is not an exhaustive edition, scene or wearable-device matrix. Physical
+Weapons remains a prototype. Existing loading/performance/Quit limitations remain.
+
+## Update
+
+Download **fear-vr-v1.8.2.zip** and its checksum from Assets, extract the complete
+ZIP, keep **setup-files** beside Setup, and choose **Setup > Upgrade**. Saves,
+calibration and wearable strengths are preserved. v1.8.1 remains available as
+rollback. GitHub's automatic Source code archives are not the mod.
+
+See [installation](INSTALLATION.md), [controls](CONTROLS.md),
+[wearable setup](INSTALLATION.md#bhaptics-wearables) and
+[known limitations](KNOWN-LIMITATIONS.md).
+
+## Included v1.8.1 compatibility fixes
+
 
 - Adds software support for TactSuit X40, X16, Air and legacy Tactot vests, plus
   legacy Tactosy arm and Tactal head devices alongside the existing kit.
@@ -6,12 +49,10 @@
   disconnected pairing no longer hides a connected replacement.
 - Adapts effects to the supported command layouts and improves connection and
   device diagnostics. Existing Pro, TactSleeve and TactVisor effects are retained.
-- Install the complete package with **Setup > Upgrade**. Saves, calibration and
-  wearable strengths are preserved. v1.8.0 remains available as rollback.
+- These compatibility fixes from v1.8.1 remain included.
 
 The additional devices passed software and real SDK packet checks, but were
-not physically tested by the author. Hand, foot and glove effects are not part
-of this hotfix. See [wearable setup](INSTALLATION.md#bhaptics-wearables).
+not physically tested by the author. See [wearable setup](INSTALLATION.md#bhaptics-wearables).
 
 ## Included v1.8.0 features — new wrist HUD, weapon handling and bHaptics
 
@@ -42,7 +83,7 @@ of this hotfix. See [wearable setup](INSTALLATION.md#bhaptics-wearables).
 
 ## Updating
 
-Download **fear-vr-v1.8.0.zip** from Assets below, verify its `.sha256`, extract the complete ZIP and use **Setup > Upgrade**. Keep **setup-files** beside Setup. Saves and calibration are preserved; no blanket profile reset is required. GitHub's automatic Source code downloads are not the mod.
+Download **fear-vr-v1.8.2.zip** from Assets below, verify its `.sha256`, extract the complete ZIP and use **Setup > Upgrade**. Keep **setup-files** beside Setup. Saves and calibration are preserved; no blanket profile reset is required. GitHub's automatic Source code downloads are not the mod.
 
 Improved Sights by **Eskess** remain optional and off by default; recalibrate sight alignment after switching.
 

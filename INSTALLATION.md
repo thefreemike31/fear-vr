@@ -24,13 +24,13 @@ your normal save backups. This release covers the original single-player campaig
 ## Download and verify
 
 1. Open [GitHub Releases](https://github.com/thefreemike31/fear-vr/releases/latest).
-2. Expand **Assets** if needed. Download **fear-vr-v1.8.0.zip** and
-   **fear-vr-v1.8.0.zip.sha256**. Ignore GitHub's automatic Source code archives.
+2. Expand **Assets** if needed. Download **fear-vr-v1.8.2.zip** and
+   **fear-vr-v1.8.2.zip.sha256**. Ignore GitHub's automatic Source code archives.
 3. Open the `.sha256` file in Notepad. Its first 64 characters are the expected hash.
 4. In the folder containing the ZIP, open PowerShell and run:
 
    ```powershell
-   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.8.0.zip'
+   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.8.2.zip'
    ```
 
 5. Compare all 64 characters. Letter case does not matter. A mismatch means
@@ -162,8 +162,16 @@ Use the existing Vest, left/right Sleeve and Visor controls for those body regio
 Connect one wearable per body region. Disconnect a second vest or duplicate
 left/right accessory if the runtime reports an ambiguous position.
 The added models have software validation, including real SDK packet checks;
-they have not been physically tested by the author. Hand, foot and glove
-accessories do not yet have gameplay effects in this mod.
+they have not been physically tested by the author.
+
+**Experimental: software-tested, physically untested, expected to work.**
+Tactosy hands and TactGlove DK2/DK3 receive firing/support recoil, confirmed
+punch/bash impacts and blasts. Tactosy feet receive bilateral kick/slide contact,
+blasts and gentle authored rumble. Hands/gloves follow the matching Sleeve
+switch/strength; feet follow Vest controls. Master and the relevant effect gains
+also apply. A peripheral-only kit works. There is no finger tracking or new
+footstep/grabbing feedback. The recorder overlay does not display these extra
+outputs. Physical orientation, feel and comfort remain unverified.
 
 ## Recording with OBS
 

@@ -1,5 +1,14 @@
 # The road to F.E.A.R. VR by TheFreeMike
 
+## v1.8.2 - November 1, 2026
+
+Physical weapon lifecycle hotfix: held-gun preservation on ammo pickup/selection,
+held matching-gun chest intake, found/owned pistol pairing, borrowed third pistols
+with the unused original holstered, individual magazine persistence and safer
+rapid/failing transactions. Includes accepted helicopter/40-health heartbeat
+polish and experimental, software-tested but physically untested hand/foot/glove
+feedback. Upgrade keeps saves and calibration; v1.8.1 remains rollback.
+
 ## v1.8.1 - October 31, 2026
 
 bHaptics compatibility hotfix: X40/X16/Air and legacy vest/arm/head software

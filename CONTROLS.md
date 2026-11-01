@@ -82,8 +82,20 @@ still apply. This is optional; other handling modes remain available.
 
 With all three inventory slots full, you can temporarily borrow a world firearm
 without replacing a stored gun. A duplicate does not overwrite the stored gun's
-ammunition. Chest ammo intake needs an already stored matching firearm; excess
-ammunition stays in the source magazine. Follow the borrowing/unloading cards.
+ammunition. Chest ammo intake needs a matching owned firearm held or holstered;
+a slotless borrowed gun alone does not qualify. Full reserves leave the spare gun
+intact, and partial intake leaves unused rounds in it.
+
+Stow or release a physically held gun before selecting another weapon. Ammo
+pickup does not silently switch away from your held gun.
+
+You can pair a found pistol with a holstered owned pistol. If you already own a
+pair, borrow a third and draw either original: the unused original stays in its
+hip holster. Stow the drawn original and draw the other to swap them. Individual
+magazine counts are preserved. Dropping one active pistol leaves a normal pair;
+dropping both leaves the unused original holstered. Release the borrowed pistol
+before reloading or switching weapons. A borrowed pistol cannot replace an
+occupied holster. Follow the borrowing/unloading cards.
 
 An empty single pistol needs its slide pulled after inserting a magazine. Dual
 pistols retain hip reloads. In the nonphysical modes, holding Reload for 1.25
@@ -280,6 +292,17 @@ in Player. **Wearable Feedback** is the master switch. Master and individual
 device strengths apply to every effect; **Effect Strengths** adjusts Incoming
 Damage, Weapon Recoil, Low Health Heartbeat, Armor Pickup, Medkit Use, Slow Motion,
 Explosions, Melee Impacts and Environmental Effects independently.
+
+Low Health Heartbeat begins gently at **40 displayed health** and grows stronger
+as health falls. Healing above 40 stops it; health upgrades do not move the threshold.
+Helicopter feedback follows supported helicopter events.
+
+Experimental Tactosy hand and TactGlove DK2/DK3 effects follow the matching
+left/right Sleeve switch and strength. Tactosy feet follow Vest controls. Master
+and the relevant Effect Strength still apply; the parent vest/sleeves need not be
+connected. These devices are software-tested but physically untested. There is
+no finger tracking or new footstep/grabbing feedback, and the recorder's wearable
+overlay does not display these additional outputs.
 
 Effects follow confirmed gameplay events. Environmental feedback covers nearby
 blasts, authored rumbles and supported visible character scares; it does not

@@ -376,7 +376,7 @@ preserve the saves and report the exact steps rather than repeatedly saving over
 
 ## Full body, calibration, kick and slide
 
-Install or upgrade with the complete v1.8.0 package so all body meshes are installed. If the
+Install or upgrade with the complete v1.8.2 package so all body meshes are installed. If the
 body is hidden, check **Immersion & Interaction > Visible Body**; a saved Off is
 preserved. Use **Calibration & Body Fit > Fit Visible Body** for proportions and
 reach. The calibration mirror includes the head. Exit fitting with X on
@@ -402,6 +402,20 @@ Continue, loading and settings preserve progress. An older lost completion flag
 can cause a one-time repeat after updating. New Game and tutorial replay reset
 progress intentionally; Tutorial Cards can disable the cards entirely.
 
+## Physical gun disappears, chest ammo is rejected, or pistol pairing fails
+
+Upgrade to **v1.8.2**. Ammo pickup now preserves the physically held gun, and
+ordinary weapon selection requires you to stow or release it first. For chest
+intake, hold or holster an owned matching firearm and release a separate spare
+gun at the chest. A slotless borrowed gun alone does not qualify. A full reserve
+leaves the spare intact; unused rounds remain after partial intake.
+
+For found-plus-owned dual pistols, grab the found pistol and draw your stored
+one. If you already own two, the unused original stays holstered while you borrow
+the third. Release the borrowed pistol before reloading or switching weapons.
+If an issue remains, report handling mode, hand, held/holstered guns, reserve and
+magazine counts, and whether it followed save/load or rapid releases.
+
 ## No bHaptics feedback
 
 Check that bHaptics Player is running and your supported wearable is connected,
@@ -410,8 +424,11 @@ device switch/strength and the relevant Effect Strength. Resume gameplay with
 the game focused; pause/loading deliberately suppress output. Controller
 Vibration does not control the wearables.
 
-For X40, X16, Air or older supported arm/head devices, upgrade to **v1.8.1**.
+For X40, X16, Air or older supported arm/head devices, upgrade to **v1.8.2**.
 v1.8.0's device filter could exclude a connected wearable that Player recognized.
+The heartbeat starts at 40 displayed health; heal above 40 to stop it. For
+experimental hands/gloves, check the matching Sleeve control; feet use Vest.
+The recorder overlay does not display these additional peripheral outputs.
 Use one connected device per body region; an old disconnected pairing can stay.
 See the [supported families and testing limits](INSTALLATION.md#bhaptics-wearables).
 
