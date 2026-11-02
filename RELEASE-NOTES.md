@@ -1,4 +1,37 @@
-# F.E.A.R. VR v1.8.2 — physical weapon fixes and bHaptics polish
+# F.E.A.R. VR v1.8.3
+
+- Fixes the delay before taking a support-hand grip after drawing or switching
+  firearms, including when returning from Physical Weapons to ordinary holsters.
+- Makes Physical Weapons holster returns more forgiving, with wider return
+  areas, a brief allowance for small overshoots and a confirmation vibration.
+  Deliberate throws and occupied-slot rules are preserved.
+- Adds recovery for missing weapon models and late muzzle readiness. A failed
+  firearm model or lost tracking can no longer silently turn shots into
+  head-directed aim or consume ammunition without a valid shot.
+- Adds a small weapon diagnostic log to help investigate remaining reports.
+- VR Settings now follows the launcher's language: English, French, German,
+  Spanish, Italian, Polish, Russian, Brazilian Portuguese, Simplified Chinese
+  and Traditional Chinese. Includes setup questions, help and button remapping.
+  Restart the game after changing the launcher language.
+
+The handling changes have owner headset acceptance. Confirmation from the
+player who reported invisible guns is still pending; this is not a claim that
+all causes or every headset have been verified. Physical Weapons remains a
+prototype. Existing loading, performance and late-Quit limitations remain.
+Menu translations passed build, catalog and Windows font checks; they have not
+yet received a separate headset or native-language editorial review.
+
+## Update
+
+Download **fear-vr-v1.8.3.zip** and its checksum from Assets, extract the complete
+ZIP, keep **setup-files** beside Setup, and choose **Setup > Upgrade**. Saves,
+calibration and wearable strengths are preserved. v1.8.2 remains available as
+rollback. GitHub's automatic Source code archives are not the mod.
+
+See [installation](INSTALLATION.md), [controls](CONTROLS.md),
+[troubleshooting](TROUBLESHOOTING.md) and [known limitations](KNOWN-LIMITATIONS.md).
+
+## Included v1.8.2 weapon and bHaptics improvements
 
 ## Physical weapon fixes
 
@@ -28,17 +61,6 @@
 The weapon fixes and heartbeat/helicopter feel have owner headset acceptance;
 this is not an exhaustive edition, scene or wearable-device matrix. Physical
 Weapons remains a prototype. Existing loading/performance/Quit limitations remain.
-
-## Update
-
-Download **fear-vr-v1.8.2.zip** and its checksum from Assets, extract the complete
-ZIP, keep **setup-files** beside Setup, and choose **Setup > Upgrade**. Saves,
-calibration and wearable strengths are preserved. v1.8.1 remains available as
-rollback. GitHub's automatic Source code archives are not the mod.
-
-See [installation](INSTALLATION.md), [controls](CONTROLS.md),
-[wearable setup](INSTALLATION.md#bhaptics-wearables) and
-[known limitations](KNOWN-LIMITATIONS.md).
 
 ## Included v1.8.1 compatibility fixes
 
@@ -83,7 +105,7 @@ not physically tested by the author. See [wearable setup](INSTALLATION.md#bhapti
 
 ## Updating
 
-Download **fear-vr-v1.8.2.zip** from Assets below, verify its `.sha256`, extract the complete ZIP and use **Setup > Upgrade**. Keep **setup-files** beside Setup. Saves and calibration are preserved; no blanket profile reset is required. GitHub's automatic Source code downloads are not the mod.
+Download **fear-vr-v1.8.3.zip** from Assets below, verify its `.sha256`, extract the complete ZIP and use **Setup > Upgrade**. Keep **setup-files** beside Setup. Saves and calibration are preserved; no blanket profile reset is required. GitHub's automatic Source code downloads are not the mod.
 
 Improved Sights by **Eskess** remain optional and off by default; recalibrate sight alignment after switching.
 

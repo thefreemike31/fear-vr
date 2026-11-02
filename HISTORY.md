@@ -1,5 +1,15 @@
 # The road to F.E.A.R. VR by TheFreeMike
 
+## v1.8.3 - November 1, 2026
+
+Weapon handling improvements: support grip during drawing/switching, more forgiving
+physical holster returns with confirmation feedback, missing-model/late-muzzle
+recovery and protection against unintended head aiming or lost ammunition.
+Owner-tested locally; the affected invisible-gun report awaits confirmation.
+VR Settings also gains the launcher's ten languages, including setup, help and
+remapping. Translation validation is offline; separate headset review is pending.
+Upgrade preserves saves and calibration; v1.8.2 remains available as rollback.
+
 ## v1.8.2 - November 1, 2026
 
 Physical weapon lifecycle hotfix: held-gun preservation on ammo pickup/selection,

@@ -71,7 +71,7 @@ selection, according to the selected layout. Locomotion is blocked while the
 world-anchored weapon selector is open. Release the selector to resume movement.
 
 **Sticky & Holsters:** press Grip at a body slot to draw, then release Grip while
-continuing to hold the weapon. Press Grip again at a compatible holster to stow.
+continuing to hold the weapon. Press that hand's Grip again to stow from any position.
 Use body slots for selection; weapon-button cycling and the wheel are unavailable.
 
 **Physical Weapons (Prototype):** hold Grip to keep a firearm in your hand.
@@ -79,6 +79,11 @@ Release at a compatible free holster to store it; release elsewhere to drop or
 throw it. Catch with either hand and fire. The mode supports nine firearm types;
 mixed-weapon dual wielding is not supported. Native ammunition and damage rules
 still apply. This is optional; other handling modes remain available.
+
+Holster returns allow a wider approach and a brief small overshoot. Feel for the
+return cue and release near a compatible free slot; a short pulse confirms stow.
+Move clearly away from the holster for a deliberate drop or throw. Occupied
+slots still cannot accept another gun.
 
 With all three inventory slots full, you can temporarily borrow a world firearm
 without replacing a stored gun. A duplicate does not overwrite the stored gun's
@@ -138,7 +143,8 @@ For ASP and G2A2, a tactical magazine change with a round still chambered does
 not need another bolt pull. Empty reloads still need racking. Keep the ASP scope
 close to your selected eye to acquire the view; it remains usable while tilting.
 
-Support hands now use native weapon grip poses. If an older custom alignment
+Support hands use native weapon grip poses and can engage during the draw.
+An early close-hand Grip press is briefly retained while the pose becomes ready. If an older custom alignment
 feels wrong, revisit grip calibration. The shotgun support hand follows the moving
 fore-end during pumping. [Weapon Size Calibration](CALIBRATION.md#weapon-size-calibration)
 adjusts the size of individual guns separately from grip and sight alignment.

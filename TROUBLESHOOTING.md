@@ -311,6 +311,17 @@ runtime/controller profile and preserve the same-run logs if the problem remains
 
 ## Weapon, reload, holster, or interaction problem
 
+**Slow support grip after drawing/switching:** upgrade to v1.8.3. Support can
+engage during the draw, including after switching away from Physical Weapons.
+Reloads and hands already holding another object still take priority.
+
+**Invisible held gun or aiming that follows your head:** upgrade the complete
+v1.8.3 package. This adds model/muzzle recovery and prevents invalid firearm
+shots from falling back to head aim. If it persists, preserve
+`FEARVR-Weapons.log` from the game folder alongside the launcher/startup logs.
+Include the handling mode, weapon, whether it is visible while holstered, and
+whether changing modes helps. A hardware name alone does not identify the cause.
+
 **Grip & Holsters** intentionally disables weapon-button cycling and the wheel.
 Draw from the body slots, or select **Classic Sticky** if you want tap/wheel
 selection. A stowed gun does not respond to Reload in Grip & Holsters.
@@ -318,7 +329,8 @@ selection. A stowed gun does not respond to Reload in Grip & Holsters.
 In **Sticky & Holsters**, release Grip after drawing; the weapon remains held.
 Press Grip again at its holster to store it. In **Physical Weapons (Prototype)**,
 releasing Grip away from a compatible free holster deliberately drops the gun.
-Check the selected mode first if a weapon drops unexpectedly. An occupied or
+Returns now accept a wider approach and brief small overshoots, with a pulse
+confirming stow. Check the selected mode first if a weapon drops unexpectedly. An occupied or
 incompatible slot cannot accept it. Mixed firearm dual wielding is not supported.
 
 For an empty single pistol, complete the magazine step and pull the slide using
@@ -571,6 +583,7 @@ before another launch. Not every log exists in every failure:
 | --- | --- |
 | FEARVR-Launcher.log | Launch arguments, runtime selection, and launcher errors |
 | FEARVR-Startup.log | Bridge initialization and the runtime failure detail |
+| FEARVR-Weapons.log, if present | Weapon model creation, fallback and muzzle readiness |
 | dxwrapper-fear.log, if present | Wrapper/device initialization details |
 
 For a launcher preflight that does **not** start the game, open PowerShell in

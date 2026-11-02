@@ -1,6 +1,6 @@
 # Known limitations
 
-Current scope for **v1.8.0**. [Release notes](RELEASE-NOTES.md) cover what changed;
+Current scope for **v1.8.3**. [Release notes](RELEASE-NOTES.md) cover what changed;
 [development history](https://github.com/thefreemike31/fear-vr/blob/main/HISTORY.md)
 holds earlier milestones. These limits apply even when installation checks pass.
 
@@ -80,10 +80,20 @@ holds earlier milestones. These limits apply even when installation checks pass.
 
 Owner testing accepted bHaptics feedback and the close-door fix on the
 Steam development installation, alongside earlier accepted gameplay work.
-The v1.8.2 weapon fixes and the preceding heartbeat/helicopter improvements have
+The v1.8.3 handling/recovery changes, v1.8.2 weapon fixes and the preceding heartbeat/helicopter improvements have
 owner headset acceptance. The report does not enumerate every edition, scene or
 edge case. Additional wearable models/peripherals remain software-tested only.
 Installer fixtures check both editions and upgrade paths; they are not a headset
 run of the assembled shipping ZIP or proof of performance on every setup.
 
 [Main guide](README.md) · [Troubleshooting](TROUBLESHOOTING.md)
+
+The affected-player invisible-gun report remains unconfirmed after v1.8.3; preserve `FEARVR-Weapons.log` if it persists.
+
+## VR menu translations
+
+The ten launcher languages are available in VR Settings. Translations passed
+offline catalog, build and Windows glyph checks; headset and native-language
+editorial reviews were not performed for this addition. Chinese text uses the
+Windows Microsoft YaHei/JhengHei fonts. Game text, voices and in-world guidance
+cards remain separate from VR menu localization.
