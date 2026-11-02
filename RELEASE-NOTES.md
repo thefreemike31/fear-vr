@@ -14,9 +14,9 @@
   and Traditional Chinese. Includes setup questions, help and button remapping.
   Restart the game after changing the launcher language.
 
-The handling changes have owner headset acceptance. Confirmation from the
-player who reported invisible guns is still pending; this is not a claim that
-all causes or every headset have been verified. Physical Weapons remains a
+The handling changes have owner headset acceptance. The affected player has
+confirmed that the invisible weapon and headset-directed firing are fixed.
+This confirms the reported symptoms on that setup, not every headset or cause. Physical Weapons remains a
 prototype. Existing loading, performance and late-Quit limitations remain.
 Menu translations passed build, catalog and Windows font checks; they have not
 yet received a separate headset or native-language editorial review.

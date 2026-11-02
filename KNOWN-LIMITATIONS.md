@@ -88,7 +88,9 @@ run of the assembled shipping ZIP or proof of performance on every setup.
 
 [Main guide](README.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
-The affected-player invisible-gun report remains unconfirmed after v1.8.3; preserve `FEARVR-Weapons.log` if it persists.
+The affected player has confirmed that the invisible weapon and headset-directed
+firing are fixed. If a similar issue occurs on another setup, preserve
+`FEARVR-Weapons.log`; this report does not certify every headset or failure path.
 
 ## VR menu translations
 

@@ -5,7 +5,8 @@
 Weapon handling improvements: support grip during drawing/switching, more forgiving
 physical holster returns with confirmation feedback, missing-model/late-muzzle
 recovery and protection against unintended head aiming or lost ammunition.
-Owner-tested locally; the affected invisible-gun report awaits confirmation.
+Owner-tested locally; the affected player also confirmed that the invisible
+weapon and headset-directed firing are fixed.
 VR Settings also gains the launcher's ten languages, including setup, help and
 remapping. Translation validation is offline; separate headset review is pending.
 Upgrade preserves saves and calibration; v1.8.2 remains available as rollback.

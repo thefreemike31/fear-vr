@@ -48,8 +48,8 @@ does not mean that hardware has been physically tested.
 Take a support-hand grip sooner after drawing or switching guns. Physical
 holster returns are more forgiving and give a confirmation vibration. Weapon
 model/muzzle recovery is stronger, and invalid firearm aiming cannot silently
-fall back to the headset. The reported invisible-gun setup still awaits
-confirmation from the affected player.
+fall back to the headset. The affected player has confirmed that the invisible weapon and
+headset-directed firing are fixed.
 
 VR Settings now follows the launcher's choice of ten languages, including setup,
 help and controller remapping. Change the launcher language before starting the
