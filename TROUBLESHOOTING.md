@@ -5,7 +5,7 @@ Current [installation](INSTALLATION.md), [controls](CONTROLS.md),
 [calibration](CALIBRATION.md) and [known limitations](KNOWN-LIMITATIONS.md) are
 maintained separately. Old release notes describe historical behavior.
 
-[Start with these checks](#start-with-these-checks) · [Download or antivirus problem](#download-or-antivirus-problem) · [Launcher error or game only on the monitor](#launcher-error-or-game-only-on-the-monitor) · [Weapon, reload, holster, or interaction problem](#weapon-reload-holster-or-interaction-problem) · [No bHaptics feedback](#no-bhaptics-feedback) · [Collect logs without Discord](#collect-logs-without-discord)
+[Start with these checks](#start-with-these-checks) Â· [Download or antivirus problem](#download-or-antivirus-problem) Â· [Launcher error or game only on the monitor](#launcher-error-or-game-only-on-the-monitor) Â· [Weapon, reload, holster, or interaction problem](#weapon-reload-holster-or-interaction-problem) Â· [No bHaptics feedback](#no-bhaptics-feedback) Â· [Collect logs without Discord](#collect-logs-without-discord)
 
 ## Start with these checks
 
@@ -327,7 +327,7 @@ Draw from the body slots, or select **Classic Sticky** if you want tap/wheel
 selection. A stowed gun does not respond to Reload in Grip & Holsters.
 
 In **Sticky & Holsters**, release Grip after drawing; the weapon remains held.
-Press Grip again at its holster to store it. In **Physical Weapons (Prototype)**,
+Press that hand's Grip again from any position to store it. In **Physical Weapons (Prototype)**,
 releasing Grip away from a compatible free holster deliberately drops the gun.
 Returns now accept a wider approach and brief small overshoots, with a pulse
 confirming stow. Check the selected mode first if a weapon drops unexpectedly. An occupied or
@@ -645,4 +645,4 @@ Other mods/overlays and changes already tried:
 Responses depend on availability; neither a report nor a donation guarantees
 individual troubleshooting or a response deadline.
 
-[Main guide](README.md) · [Installation](INSTALLATION.md) · [Controls](CONTROLS.md) · [Calibration](CALIBRATION.md) · [Troubleshooting](TROUBLESHOOTING.md)
+[Main guide](README.md) Â· [Installation](INSTALLATION.md) Â· [Controls](CONTROLS.md) Â· [Calibration](CALIBRATION.md) Â· [Troubleshooting](TROUBLESHOOTING.md)
