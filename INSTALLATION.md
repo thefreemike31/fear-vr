@@ -1,6 +1,6 @@
 # Installation, updates, and recovery
 
-Current instructions for **v1.8.0**, covering the original GOG and Steam base game.
+Current instructions for **v1.8.5**, covering the original GOG and Steam base game.
 Install the complete package using Setup; existing users choose **Upgrade**.
 Saves, calibration, language backups and tutorial progress are preserved. Keep
 your own save backups and do not mix DLLs from different releases.
@@ -24,13 +24,13 @@ your normal save backups. This release covers the original single-player campaig
 ## Download and verify
 
 1. Open [GitHub Releases](https://github.com/thefreemike31/fear-vr/releases/latest).
-2. Expand **Assets** if needed. Download **fear-vr-v1.8.3.zip** and
-   **fear-vr-v1.8.3.zip.sha256**. Ignore GitHub's automatic Source code archives.
+2. Expand **Assets** if needed. Download **fear-vr-v1.8.5.zip** and
+   **fear-vr-v1.8.5.zip.sha256**. Ignore GitHub's automatic Source code archives.
 3. Open the `.sha256` file in Notepad. Its first 64 characters are the expected hash.
 4. In the folder containing the ZIP, open PowerShell and run:
 
    ```powershell
-   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.8.3.zip'
+   Get-FileHash -Algorithm SHA256 -LiteralPath '.\fear-vr-v1.8.5.zip'
    ```
 
 5. Compare all 64 characters. Letter case does not matter. A mismatch means
@@ -253,7 +253,7 @@ The reader supports the original InstallShield cabinet layout; incomplete,
 modified, split or different-format media can be refused. No language whitelist
 is imposed. You supply the ISO and patch; no game-language data is included.
 
-1. Close F.E.A.R. and install/upgrade the VR mod to **v1.8.0**.
+1. Close F.E.A.R. and install/upgrade the VR mod to **v1.8.5**.
 2. Insert your original language DVD, or right-click its ISO in Windows and
    choose **Mount**. It must appear as a DVD drive. Eject other F.E.A.R. discs so
    only the intended language is mounted; keep all cabinet files available.

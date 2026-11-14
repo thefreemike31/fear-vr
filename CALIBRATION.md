@@ -1,6 +1,6 @@
 # Calibration and body fit
 
-Current guide for **v1.8.0**. Open **Options > VR Settings > Calibration & Body Fit**.
+Current guide for **v1.8.5**. Open **Options > VR Settings > Calibration & Body Fit**.
 The main menu opens the included calibration room; during a campaign you stay
 in the current level. Settings belong to your profile. Calibration does not
 replace campaign saves or Continue, and upgrading does not require Reset All.
@@ -24,6 +24,11 @@ replace campaign saves or Continue, and upgrading does not require Reset All.
 Start with one adjustment at a time and follow the in-headset prompts for
 capture, confirmation, and exit; they reflect your selected controller layout.
 You do not need every advanced calibration to begin playing.
+
+Ammo pouches now follow the same body frame as your weapon and throwable
+holsters. Their visible magazines/shells, grab zones and calibration previews
+stay together as you look down, turn or crouch. Existing saved offsets and
+central/distributed layouts are preserved; no calibration reset is required.
 
 ## What each adjustment changes
 

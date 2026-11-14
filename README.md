@@ -1,13 +1,13 @@
 # F.E.A.R. VR Mod by TheFreeMike
 
-**v1.8.3 · GOG and Steam · Free, unofficial PC VR mod**
+**v1.8.5 · GOG and Steam · Free, unofficial PC VR mod**
 
 Play the original F.E.A.R. campaign with tracked hands, physical weapon handling,
 manual reloads, body calibration and configurable comfort options. You need a
 legitimate supported copy of the game and a Windows PC capable of PC VR. The
 game is not included; this is not a standalone Quest app.
 
-[Download v1.8.3](https://github.com/thefreemike31/fear-vr/releases/tag/v1.8.3) ·
+[Download v1.8.5](https://github.com/thefreemike31/fear-vr/releases/tag/v1.8.5) ·
 [Installation](INSTALLATION.md) · [Controls](CONTROLS.md) ·
 [Calibration](CALIBRATION.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
@@ -16,7 +16,7 @@ game is not included; this is not a standalone Quest app.
 ## Start here
 
 1. Confirm the unmodified GOG or Steam base game works on your PC.
-2. From the release's **Assets** list, download `fear-vr-v1.8.3.zip` and its
+2. From the release's **Assets** list, download `fear-vr-v1.8.5.zip` and its
    `.sha256` file. GitHub's automatic **Source code** downloads are not the mod.
 3. Verify and extract the complete ZIP. Keep **setup-files** beside
    **F.E.A.R. VR Setup.exe**.
@@ -43,18 +43,27 @@ Other retail executable variants, Extraction Point, Perseus Mandate, multiplayer
 Linux/Proton are outside this release's supported scope. A controller mapping
 does not mean that hardware has been physically tested.
 
-## New in 1.8.3
+## New in 1.8.5
 
-Take a support-hand grip sooner after drawing or switching guns. Physical
-holster returns are more forgiving and give a confirmation vibration. Weapon
-model/muzzle recovery is stronger, and invalid firearm aiming cannot silently
-fall back to the headset. The affected player has confirmed that the invisible weapon and
-headset-directed firing are fixed.
+- Snatch firearms from regular soldiers with an empty-hand Grip. Deliberate
+  punches, firearm strikes and thrown-gun impacts have improved responses.
+- More consistent firearm throws and releases, including in slow motion,
+  plus improved third-pistol storage and remote-charge/detonator handling.
+- Ammo collection drops a magazine while keeping the original magazine hidden.
+  Ammo pouches and the throwable holster follow the visible body consistently.
+- Optional God Mode, Infinite Ammo, Infinite Throwables, Infinite Slow Motion
+  and unlimited flashlight battery under **VR Settings > Cheats**.
+- Stronger, location-aware holster-draw wearable cues, including the drawing
+  arm, with tuned recoil/contact and slow-motion feedback.
+- Improved presentation of living enemies and attached guns in slow motion,
+  plus a lighting-update optimization that preserves the effects.
 
-VR Settings now follows the launcher's choice of ten languages, including setup,
-help and controller remapping. Change the launcher language before starting the
-game. This translates the VR menus; game text and voices use their separate
-language packs.
+Heavy combat can still hitch; this update does not guarantee a locked 90 FPS.
+This is a base-game update. The public launcher is unchanged; expansion support
+and the private launcher work are excluded.
+
+The earlier weapon visibility, tracked-aim recovery, support grip, holster-return
+and ten-language VR Settings improvements remain included.
 
 ## Included 1.8.2 improvements
 

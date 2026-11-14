@@ -1,4 +1,4 @@
-# Troubleshooting F.E.A.R. VR v1.8.0
+# Troubleshooting F.E.A.R. VR v1.8.5
 
 Start with the checks below, then use the section matching the actual symptom.
 Current [installation](INSTALLATION.md), [controls](CONTROLS.md),
@@ -107,10 +107,10 @@ open a GitHub issue. Do not delete state/receipt files or recovery snapshots.
 
 The original GOG input wrapper is required and is preserved by the current
 installer. Its presence does not mean another mod is installed. An obsolete
-installer may reject it; use the complete **v1.8.0** package.
+installer may reject it; use the complete **v1.8.5** package.
 
 If you moved your original file to bypass that warning, close F.E.A.R., restore
-that same `dinput8.dll` to the GOG game folder and install v1.8.0. If it is lost,
+that same `dinput8.dll` to the GOG game folder and install v1.8.5. If it is lost,
 repair the game through GOG, then reinstall the VR mod. Do not substitute a DLL
 from a download site or the Steam edition. Unknown or modified loaders still
 need their own uninstall instructions or a clean supported installation.
@@ -228,7 +228,7 @@ should still be reported with the exact error and launcher log.
 
 ## SteamVR runtime-selection edge case
 
-Upgrade to **v1.8.0** and start through **F.E.A.R. VR.exe**. Some startup
+Upgrade to **v1.8.5** and start through **F.E.A.R. VR.exe**. Some startup
 environments supply SteamVR's 64-bit OpenXR runtime to this 32-bit game. The
 launcher now validates that selection and uses a valid neighboring 32-bit
 SteamVR runtime. Missing or invalid counterparts produce a repair message before
@@ -306,7 +306,7 @@ have not all been tested on physical hardware.
 
 Release both triggers, then press either trigger once the continue prompt is
 ready; pointing at it is unnecessary. If an old build loses its pointer or
-controller updates here, upgrade to **v1.8.0**. In a current build, report the
+controller updates here, upgrade to **v1.8.5**. In a current build, report the
 runtime/controller profile and preserve the same-run logs if the problem remains.
 
 ## Weapon, reload, holster, or interaction problem
@@ -524,7 +524,7 @@ files or removes the input DLL when Setup created it.
 ## Language import and reset
 
 Follow the [complete tutorial](INSTALLATION.md#import-game-text-and-voices).
-Use the current **v1.8.0** package; obsolete import restrictions do not apply.
+Use the current **v1.8.5** package; obsolete import restrictions do not apply.
 Use your original language DVD/ISO and the **1.08 patch in that same language**.
 All language editions are intended to work in theory; only Spanish is officially
 tested. Other languages are not rejected merely for being non-Spanish.
@@ -646,3 +646,19 @@ Responses depend on availability; neither a report nor a donation guarantees
 individual troubleshooting or a response deadline.
 
 [Main guide](README.md) · [Installation](INSTALLATION.md) · [Controls](CONTROLS.md) · [Calibration](CALIBRATION.md) · [Troubleshooting](TROUBLESHOOTING.md)
+
+## Crowded slow-motion combat hitches
+
+v1.8.5 keeps a lighting-update optimization and all normal effects. It does not
+eliminate every combat stall or guarantee a locked 90 FPS. If reporting a hitch,
+include the level/save, action, whether slow motion was active and your runtime
+and headset settings. Enemy pose smoothing and whole-frame stalls are separate.
+The temporary profiling capture shortcuts and effect-disable modes do not ship.
+
+## Ammo-strip magazine or body pouch feedback
+
+Upgrade to v1.8.5 if collecting ammo drops a magazine while leaving an immediate
+copy on the source gun. The source stays absent; reload or replenished ammunition
+restores a borrowed gun's normal magazine. Shotguns use shell feedback.
+Pouch visuals and grab zones now follow the same body frame. Saved calibration
+is preserved; adjust the pouch location if it remains uncomfortable.

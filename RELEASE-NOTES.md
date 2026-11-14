@@ -1,4 +1,45 @@
-# F.E.A.R. VR v1.8.3
+# F.E.A.R. VR v1.8.5
+
+- **Disarm and fight:** snatch regular soldiers' firearms with an empty-hand
+  Grip. Disarmed soldiers react, pursue or seek cover. Deliberate hand melee,
+  held-firearm strikes and thrown-gun impacts have improved damage and reactions.
+- **Better throws:** firearm release preserves wrist-rotation momentum and
+  clears the player more consistently, including during slow motion.
+- **Weapon handling:** improved third-pistol empty-hip storage, duplicate-SMG
+  handoff and remote-charge/detonator transitions preserve native ownership.
+- **Ammo collection:** see and hear the loose magazine fall while the original
+  stays absent. Borrowed-gun magazines return when reloading or replenishing ammo.
+- **Body and pouches:** ammo displays, reload/grab zones and calibration previews
+  follow the body together. The throwable holster uses that same body frame.
+- **Optional cheats:** God Mode, Infinite Ammo, Infinite Throwables, Infinite
+  Slow Motion and unlimited Flashlight Battery. Infinite Ammo keeps reloading.
+- **bHaptics:** stronger recoil/contact cues, a slower slow-motion wave and
+  location-aware holster feedback with a pulse on the arm drawing the firearm.
+- **Slow-motion presentation and lighting:** living enemies and attached guns
+  retain improved smoothing; repeated identical light updates are avoided while
+  preserving authored lighting, shadows, particles and image quality.
+
+This release is for the original GOG and Steam campaigns. The public launcher
+is unchanged from v1.8.3. Expansion support, the private launcher, experimental
+visual cuts and profiling tools are excluded.
+
+Heavy combat can still hitch, especially in crowded slow-motion encounters.
+A locked 90 FPS is not guaranteed. The gameplay changes have owner acceptance
+from development builds; that does not establish exhaustive scene, edition or
+hardware coverage. Existing loading and late-Quit limits remain.
+
+## Update
+
+Download **fear-vr-v1.8.5.zip** and its checksum, extract the complete ZIP, keep
+**setup-files** beside Setup, and choose **Setup > Upgrade**. Saves, calibration
+and wearable strengths are preserved. v1.8.3 remains the previous public release
+and rollback. GitHub's automatic Source code archives are not the mod.
+
+See [controls](CONTROLS.md), [installation](INSTALLATION.md),
+[calibration](CALIBRATION.md) and [known limitations](KNOWN-LIMITATIONS.md).
+
+## Included v1.8.3 improvements
+
 
 - Fixes the delay before taking a support-hand grip after drawing or switching
   firearms, including when returning from Physical Weapons to ordinary holsters.
@@ -20,16 +61,6 @@ This confirms the reported symptoms on that setup, not every headset or cause. P
 prototype. Existing loading, performance and late-Quit limitations remain.
 Menu translations passed build, catalog and Windows font checks; they have not
 yet received a separate headset or native-language editorial review.
-
-## Update
-
-Download **fear-vr-v1.8.3.zip** and its checksum from Assets, extract the complete
-ZIP, keep **setup-files** beside Setup, and choose **Setup > Upgrade**. Saves,
-calibration and wearable strengths are preserved. v1.8.2 remains available as
-rollback. GitHub's automatic Source code archives are not the mod.
-
-See [installation](INSTALLATION.md), [controls](CONTROLS.md),
-[troubleshooting](TROUBLESHOOTING.md) and [known limitations](KNOWN-LIMITATIONS.md).
 
 ## Included v1.8.2 weapon and bHaptics improvements
 

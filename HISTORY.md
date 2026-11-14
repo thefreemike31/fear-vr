@@ -1,5 +1,15 @@
 # The road to F.E.A.R. VR by TheFreeMike
 
+## v1.8.5 - November 14, 2026
+
+Base-game interaction update: soldier disarming, deliberate melee, thrown-gun
+impacts and release corrections; optional campaign cheats; third-pistol and
+remote-charge handling; persistent ammo-strip magazine feedback; body-following
+pouches and wearable draw/recoil/slow-motion tuning. Living-enemy smoothing and
+an exact-input lighting cache remain. Combat profiling is retired and all
+effects restored. Heavy-scene stalls remain unresolved. Expansion and private
+launcher work are excluded; v1.8.3 remains available as rollback.
+
 ## v1.8.3 - November 1, 2026
 
 Weapon handling improvements: support grip during drawing/switching, more forgiving

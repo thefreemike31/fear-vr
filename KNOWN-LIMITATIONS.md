@@ -1,6 +1,6 @@
 # Known limitations
 
-Current scope for **v1.8.3**. [Release notes](RELEASE-NOTES.md) cover what changed;
+Current scope for **v1.8.5**. [Release notes](RELEASE-NOTES.md) cover what changed;
 [development history](https://github.com/thefreemike31/fear-vr/blob/main/HISTORY.md)
 holds earlier milestones. These limits apply even when installation checks pass.
 
@@ -24,6 +24,9 @@ holds earlier milestones. These limits apply even when installation checks pass.
 - The game is 32-bit. Steam memory preparation enables up to 4 GB of address
   space on 64-bit Windows; it does not eliminate memory pressure. High per-eye
   resolution can still exhaust resources on a PC with plenty of system RAM.
+- Crowded firefights can still drop below 90 FPS and hitch, particularly during
+  slow motion. The lighting optimization retains all effects and does not promise
+  locked performance.
 - Residual hitches and recurring stalls are not universally resolved. Runtime,
   driver, loading and streaming waits can still stall; report timing and settings.
 - A pre-existing native cleanup crash after Quit remains unresolved. Windows
@@ -78,24 +81,13 @@ holds earlier milestones. These limits apply even when installation checks pass.
 
 ## Validation scope
 
-Owner testing accepted bHaptics feedback and the close-door fix on the
-Steam development installation, alongside earlier accepted gameplay work.
-The v1.8.3 handling/recovery changes, v1.8.2 weapon fixes and the preceding heartbeat/helicopter improvements have
-owner headset acceptance. The report does not enumerate every edition, scene or
-edge case. Additional wearable models/peripherals remain software-tested only.
-Installer fixtures check both editions and upgrade paths; they are not a headset
-run of the assembled shipping ZIP or proof of performance on every setup.
+The accepted development checkpoints cover thrown firearms, disarming/melee,
+cheats, body/pouch placement, wearable tuning and ammo-strip presentation.
+Owner reports do not enumerate every firearm, scene, edition or hardware setup.
+The lighting cache was retained by request; a causal FPS gain was not established.
 
-[Main guide](README.md) · [Troubleshooting](TROUBLESHOOTING.md)
-
-The affected player has confirmed that the invisible weapon and headset-directed
-firing are fixed. If a similar issue occurs on another setup, preserve
-`FEARVR-Weapons.log`; this report does not certify every headset or failure path.
-
-## VR menu translations
-
-The ten launcher languages are available in VR Settings. Translations passed
-offline catalog, build and Windows glyph checks; headset and native-language
-editorial reviews were not performed for this addition. Chinese text uses the
-Windows Microsoft YaHei/JhengHei fonts. Game text, voices and in-world guidance
-cards remain separate from VR menu localization.
+The public client excludes developer menus and profiling. Fresh-install,
+upgrade and launcher-preflight checks are separate from headset gameplay;
+owner acceptance does not establish exhaustive public-package coverage.
+Expansion support and the private launcher are excluded. The public launcher retains its v1.8.3 bytes.
+Earlier translation and peripheral-hardware testing limits remain in force.

@@ -1,6 +1,6 @@
 # Controls and weapon handling
 
-Current guide for **v1.8.0**. Open **Controller Layouts.html** from the ZIP or
+Current guide for **v1.8.5**. Open **Controller Layouts.html** from the ZIP or
 installed **FEAR-VR-Install** folder for diagrams and default buttons for your
 detected controller profile. The launcher’s **Controls** button opens that guide.
 An emulated runtime profile can differ from the controller’s product name;
@@ -102,6 +102,25 @@ dropping both leaves the unused original holstered. Release the borrowed pistol
 before reloading or switching weapons. A borrowed pistol cannot replace an
 occupied holster. Follow the borrowing/unloading cards.
 
+With a third pistol already stored, either held single pistol can use the
+remaining empty hip holster. Each pistol keeps its own ammunition.
+
+### Disarming, throwing and collecting ammunition
+
+Reach for a regular soldier's firearm with an empty hand and press Grip to
+snatch it. The soldier flinches and may pursue you or seek cover. Eligibility,
+free-hand and weapon-ownership rules still apply; not every enemy is disarmable.
+
+Deliberately thrown firearms can hit and damage enemies, with contact reactions
+and rebound. Release direction and momentum include your wrist rotation; a
+slow-motion release should clear your body rather than immediately catching it.
+
+Use the ammo-collection action on a held world gun (default Touch **B**) to strip
+eligible spare ammunition. A loose magazine falls with an audio cue, and the
+source magazine stays absent instead of immediately appearing again. A borrowed
+gun's normal magazine presentation returns when reloading or replenishing ammo.
+Shotguns retain shell feedback. Native ammunition limits still apply.
+
 An empty single pistol needs its slide pulled after inserting a magazine. Dual
 pistols retain hip reloads. In the nonphysical modes, holding Reload for 1.25
 seconds discards one pistol from a pair; release early to cancel. Physical mode
@@ -189,11 +208,20 @@ the pouch if its position is the problem. See [Troubleshooting](TROUBLESHOOTING.
 Empty-hand melee works with either an open hand or a closed fist on enemies
 and breakable glass/planks. Keep the striking hand free: holding a prop,
 supporting a weapon, reloading, or climbing takes priority. Firing a held gun
-does not also add physical weapon-strike damage.
+does not also add physical weapon-strike damage. Hits need deliberate motion;
+merely brushing an enemy is insufficient. Held-firearm strikes have stronger
+impact feedback and damage than incidental contact.
 
 Physical pickups, weapon exchange, melee, and ladders depend on eligible objects
 and free hands. A decorative prop is not necessarily grabbable. Clear held
 objects/weapons when an interaction requires an empty hand.
+
+## Optional single-player cheats
+
+Open **Options > VR Settings > Cheats** for **God Mode**, **Infinite Ammo**,
+**Infinite Throwables**, **Infinite Slow Motion**, and **Flashlight Battery**.
+Infinite Ammo replenishes reserves; you still reload and operate the weapon.
+These are optional profile settings for the single-player campaign.
 
 ## Ladder modes
 
@@ -302,6 +330,11 @@ Explosions, Melee Impacts and Environmental Effects independently.
 Low Health Heartbeat begins gently at **40 displayed health** and grows stronger
 as health falls. Healing above 40 stops it; health upgrades do not move the threshold.
 Helicopter feedback follows supported helicopter events.
+
+Drawing from a hip, shoulder or back holster gives a cue at that location on
+the vest and a short pulse on the drawing arm. Cross-body draws use the arm
+that actually grabbed the gun. Recoil/contact cues are stronger and the
+slow-motion wave is slower; existing strength controls still apply.
 
 Experimental Tactosy hand and TactGlove DK2/DK3 effects follow the matching
 left/right Sleeve switch and strength. Tactosy feet follow Vest controls. Master
